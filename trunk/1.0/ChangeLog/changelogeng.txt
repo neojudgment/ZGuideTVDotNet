@@ -1,0 +1,355 @@
+Friday, June 21, 2013 (ZGuideTV.NET 1.0 RC7)
+
+Fixed:
+- Testing a workaround to fix a bug during ZGuideTV.NET startup when the first TV broadcast of the first TV channel is empty.
+
+Miscellaneous:
+- Code cleaning.
+- Code optimisation.
+- SQLite engine v3.7.16.2 to v3.7.17
+- Many other fixes.
+
+Tuesday, April 15, 2013 (ZGuideTV.NET 1.0 RC6)
+
+Miscellaneous:
+- Code cleaning.
+- Code optimisation.
+- SQLite engine v3.7.16 to v3.7.16.2
+- Many performance improvements and bug fixes. 
+
+Friday, March 29, 2013 (ZGuideTV.NET 1.0 RC5)
+
+Fixed:
+- Bug fixes "System.UnauthorizedAccessException in Data.xml" access denied (TV series and movies detailed informations).
+
+Miscellaneous:
+- Code cleaning.
+- Code optimisation.
+- SQLite engine v3.7.15.1 to v3.7.16
+
+Sunday, February 4, 2013 (ZGuideTV.NET 1.0 RC4)
+
+- Code cleaning.
+- Code optimisation.
+- Update SQLite v3.7.10 to v3.7.15.1
+- Update 7-Zip v9.25 to v9.30 beta.
+
+Saturday, October 13, 2012 (ZGuideTV.NET 1.0 RC3)
+
+- Security update.
+- Feedback is working again.
+- Link updated.
+
+Saturday, March 3, 2011 (ZGuideTV.NET 1.0 RC2).
+
+Added:
+- New options when update files are local.
+
+Fixed:
+- Bug fixes in TV series and movies detailed informations.
+- Bug fixes in setup Wizard.
+- Translation fixes.
+- ZGuideTV.NET no longer crashes when the database is outdated and the update is done via a xmltv file on the hard drive or the auto update option is activated.
+- The backup/restore options no longer displays the unzipped files.
+
+Miscellaneous:
+- Code cleaning.
+- Code optimisation.
+- Update SQLite v3.7.9 to v3.7.10.
+- Update 7-Zip v9.22 to v9.25 beta.
+
+Saturday, december 31, 2011 (ZGuideTV.NET RC1).
+
+Added:
+- Mutex system.
+- New DOM-TOM logos and others.
+ 
+Fixed:
+- Minor fixes.
+
+Miscellaneous:
+- Code cleaning
+- Code optimisation
+
+Wednesday, June 29, 2011 (ZGuideTV.NET 9 build 0.98).
+
+Fixed:
+- New ZGuideTV.NET icon displayed in the Windows audio mixer.
+- Delete outdated downloaded files. They created random errors during later automatic updates.
+- Display Online Help using the language selected in ZGuideTV.NET.
+
+Added :
+- Add Link to the online Help from the menu.
+- Sending Feedback asynchronously.
+
+Miscellaneous:
+- Code cleaning
+- Code optimisation
+- Update SQLite v3.7.6 to v3.7.7.
+- Update 7-Zip v9.21 to v9.22 beta. 
+
+Wednesday, April 13, 2011 (ZGuideTV.NET 9 build 0.97).
+
+Fixed:
+- Fixes in Feedback management.
+- Improved cache.
+- Rewrite code in geolocation management.
+- Many other fixes.
+
+Added :
+- New Splash Screen.
+- Additional backup/restoration settings (Ctrl+W).
+- Viewing online help (quick start) or '?' button in the toolbar.
+- Option to delete backups during uninstall.
+- DirectX sound management.
+- Manual and automatic new ZGuideTV.NET update availability.
+
+Miscellaneous :
+- Code cleaning
+- Code optimisation
+- Update SQLite v3.7.4 to v3.7.6.
+- Update 7-Zip v9.15 to v9.21 beta. 
+
+Wednesday, december 29, 2010 (ZGuideTV.NET 9 build 0.96)
+
+Fixed :
+- Duplicates channels that caused an error when parsing the XMLTV file structure.
+- Random bug at startup.
+- Error in calendar.
+- Creating backup/restore directory during Setup Wizard.
+- Many other fixes.
+
+Added :
+- Quick search by title.
+- Backup/Restore database (Ctrl+W).
+- Microsoft Authenticode Certificate.
+- Off-Line mode.
+
+Miscellaneous :
+- Code cleaning
+- Code optimisation
+- Update SQLite v3.7 to v3.7.4.
+- Update 7-Zip v9.15 to v9.20 Final.
+
+Thursday, August 26, 2010 (ZGuideTV.NET 9 build 0.95)
+
+Added :
+- Summary Preview (mouseover TV Show).
+- Real-time TV Show view.
+- Database Auto-update if outdated.
+
+Fixed :
+- Description completely rewritten.
+- Various fixes in SQL queries
+- Best fluidity in main panel.
+- Major and Minor bugs fixed.
+
+Miscellaneous :
+- Code cleaning
+- Code optimisation
+- Update SQLite v3.6.23.1 to v3.7
+- Update 7-Zip v9.14 to v9.15
+
+Friday, June 11, 2010 (ZGuidetv.NET beta 9 build 0.93)
+
+Added :
+- Content rating in TV Show description. (Show caption content rating ALT+R).
+- Bell icon on a selected TV Show.
+- OSD during data search.
+- ShowView number in TV Show description.
+- Warning when a new RSS flux is coming from ZGuideTV.NET.
+
+Fixed :
+- Various fixes in SQL queries
+- Bug in Data source selection for series/movies sheets 
+
+Miscellaneous :
+- Tested under Windows 7 PRemium 64 bits
+- New icon for language selection.
+- Logos updated
+- Code cleaning
+- Code optimisation
+- Update SQLite v3.6.23.0 to v3.6.23.1
+- Update 7-Zip v9.11 to v9.14
+- Update xmldtd v1.42 to v1.44
+- Update Windows 7 API
+
+Friday, March 19, 2010 (ZGuidetv.NET beta 9 build 0.92)
+
+Fixed :
+- Some controls handling in the main screen.
+- Various fixes in series/movies sheets.
+- Networks link test (Connection Available for update).
+- Jet lag compensation when displaying "View by channel"
+- Fixes in SQLite queries.
+- Fixes in English translation.
+- Fixes internet/network detection.
+- Fixes height issue in window description after restarting ZGuideTV.NET.
+- Various fixes.
+
+Added :
+- Compatibility with Windows Starter Edition 7 (untested)
+- Ability to add a Windows Firewall exception during Setup Wizard (Recommended). Tested under Windows 7 Pro x86 and Premium.
+- Ability to create a database for different user accounts (user, admin) under the same OS with different options selected.
+- New UAC management (User Account Control).
+- Ability of no longer URL update automatically.
+- New icons in the toolbar ... Show/Hide categories Show/Hide calendar show/hide description, The TVdb.com.
+- Ability to send a feedback/suggestion manually (toolbar).
+- A window jet-lag compensation (ALT+T or double-click in the status bar).
+- A link "Donate" in "?" menu.
+- Data source selection for series/movies sheets (CTRL-H or double-click in the status bar).
+
+Miscellaneous :
+- Code cleaning
+- Code optimisation
+- Update SQLite v3.6.22 to v3.6.23.
+- Update 7-Zip v9.10 to v9.11.
+
+Thursday, December 31, 2009 (ZGuidetv.NET beta 9 build 0.91)
+
+Fixed :
+- Resizing tables during parsing
+- Important fixes in SQL queries
+- More then 40 bugs fixed since beta 0.90
+
+Added :
+- From this release ZGuideTV.NET uses SqLite database
+- Vertical scrolling in categories
+- New Progressbar in Window 7 taskbar
+- Jumplist (K!TV, MeuhMeuhTV, ProgDVB) available in Window 7 taskbar
+- TV shows channel view (double click on a logo) 
+- New advanced search (Ctrl+F)
+- New logos
+
+Miscellaneous :
+- 7zip Updated to 9.10.0.0
+- Code cleaning
+- Code optimisation
+
+Saturday, October 12, 2009 (ZGuidetv.NET beta 9 build 0.90)
+
+Fixed :
+- An error occurs when clicking on "Cancel" in manual update Windows
+- Various fixes in SQL queries
+
+Added :
+- Supports up to 256 categories (previous beta limited up to 40)
+- Search series / films sheets via the TheTVDB.Com APIs (CTRL + I)
+
+Miscellaneous :
+- Code cleaning
+- Code optimisation
+- Various fixes
+
+Wednesday, September 23 2009 (ZGuidetv.NET beta 8 build 0.81)
+
+- Database backup/Restore when XMLTV file is not conform to DTD specifications during update
+- Support quotes in the channel's names
+- Handling errors related to non compliance of DTD specifications
+- Support up to 350 channels (previous beta limited up to 200)
+- Various bugfixes
+
+Friday, September 18 2009 (ZGuideTV.NET beta 8)
+
+- Improved Support for xmltv files standard
+- New 2D/3D interface
+- If the logo does not exist it is created (based on the channel's name)
+- Improved speed when opening / closing panels
+- Improved speed simple / double click
+- Improved refresh rate controls
+- New categories management
+- 7z Updated to 9.7.0.0
+- Significant Bug fixes
+- New ZGuideTV.NET logo
+- Miscellaneous
+
+Tuesday, 1 September 2009 (ZGuideTV.NET beta 7)
+
+Workaround :
+- Download XML data
+
+Fixed :
+- If a logo is not found he will be replaced by a blank logo
+
+Added :
+- Double click on a TV shows displays IMDB sheet
+- Ability to add your e-mail when you send Feedback
+
+Note :
+- Filters are temporarily disabled
+- TV channels are currently limited
+
+Saturday, 15 August 2009 (ZGuideTV.NET beta 6)
+
+Fixed :
+- Windows XP 64Bits Support (Thanks to hogans for spotted this problem)
+- "Kiosque" Channels
+
+Tuesday, 11 August 2009 (ZGuideTV.NET beta 5)
+
+Added :
+- Horizontal scrolling mouse
+- Auto Feedback
+- New categories in filter section
+- Transiting to Framework 3.5
+- iMON remote control Support (cf \RemoteControl)
+- 3d toolbar and menus rendering
+- Screen saver option
+
+Fixed :
+- Fix in filter management
+
+Miscellaneous :
+- Code cleaning
+- Code optimisation
+- Various fixes
+- New keyboard shortcuts
+
+Saturday, 6 June 2009 (ZGuideTV.NET beta 4)
+
+Added:
+- Dual-Screen support
+- System restore point
+- Database corrupted management
+
+Fixed:
+- Calendar error
+- Description resizing
+- Initial logos positioning
+- The main screen has the focus after startup
+
+Miscellaneous
+- Code cleaning
+- New SplashScreen
+- English translation (~99,99%) 
+- Various small fixes
+- New keyboard shortcuts
+
+Friday, 27 March 2009 (ZGuideTV.NET beta 3)
+
+Added :
+
+- Automatic update TV program scheduling
+- Checking automatic updates application
+- Advanced Search CTRL+F
+- Ability to print 'Tonight' ALT+P
+- Supports Windows 7
+- Now works without admin rights
+
+Fixed :
+
+- Calendar error
+- User settings error after auto Update
+
+Miscellaneous :
+
+- Updated 7-zip 4.65 Final
+- Fixed Mouse wheel management in 'Now'
+- New logos
+- Various correction
+
+Language :
+
+- English translation (~99%)
+
+Tested under K!TV 2.3.0.1 and 2.4 beta 2

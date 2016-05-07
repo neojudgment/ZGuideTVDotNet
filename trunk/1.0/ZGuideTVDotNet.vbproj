@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{623D2B43-C0D3-4558-A611-1BE728AB49A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ZGuideTV.My.MyApplication</StartupObject>
+    <RootNamespace>ZGuideTV</RootNamespace>
+    <AssemblyName>ZGuideTVDotNet</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Images\icobleutv.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>E30846BA38FB5D0566EA32A31FB7FD23F7B92A07</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionInfer>Off</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <PublishUrl>D:\setupZGuide.net\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ZGuideTVDotNet.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>true</Optimize>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ZGuideTVDotNet.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <CodeContractsEnableRuntimeChecking>False</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animaonline Weather API, Version=2.5.0.0, Culture=neutral, PublicKeyToken=5808f2d90955dcf7, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Animaonline Weather API.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.DirectX.AudioVideoPlayback.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TvdbLib, Version=0.8.8.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\TvdbLib.dll</HintPath>
+    </Reference>
+    <Reference Include="VistaBridgeLibrary, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\VistaBridgeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.DesktopIntegration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Windows7.DesktopIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.DesktopIntegration.Registration">
+      <HintPath>dll\Windows7.DesktopIntegration.Registration.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\AudioMixerHelper.vb" />
+    <Compile Include="Class\BannerControl.designer.vb">
+      <DependentUpon>BannerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BannerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\BarreTemporelle.designer.vb">
+      <DependentUpon>BarreTemporelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BarreTemporelle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\calendrier.vb" />
+    <Compile Include="Class\calendrierpavé.Designer.vb">
+      <DependentUpon>calendrierpavé.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\calendrierpavé.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\CoverFlow.designer.vb">
+      <DependentUpon>CoverFlow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CoverFlow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\curseur.Designer.vb">
+      <DependentUpon>curseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\curseur.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\Custom_Scroll.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\GifImage.vb" />
+    <Compile Include="Class\gradientBouton.designer.vb">
+      <DependentUpon>gradientBouton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\gradientBouton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\iBar.designer.vb">
+      <DependentUpon>iBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\iBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\IniFile.vb" />
+    <Compile Include="Class\lbLoader.Designer.vb">
+      <DependentUpon>lbLoader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\lbLoader.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\PaveActuellement.designer.vb">
+      <DependentUpon>PaveActuellement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PaveActuellement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\PosterControl.designer.vb">
+      <DependentUpon>PosterControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PosterControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\SeasonTag.vb" />
+    <Compile Include="Class\ShapeRater.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\PaveCentral.Designer.vb">
+      <DependentUpon>PaveCentral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PaveCentral.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\SplashScreenClass.vb" />
+    <Compile Include="Class\Wakeup.vb" />
+    <Compile Include="Form\Central_screen.Designer.vb">
+      <DependentUpon>Central_screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Central_screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EPGDataSubscription.Designer.vb">
+      <DependentUpon>EPGDataSubscription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EPGDataSubscription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Forecast.Designer.vb">
+      <DependentUpon>Forecast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Forecast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MiseajourEPGData.Designer.vb">
+      <DependentUpon>MiseajourEPGData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MiseajourEPGData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PremierDemarrage.Designer.vb">
+      <DependentUpon>PremierDemarrage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PremierDemarrage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Gestionbdd.Designer.vb">
+      <DependentUpon>Gestionbdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Gestionbdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\miseajourautoEPGDATA.Designer.vb">
+      <DependentUpon>miseajourautoEPGDATA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\miseajourautoEPGDATA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProgressBar.Designer.vb">
+      <DependentUpon>ProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReorgChannel.designer.vb">
+      <DependentUpon>ReorgChannel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReorgChannel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\signaletique.Designer.vb">
+      <DependentUpon>signaletique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\signaletique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EngineSelection.Designer.vb">
+      <DependentUpon>EngineSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EngineSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Feedback.Designer.vb">
+      <DependentUpon>Feedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Feedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ChannelView.Designer.vb">
+      <DependentUpon>ChannelView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ChannelView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Search.Designer.vb">
+      <DependentUpon>Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SelectLanguage.Designer.vb">
+      <DependentUpon>SelectLanguage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SelectLanguage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SearchResultForm.designer.vb">
+      <DependentUpon>SearchResultForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SearchResultForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SeriesBrowser.Designer.vb">
+      <DependentUpon>SeriesBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SeriesBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TimeZone.Designer.vb">
+      <DependentUpon>TimeZone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TimeZone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\tri_avance.Designer.vb">
+      <DependentUpon>tri_avance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\tri_avance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WeatherCitySelect.Designer.vb">
+      <DependentUpon>WeatherCitySelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\WeatherCitySelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ConnectionAvailable.vb" />
+    <Compile Include="Module\DatabaseEPGData.vb" />
+    <Compile Include="Module\HideControls.vb" />
+    <Compile Include="Module\imprimer.vb" />
+    <Compile Include="Module\DataBase.vb" />
+    <Compile Include="Form\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ListRecKTV.Designer.vb">
+      <DependentUpon>ListRecKTV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ListRecKTV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Message.designer.vb">
+      <DependentUpon>Message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Miseajour.designer.vb">
+      <DependentUpon>Miseajour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Miseajour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pref.designer.vb">
+      <DependentUpon>Pref.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pref.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\INIAccess.vb" />
+    <Compile Include="Form\KTvForm.designer.vb">
+      <DependentUpon>KTvForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\KTvForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\miseajourauto.designer.vb">
+      <DependentUpon>miseajourauto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\miseajourauto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MMTvForm.Designer.vb">
+      <DependentUpon>MMTvForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MMTvForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ControlLanguage.vb" />
+    <Compile Include="Module\Language.vb" />
+    <Compile Include="Module\MemoireClean.vb" />
+    <Compile Include="Module\Marquage.vb" />
+    <Compile Include="Module\purge.vb" />
+    <Compile Include="Module\sqliteWrapper.vb" />
+    <Compile Include="Module\UpdateXMLParser.vb" />
+    <Compile Include="Module\utilitairedate.vb" />
+    <Compile Include="Module\UtilitaireMiseaJourEPGData.vb" />
+    <Compile Include="Module\utilitairesmiseajour.vb" />
+    <Compile Include="Module\Weather.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Module\requete.vb" />
+    <Compile Include="Form\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\taskbar.vb" />
+    <Compile Include="Module\Variables.vb" />
+    <Compile Include="Class\ChannelsConfigs.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Class\BannerControl.resx">
+      <DependentUpon>BannerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\BarreTemporelle.resx">
+      <DependentUpon>BarreTemporelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\CoverFlow.resx">
+      <DependentUpon>CoverFlow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\curseur.resx">
+      <DependentUpon>curseur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\iBar.resx">
+      <DependentUpon>iBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\lbLoader.resx">
+      <DependentUpon>lbLoader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\PaveCentral.resx">
+      <DependentUpon>PaveCentral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\PosterControl.resx">
+      <DependentUpon>PosterControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\ShapeRater.resx">
+      <DependentUpon>ShapeRater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EPGDataSubscription.resx">
+      <DependentUpon>EPGDataSubscription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Forecast.resx">
+      <DependentUpon>Forecast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MiseajourEPGData.resx">
+      <DependentUpon>MiseajourEPGData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PremierDemarrage.resx">
+      <DependentUpon>PremierDemarrage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Gestionbdd.resx">
+      <DependentUpon>Gestionbdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\miseajourautoEPGDATA.resx">
+      <DependentUpon>miseajourautoEPGDATA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProgressBar.resx">
+      <DependentUpon>ProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReorgChannel.resx">
+      <DependentUpon>ReorgChannel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\signaletique.resx">
+      <DependentUpon>signaletique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EngineSelection.resx">
+      <DependentUpon>EngineSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Feedback.resx">
+      <DependentUpon>Feedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ChannelView.resx">
+      <DependentUpon>ChannelView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Search.resx">
+      <DependentUpon>Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ListRecKTV.resx">
+      <DependentUpon>ListRecKTV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Message.resx">
+      <DependentUpon>Message.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Miseajour.resx">
+      <DependentUpon>Miseajour.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pref.resx">
+      <DependentUpon>Pref.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SelectLanguage.resx">
+      <DependentUpon>SelectLanguage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\KTvForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KTvForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\miseajourauto.resx">
+      <DependentUpon>miseajourauto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MMTvForm.resx">
+      <DependentUpon>MMTvForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SearchResultForm.resx">
+      <DependentUpon>SearchResultForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SeriesBrowser.resx">
+      <DependentUpon>SeriesBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TimeZone.resx">
+      <DependentUpon>TimeZone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\tri_avance.resx">
+      <DependentUpon>tri_avance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WeatherCitySelect.resx">
+      <DependentUpon>WeatherCitySelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dolby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\etoile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\etoile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\etoile-grise.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\etoile-rouge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\etoilesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\premiere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\star1cz8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\star2nn9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stargho3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stars_10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\starynz0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\teletext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Images\ziplogo.png" />
+    <None Include="Images\miseajour.png" />
+    <None Include="Images\Bg_Aero.jpg" />
+    <None Include="Images\ktv.png" />
+    <None Include="Images\mmtv.png" />
+    <None Include="Images\etoile-jaune.gif" />
+    <None Include="Images\separation_horizontale.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pave4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PrintHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\FindHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SendBackwardHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PropertiesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Network Configuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PublishPlanHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\forum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\internet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\moniteur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AddTableHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\DataContainer_NewRecordHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PauseRecorderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\miseajour2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\splash3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\monitor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\splash_bleu_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logo_bleu_tv.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ico_bleu_tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\loader4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tvdb_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\episode_notfound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\season_notfound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dvdbox_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dvdbox_front1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tvdb_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\API_KEY.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\playback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\progressbar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icobleutv.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\security.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\NewReportHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Calendar_scheduleHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HideDescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\filters.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\tvdb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\decalage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\printeradd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\datalink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\world_link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\stereo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\signaletique.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\plugin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ZGuideTVDotNet.Description\RichTextBoxPrintCtrl\ZGuideTVDotNet.Description.vbproj">
+      <Project>{34E719F9-E103-44E4-B48B-BAB98B328954}</Project>
+      <Name>ZGuideTVDotNet.Description</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="ZGuideTVDotNet.Render\esasyrendervb\ZGuideTVDotNet.Render.vbproj">
+      <Project>{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}</Project>
+      <Name>ZGuideTVDotNet.Render</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\separator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\chance_of_rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\mostly_sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\partly_cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\mostly_cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\chance_of_snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\chance_of_storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\mist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\thunderstorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\chance_of_tstorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\fog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\smoke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\haze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\flurries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\findLocation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ArrowNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\paypaldonate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bleu_tv_ericdesign1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bleu_tv_ericdesign.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logo_bleu_tv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\asteriskrouge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\soundmute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\audiominus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\audioplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\controlplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\imon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\keyboard.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

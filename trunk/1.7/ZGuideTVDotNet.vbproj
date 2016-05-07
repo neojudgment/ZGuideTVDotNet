@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{623D2B43-C0D3-4558-A611-1BE728AB49A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ZGuideTV.My.MyApplication</StartupObject>
+    <RootNamespace>ZGuideTV</RootNamespace>
+    <AssemblyName>ZGuideTVDotNet</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>icobleutv.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>E30846BA38FB5D0566EA32A31FB7FD23F7B92A07</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OptionInfer>Off</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>D:\setupZGuide.net\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Optimize>true</Optimize>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <CodeContractsEnableRuntimeChecking>False</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>False</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>False</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>false</Optimize>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DefineDebug>true</DefineDebug>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>References\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TvdbLib">
+      <HintPath>References\TvdbLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows7.DesktopIntegration">
+      <HintPath>References\Windows7.DesktopIntegration.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Class\CustomRenderer.vb" />
+    <Compile Include="Class\TreeNodeCategorie.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\WebFileDownloader.vb" />
+    <Compile Include="Class\ZSplitButton.designer.vb">
+      <DependentUpon>ZSplitButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ZSplitButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\Ztextbox.Designer.vb" />
+    <Compile Include="Class\Ztextbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\GestionCategorie.designer.vb">
+      <DependentUpon>GestionCategorie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GestionCategorie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Message.designer.vb">
+      <DependentUpon>Message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ZGuideTVDotNetUpdate.designer.vb">
+      <DependentUpon>ZGuideTVDotNetUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ZGuideTVDotNetUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impression\CoolPrintPreviewControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Impression\CoolPrintPreviewDialog.designer.vb">
+      <DependentUpon>CoolPrintPreviewDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Impression\CoolPrintPreviewDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impression\ImprimeEmissions.vb" />
+    <Compile Include="Impression\PageImageList.vb" />
+    <Compile Include="Module\Categorie.vb" />
+    <Compile Include="Module\PathDLL.vb" />
+    <Compile Include="MyApplication.vb" />
+    <Compile Include="Class\BannerControl.designer.vb">
+      <DependentUpon>BannerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BannerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\BarreTemporelle.designer.vb">
+      <DependentUpon>BarreTemporelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BarreTemporelle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\calendrier.vb" />
+    <Compile Include="Class\calendrierpavé.Designer.vb">
+      <DependentUpon>calendrierpavé.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\calendrierpavé.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\curseur.Designer.vb">
+      <DependentUpon>curseur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\curseur.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\iBar.designer.vb">
+      <DependentUpon>iBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\iBar.vb" />
+    <Compile Include="Class\PaveActuellement.designer.vb">
+      <DependentUpon>PaveActuellement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PaveActuellement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\PosterControl.designer.vb">
+      <DependentUpon>PosterControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PosterControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\SeasonTag.vb" />
+    <Compile Include="Class\ShapeRater.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\PaveCentral.Designer.vb">
+      <DependentUpon>PaveCentral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\PaveCentral.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\SplashScreenClass.vb" />
+    <Compile Include="Class\Wakeup.vb" />
+    <Compile Include="Form\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Central_screen.Designer.vb">
+      <DependentUpon>Central_screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Central_screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PremierDemarrage.Designer.vb">
+      <DependentUpon>PremierDemarrage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\PremierDemarrage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Gestionbdd.Designer.vb">
+      <DependentUpon>Gestionbdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Gestionbdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ProgressBar.Designer.vb">
+      <DependentUpon>ProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ReorgChannel.designer.vb">
+      <DependentUpon>ReorgChannel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ReorgChannel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Feedback.Designer.vb">
+      <DependentUpon>Feedback.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Feedback.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Search.Designer.vb">
+      <DependentUpon>Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SelectLanguage.Designer.vb">
+      <DependentUpon>SelectLanguage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SelectLanguage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SearchResultForm.designer.vb">
+      <DependentUpon>SearchResultForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SearchResultForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SeriesBrowser.Designer.vb">
+      <DependentUpon>SeriesBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SeriesBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\TimeZone.Designer.vb">
+      <DependentUpon>TimeZone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\TimeZone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ConnectionAvailable.vb" />
+    <Compile Include="Module\HideControls.vb" />
+    <Compile Include="Module\DataBase.vb" />
+    <Compile Include="Form\Miseajour.designer.vb">
+      <DependentUpon>Miseajour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Miseajour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Pref.designer.vb">
+      <DependentUpon>Pref.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Pref.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\miseajourauto.designer.vb">
+      <DependentUpon>miseajourauto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\miseajourauto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ControlLanguage.vb" />
+    <Compile Include="Module\Language.vb" />
+    <Compile Include="Module\Marquage.vb" />
+    <Compile Include="Module\GarbageCollector.vb" />
+    <Compile Include="Module\purge.vb" />
+    <Compile Include="Module\sqliteWrapper.vb" />
+    <Compile Include="Module\utilitairedate.vb" />
+    <Compile Include="Module\utilitairesmiseajour.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Module\requete.vb" />
+    <Compile Include="Form\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\taskbar.vb" />
+    <Compile Include="Module\Variables.vb" />
+    <Compile Include="Popup\NativeMethods.vb" />
+    <Compile Include="Popup\Popup.designer.vb">
+      <DependentUpon>Popup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\Popup.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupAnimation.vb" />
+    <Compile Include="Popup\ucPopup.designer.vb">
+      <DependentUpon>ucPopup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ucPopup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Popup\ZComboBox.designer.vb">
+      <DependentUpon>ZComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ZComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearchEditor.designer.vb">
+      <DependentUpon>AdvancedSearchEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearchEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearchFactory.vb" />
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Category.designer.vb">
+      <DependentUpon>AdvancedSearch_Category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Category.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Channel.designer.vb">
+      <DependentUpon>AdvancedSearch_Channel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Channel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Date.designer.vb">
+      <DependentUpon>AdvancedSearch_Date.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Date.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_DateRange.designer.vb">
+      <DependentUpon>AdvancedSearch_DateRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_DateRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_DayOfWeek.designer.vb">
+      <DependentUpon>AdvancedSearch_DayOfWeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_DayOfWeek.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Duration.designer.vb">
+      <DependentUpon>AdvancedSearch_Duration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Duration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_EstActuellement.designer.vb">
+      <DependentUpon>AdvancedSearch_EstActuellement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_EstActuellement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_OnToday.designer.vb">
+      <DependentUpon>AdvancedSearch_OnToday.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_OnToday.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_OrCondition.designer.vb">
+      <DependentUpon>AdvancedSearch_OrCondition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_OrCondition.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TextFields.designer.vb">
+      <DependentUpon>AdvancedSearch_TextFields.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TextFields.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Time.designer.vb">
+      <DependentUpon>AdvancedSearch_Time.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Time.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TimeProximity.designer.vb">
+      <DependentUpon>AdvancedSearch_TimeProximity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TimeProximity.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TimeRange.designer.vb">
+      <DependentUpon>AdvancedSearch_TimeRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TimeRange.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\SortChildNodes.vb" />
+    <Compile Include="RechercheAvance\SuperTreeNode.vb" />
+    <Compile Include="RechercheAvance\TVGuideMainForm.designer.vb">
+      <DependentUpon>TVGuideMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\TVGuideMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\TVListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RechercheAvance\TvObject\AdvancedSearchUICollection.vb" />
+    <Compile Include="RechercheAvance\TvObject\GenericCollection.vb" />
+    <Compile Include="RechercheAvance\TvObject\IAdvancedSearchUI.vb" />
+    <Compile Include="RechercheAvance\TvObject\ISearchCriteria.vb" />
+    <Compile Include="RechercheAvance\TvObject\ITranslatable.vb" />
+    <Compile Include="RechercheAvance\TvObject\ProgrammeOrganizer.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteriaCollection.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteriaDecorator_NegateMatching.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Category.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Channel.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Date.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_DateRange.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_DayOfWeek.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Description.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Duration.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_IsOnNow.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_OrCondition.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_SubTitle.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Time.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_TimeProximity.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_TimeRange.vb" />
+    <Compile Include="RechercheAvance\TvObject\SearchCriteria\SearchCriteria_Title.vb" />
+    <Compile Include="RechercheAvance\TvObject\StringLogicalComparer.vb" />
+    <Compile Include="RechercheAvance\TvObject\TVProgrammeComparer.vb" />
+    <Compile Include="RechercheAvance\TVTreeViewEx.designer.vb">
+      <DependentUpon>TVTreeViewEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RechercheAvance\TVTreeViewEx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Class\BannerControl.resx">
+      <DependentUpon>BannerControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\BarreTemporelle.resx">
+      <DependentUpon>BarreTemporelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\curseur.resx">
+      <DependentUpon>curseur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\iBar.resx">
+      <DependentUpon>iBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\PaveCentral.resx">
+      <DependentUpon>PaveCentral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\PosterControl.resx">
+      <DependentUpon>PosterControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\ShapeRater.resx">
+      <DependentUpon>ShapeRater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Central_screen.resx">
+      <DependentUpon>Central_screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GestionCategorie.resx">
+      <DependentUpon>GestionCategorie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Message.resx">
+      <DependentUpon>Message.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PremierDemarrage.resx">
+      <DependentUpon>PremierDemarrage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Gestionbdd.resx">
+      <DependentUpon>Gestionbdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ProgressBar.resx">
+      <DependentUpon>ProgressBar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ReorgChannel.resx">
+      <DependentUpon>ReorgChannel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Feedback.resx">
+      <DependentUpon>Feedback.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Search.resx">
+      <DependentUpon>Search.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Miseajour.resx">
+      <DependentUpon>Miseajour.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Pref.resx">
+      <DependentUpon>Pref.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SelectLanguage.resx">
+      <DependentUpon>SelectLanguage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\miseajourauto.resx">
+      <DependentUpon>miseajourauto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SearchResultForm.resx">
+      <DependentUpon>SearchResultForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SeriesBrowser.resx">
+      <DependentUpon>SeriesBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\TimeZone.resx">
+      <DependentUpon>TimeZone.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ZGuideTVDotNetUpdate.resx">
+      <DependentUpon>ZGuideTVDotNetUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impression\CoolPrintPreviewDialog.resx">
+      <DependentUpon>CoolPrintPreviewDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ucPopup.resx">
+      <DependentUpon>ucPopup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ZComboBox.resx">
+      <DependentUpon>ZComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearchEditor.resx">
+      <DependentUpon>AdvancedSearchEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Category.resx">
+      <DependentUpon>AdvancedSearch_Category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Channel.resx">
+      <DependentUpon>AdvancedSearch_Channel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Date.resx">
+      <DependentUpon>AdvancedSearch_Date.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_DateRange.resx">
+      <DependentUpon>AdvancedSearch_DateRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_DayOfWeek.resx">
+      <DependentUpon>AdvancedSearch_DayOfWeek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Duration.resx">
+      <DependentUpon>AdvancedSearch_Duration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_EstActuellement.resx">
+      <DependentUpon>AdvancedSearch_EstActuellement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_OnToday.resx">
+      <DependentUpon>AdvancedSearch_OnToday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_OrCondition.resx">
+      <DependentUpon>AdvancedSearch_OrCondition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TextFields.resx">
+      <DependentUpon>AdvancedSearch_TextFields.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_Time.resx">
+      <DependentUpon>AdvancedSearch_Time.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TimeProximity.resx">
+      <DependentUpon>AdvancedSearch_TimeProximity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\AdvancedSearches\AdvancedSearch_TimeRange.resx">
+      <DependentUpon>AdvancedSearch_TimeRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\TVGuideMainForm.resx">
+      <DependentUpon>TVGuideMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\TVListView.resx">
+      <DependentUpon>TVListView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechercheAvance\TVTreeViewEx.resx">
+      <DependentUpon>TVTreeViewEx.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\API_KEY.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\progressbar1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icobleutv.ico" />
+    <None Include="Images\redcross.jpg" />
+    <None Include="Images\whitecross.jpg" />
+    <None Include="Resources\tf1.gif" />
+    <None Include="Resources\chevron-expand.png" />
+    <None Include="Resources\closelabel.gif" />
+    <None Include="Images\color-swatch.png" />
+    <None Include="Images\cross.png" />
+    <None Include="Resources\color-swatch.png" />
+    <None Include="Images\icon16facebook.png" />
+    <None Include="Images\x86.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,684 @@
+﻿[LANGUAGE]
+LngLanguage=Français
+LngLanguageID=1036
+LngTranslator=Néo
+
+[SELECTLANGUAGE]
+LngSelectLanguageButtonOK=OK
+LngSelectLanguageButtonCancel=Annuler
+
+[JUMPLIST]
+LngSiteOfficiel=Site officiel de ZGuideTV.NET
+LngForumOfficiel=Forum officiel de ZGuideTV.NET
+
+[PREMIERDEMARAGE]
+LngPremierDemarrageTitle=ZGuideTV.NET - Configuration du proxy
+LngPremierDemarrageLabelInfo=Si vous ne savez pas, demandez à votre administrateur, sinon laissez ces champs vides. 
+LngPremierDemarrageButtonOK=OK
+LngPremierDemarrageButtonCancel=Annuler
+
+[PREF_TITLE]
+LngPrefTitle=ZGuideTV.NET - Paramètres
+
+[PREF_TABPAGE_GENERAL]
+LngTabPageGeneral=Général
+LngGroupBoxPurge=Purge des fichiers
+LngGroupBoxEffects=Effets
+LngGroupBoxConfHardware=Configuration matérielle
+LngGroupBoxSauvegardeFenetre=Sauvegarde de la fenêtre principale
+LngGroupBoxDivers=Autres
+LngGroupBoxFiltres=Filtres
+LngGroupBoxPosition=Positions des fenêtres
+LngCheckBoxPurge=Purge automatique
+LngCheckBoxoldUI=Interface 2D
+LngCheckBoxFadeOut=FadeOut
+LngCheckBoxSlide=Effet au passage de la souris
+LngRadioButtonConfNormal=Normale (par défaut)
+LngRadioButtonConfAverage=Moyenne
+LngRadioButtonConfMinimum=Petite
+LngCheckBoxConfigWindow=Dimensions/Positions
+LngCheckBoxtracelog=Fichier Log
+LngCheckBoxFilters=Cacher automatiquement
+LngGroupBoxMouse=Souris
+LngCheckBoxaccordscrollhorizontal=Défilement horizontal
+LngCheckBoxbuttonssave=Sauvegarde Auto
+LngCheckBoxUrlUpdate=Mise à jour auto URL
+LngGroupBoxUrlUpdate=URL
+LngCheckBoxToolTipsBallon=Afficher les infobulles
+LngGroupBoxToolTipsBallon=Infobulles
+
+[PREF_TABPAGE_PROXY]
+LngTabPageProxy=Proxy
+LngGroupBoxConnexion=Connexion
+LngGroupBoxProxy=Proxy
+LngLabelUtilisateur=Utilisateur
+LngLabelMotdePasse=Mot de passe
+LngLabelProxy=Proxy
+LngLabelPort=Port
+
+[PREF_TABPAGE_MAJ_DONNEES]
+LngTabPageMiseajourDonnees=Mises à jour
+LngGroupBoxIntervalle=Interval de mise à jour
+LngGroupBoxUpdateLast=Dernière mise à jour
+LngGroupBoxAutoUpdate=Mise à jour des données
+LngGroupBoxTailleBdd=Taille de la base de données
+LngGroupBoxUpdateIn=Prochaine mise à jour dans
+LngUpdateIn=jour(s)
+LngGroupBoxUpdateNext=Prochaine mise à jour
+LngCheckBoxAutoUpdate=Mise à jour automatique
+LngTextBoxUpdateDay=jour(s)
+
+[PREF_TABPAGE_MAJ_LOGICIEL]
+LngGroupBoxAutoUpdateExe=Mises à jour ZGuideTV.NET
+LngCheckBoxAutoverif=Rechercher automatiquement les mises à jour
+
+[PREF_TABPAGE_CESOIR_MAINTENANT]
+LngTabPageCesoirMaintenant=Ce soir et Actuellement
+LngGroupBoxCesoir=Ce soir
+LngGroupBoxMaintenant=Actuellement
+LngRadioButtonCesoirAll=Tout afficher
+LngRadioButtonCesoir45=45 minutes
+LngRadioButtonCesoir60=60 minutes
+LngRadioButtonCesoir75=75 minutes
+LngRadioButtonCesoir90=90 minutes
+LngRadioButtonCesoir105=105 minutes
+LngRadioButtonCesoir120=120 minutes
+LngRadioButtonMaintenantAll=Tout afficher
+LngRadioButtonMaintenant45=45 minutes
+LngRadioButtonMaintenant60=60 minutes
+LngRadioButtonMaintenant75=75 minutes
+LngRadioButtonMaintenant90=90 minutes
+LngRadioButtonMaintenant105=105 minutes
+LngRadioButtonMaintenant120=120 minutes
+
+[PREF_TABPAGE_MODE_VEILLE]
+LngTabPageResume=Mode veille
+LngGroupBoxResume=Sortie du mode veille
+LngCheckBoxResume=Reprise automatique
+LngGroupBoxResumeBefore=Reprise avant
+LngRadioButtonResume5=5 minutes
+LngRadioButtonResume10=10 minutes
+LngRadioButtonResume15=15 minutes
+LngRadioButtonResume20=20 minutes
+LngRadioButtonResume30=30 minutes
+
+[PREF_TABPAGE_GESTION_SON]
+LngTabPageSound=Gestion du son
+LngGroupBoxRSS=Mise à jour du Flux RSS
+LngGroupBoxMessages=Affichage des messages
+LngGroupBoxReminder=Rappel des émissions
+LngGroupBoxMasterVolume=Volume général
+LngGroupBoxMute=Désactiver son
+LngCheckBoxAudioOn=Muet
+
+[PREF_BUTTON]
+LngButtonOk=OK
+LngButtonCancel=Annuler
+
+[MAINFORM_TOOLSTRIP_MENU_FILE]
+LngToolStripMenuFile=&Fichier
+LngToolStripMenuFileSave=Gestion base de données
+LngToolStripMenuFileRestart=Redémarrer
+LngToolStripMenuItemSettingsReset=Réinitialisation des paramètres
+LngToolStripMenuFileExit=Quitter
+
+[MAINFORM_TOOLSTRIP_MENU_EDIT]
+LngToolStripMenuEdit=&Edition
+LngToolStripMenuEditOntop=Toujours en avant plan
+LngToolStripMenuSearch=Recherche avancée
+LngToolStripMenuEditPrint=Imprimer la description
+LngToolStripMenuPrintTonight=Imprimer "Ce soir"
+LngToolStripMenuCategories=Afficher/Cacher catégories
+LngToolStripMenuDescription=Afficher/Cacher description
+LngToolStripMenuCalendar=Afficher/Cacher calendrier
+
+[MAINFORM_TOOLSTRIP_MENU_OPTIONS]
+LngToolStripMenuOptions=&Options
+LngToolStripMenuOptionsUpdate=Mise à jour Manuelle
+LngToolStripMenuOptionsAutoUpdate=Mise à jour automatique
+LngToolStripMenuOptionsPreferences=Paramètres
+LngToolStripMenuOptionsLogos=Réorganisation logos et chaines
+LngToolStripMenuOptionsDualMonitor=Basculer entre les écrans
+LngToolStripMenuOptionsEngineSelection=Informations complémentaires...
+
+[MAINFORM_TOOLSTRIP_MENU_HELP]
+LngToolStripMenuHelp=?
+LngToolStripMenuHelpHelptopics=Rubrique d'aide
+LngToolStripMenuHelpHelpShortcuts=Raccourcis clavier
+LngToolStripMenuHelpWebsite=Site Web officiel de ZGuideTV.NET
+LngToolStripMenuHelpForum=Forum officiel de ZGuideTV.NET
+LngToolStripMenuHelpLanguage=Langue
+LngToolStripMenuHelpAbout=À propos de ZGuideTV.NET
+LngToolStripMenuHelpManualFeedBack=Envoyer un Feedback...
+LngToolStripMenuHelpDonate=Faire un don
+LngToolStripMenuHelpCompensation=Compensation décalage horaire
+
+[MAINFORM_TOOLSTRIP]
+LngToolStripSave=Gestion base de données
+LngToolStripPrint=Imprimer la description
+LngToolStripSearch=Recherche avancée
+LngToolStripOntop=Toujours en avant plan
+LngToolStripPreferences=Paramètres
+LngToolStripLogos=Réorganisation logos et chaines
+LngToolStripUpdate=Mise à jour manuelle
+LngToolStripAutoUpdate=Mise à jour automatique
+LngToolStripDualMonitor=Basculer entre les écrans
+LngToolStripWebsite=Site Web officiel de ZGuideTV.NET
+LngToolStripForum=Forum officiel de ZGuideTV.NET
+LngToolStripLangue=Langue
+LngToolStripAbout=À propos de ZGuideTV.NET
+LngToolStripHelptopics=Rubrique d'aide
+LngToolStripHelpShortcuts=Raccourcis clavier
+LngToolStripCategories=Afficher/Cacher catégories
+LngToolStripDescription=Afficher/Cacher description
+LngToolStripCalendar=Afficher/Cacher calendrier
+LngToolStripManualFeedBack=Envoyer un Feedback...
+LngToolStripTextBoxRecherche=Recherche par titre
+LngToolStripButtonRecherche=Recherche rapide
+LngToolStripButtonDonate=Faire un don
+
+[MAINFORM_PAVE]
+LngPaveJourMoins=Jour -1
+LngPaveHeureMoins=Heure -1
+LngPave6H=06H
+LngPave9H=09H
+LngPave12H=12H
+LngPave15H=15H
+LngPave18H=18H
+LngPave20H=20H
+LngPave23H=23H
+LngPaveMaintenant=Maintenant
+LngPaveJourPlus=Jour +1
+LngPaveHeurePlus=Heure +1
+
+[MAINFORM_CESOIR_MAINTENANT]
+LngPanelTitreCesoir=Ce soir
+LngPanelTitreMaintenant=Actuellement
+
+[REORGCHANNEL_TITLE]
+LngReorgChannelTitle=ZGuideTV.NET - Réorganisation logos et chaines
+
+[REORGCHANNEL_BUTTON]
+LngButtonMonterReorgChannel=Monter
+LngButtonDescendreReorgChannel=Descendre
+LngButtonSupprimerReorgChannel=Supprimer
+LngButtonLogoReorgChannel=Remplacer le logo
+LngButtonEnregistrerReorgChannel=Enregister
+LngButtonAnnulerReorgChannel=Annuler
+LngReorgChannelListViewColumns0=Chaine
+LngReorgChannelListViewColumns1=Ordre
+
+[FRM_ABOUT_TITLE]
+LngAboutTitle=ZGuideTV.NET - À propos
+
+[FRM_ABOUT_TABPAGE_ABOUT]
+LngTabPageAbout=À propos
+
+[FRM_ABOUT_TABPAGE_AUTHORS]
+LngTabPageAuteurs=Auteurs
+LngTextBoxCreator=Initiateur du projet
+LngTextBoxAdmin=Administrateur du projet
+LngTextBoxDev=Développeurs
+LngTextBoxTesters=Bêta testeurs
+LngTextBoxContributors=Contributeurs
+LngTextBoxThanks=Remerciements
+
+[FRM_ABOUT_TABPAGE_LICENCE]
+LngTabPagelicence=Licence
+
+[FRM_ABOUT_TABPAGE_7ZIP]
+LngTabPage7zip=Crédits
+
+[FRM_ABOUT_TABPAGE_DONATE]
+LngTabPageDonate=Faire un don
+
+[FRMMISEAJOUR_TITLE]
+LngFrmMiseajour=ZGuideTV.NET - Mise à jour
+
+[FRMMISEAJOUR_LISTVIEW1_COLUMN]
+LngFrmMiseajourListViewAllChannelColumns0=Chaînes disponibles
+LngFrmMiseajourListViewAllChannelColumns1=Chaînes sélectionnées
+
+[FRMMISEAJOUR]
+LngRadioButtonDownload=Télécharger
+LngRadioButtonXmlPath=Fichier XMLTV
+LngButtonTout=Tout sélectionner
+LngButtonSuppr=Tout effacer
+LngButtonMiseaJour=Appliquer
+LngButtonDemarrer=Démarrer
+LngButtonAnnuler=Annuler
+LngButtonEdit=Editer
+LngButtonForceDownload=Forcer MAJ
+Lngtelechargement=Téléchargement jour :
+LngParsingoperation=Analyse syntaxique jour :
+LngCheckBoxAutoRestartManualUpdate=Redémarrer automatiquement après une mise à jour
+
+[FRMMISEAJOUR_MESSAGE]
+LngErrorInChannelListRecovery=Erreur lors de la récupération de la liste des chaines !
+LngNoURLUpdate=Mise à jour de la liste des URL impossible !
+LngInvalidURL=URL invalide !
+LngUntraceableFile=Fichier introuvable !
+LngInvalidFile=Fichier invalide !
+LngErrorInUpdate=Erreur de mise à jour !
+LngErrorInXMLCopy=La procédure de mise à jour des programmes TV a échoué lors de la copie du fichier XML !
+LngErrorInFileCopy=La procédure de mise à jour des programmes TV a échoué lors de la copie du fichier !
+LngErrorInUnzip=La procédure de mise à jour des programmes TV a échoué lors de la décompression du fichier !
+LngWrongFileName=Nom du fichier incorrecte !
+LngFailURLFileDownload=Le téléchargement de la liste d'URL a échoué !
+LngUntraceableURLListFile=Liste d'URL introuvable !
+LngTheFile=Le fichier
+LngDontExist= n'existe pas !
+LngProtectedFile= ,protégé en écriture où est déjà utilisé par un autre processus !
+LngChosenChannels=Chaines choisies (
+LngAvailableChannels=Chaines disponibles (
+LngChoseFile=Veuillez choisir le fichier à télécharger.
+LngInvalidChoice=Choix invalide !
+
+[MAINFORM_MENU_CONTEXTUEL_DESCRIPTION]
+LngToolStripMenuPrintDescript=Imprimer la description
+
+[MAINFORM_MESSAGE_PROXY]
+LngMsgProxyTitle=ZGuideTV.NET - Configuration du proxy
+LngMsgProxy=Si vous disposez d'un proxy, voulez-vous le configurer maintenant ?
+
+[MAINFORM_NOTIFYICON1_BALLOONTIP]
+LngNotifyIcon1BalloonTipTitle=ZGuideTV.NET
+
+[MAINFORM_TREEVIEW_FILTER]
+LngNodeFilter=Filtres
+LngNodeCategory=Catégories
+LngNodeCountry=Pays
+LngNodeProvider=Fournisseurs
+
+[MESSAGEBOXBASEPERIMEE]
+LngMessageBoxBasePerimee=La base de donnée est périmée!
+LngMessageBoxBasePerimee1=Voulez-vous effectuer une mise à jour ?
+LngMessageBoxBasePerimeeTitre=ZGuideTV.NET - Base de données périmée
+
+[MESSAGEBOXNODATA]
+LngMessageBoxNoData=Désolé, il n'y a pas de données à cette date !
+LngMessageBoxNoDataTitre=Information
+
+[MESSAGEBOXNOUPDATE]
+LngMessageBoxnoupdate=Aucune mise à jour disponible!
+LngMessageBoxnoupdateTitre=ZGuideTV.NET - Vérifier les mises à jour...
+
+[MESSAGEBOXMISEAJOUR]
+LngMessageBoxMiseaJour=Une mise à jour a été planifiée !
+LngMessageBoxMiseaJour1=Voulez-vous effectuer la mise à jour ?
+LngMessageBoxMiseaJourTitre=ZGuideTV.NET - Mise à jour planifiée
+
+[MESSAGEBOXMISEAJOURDONE]
+LngMessageBoxMiseaJourDone=Une mise à jour vient d'être effectuée !
+LngMessageBoxMiseaJour1Done=Voulez-vous redémarrer ZGuideTV.NET ?
+LngMessageBoxMiseaJourTitreDone=ZGuideTV.NET - Mise à jour
+
+[MESSAGEBOXMODIFPREF]
+LngMessageBoxModifPref=Vous devez redémarrer ZGuideTV.NET afin que les nouveaux paramètres prennent effet.
+LngMessageBoxModifPref1=Voulez-vous redémarrer ZGuideTV.NET maintenant ?
+LngMessageBoxModifPrefTitre=ZGuideTV.NET - Paramètres
+
+[MESSAGEBOXNOCONNECTION]
+LngMessageBoxNoConnection=Connexion Internet indisponible ou
+LngMessageBoxNoConnection1=site web temporairement inaccessible !
+LngMessageBoxNoConnectionTitre=ZGuideTV.NET - Connexion Internet
+
+[MESSAGEBOXFEEDBACK]
+LngMessageBoxFeedback=Adresse E-mail invalide!
+LngMessageBoxFeedbackTitre=ZGuideTV.NET - Feedback
+
+[MESSAGEBOXFICHIERCORROMPU]
+LngMessageFichierCorrompu=Le fichier XMLTV n'est pas conforme aux spécifications DTD ou est corrompu !
+LngMessageFichierCorrompu1=Voulez-vous essayer de récupérer votre ancienne base de donnée ?
+LngMessageFichierCorrompu2=ou sélectionner un autre fichier de mise à jour ?
+LngMessageFichierCorrompuTitre=ZGuideTV.NET - Fichier non conforme
+
+[MESSAGEBOXLISTXMLTVFRCHOISIE]
+LngMessageBoxListXMLTVFRChoisie=Le nombre de chaines sélectionnées dépasse la limite autorisée !
+LngMessageBoxListXMLTVFRChoisie1=Le nombre maximale de chaines autorisées est de 120.
+LngMessageBoxListXMLTVFRChoisieTitre=ZGuideTV.NET - Le nombre de chaines sélectionnées dépasse la limite
+
+[MESSAGEBOXTHETVDBNORESULT]
+LngMessageBoxThetvdbNoResult=Pas de résultat pour cette série !
+LngMessageBoxThetvdbNoResultTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXTHETVDBVALIDESERIEID]
+LngMessageBoxThetvdbNoValidSeriesId=Veuillez entrer un ID valide !
+LngMessageBoxThetvdbNoValidSeriesIdTitre=ZGuideTV.NET - TheTVDB.Com
+
+[THETVDBBOXNOSHEET]
+LngThetvdbBoxNoSheet=Recherche de cette fiche temporairement indisponible !
+LngThetvdbBoxNoSheetTitre=ZGuideTV.NET - Connexion 
+
+[MESSAGEBOXTHETVDBNOSERIEDETAIL]
+LngMessageBoxThetvdbNoSerieDetails=Impossible de charger les détails de la série !
+LngMessageBoxThetvdbNoSerieDetailsTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXTHETVDBNOACTORINFO]
+LngMessageBoxThetvdbNoActorInfo=Impossible de charger les informations avancées des acteurs
+LngMessageBoxThetvdbNoActorInfoTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXTHETVDBNOBANNER]
+LngMessageBoxThetvdbNoBanner=Impossible de charger les bannières
+LngMessageBoxThetvdbNoBannerTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXMESSAGEENVOYE]
+LngMessageBoxMessageEnvoye=Votre feedback a été correctement envoyé. Merci !
+LngMessageBoxMessageEnvoyeTitre=ZGuideTV.NET - Feedback
+
+[MESSAGEBOXMESSAGEISEMPTY]
+LngMessageBoxMessageIsEmpty=Veuillez écrire votre message avant d'envoyer. Merci !
+LngMessageBoxMessageIsEmptyTitre=ZGuideTV.NET - Feedback
+
+[MESSAGEBOXFILERESTORE]
+LngMessageBoxFileRestore=Une restauration vient d'être effectuée !
+LngMessageBoxFileRestore1=Vous devez redémarrer ZGuideTV.NET afin que celle-ci prenne effet.
+LngMessageBoxFileRestore2=Voulez-vous redémarrer ZGuideTV.NET maintenant ?
+LngMessageBoxFileRestoreTitre=ZGuideTV.NET - Restauration
+
+[MESSAGEBOXNORESTORESELECTED]
+LngMessageBoxNoRestoreSelected=Veuillez sélectionner une sauvegarde !
+LngMessageBoxNoRestoreSelectedTitre=ZGuideTV.NET - Aucune sauvegarde sélectionnée
+
+[MESSAGEBOXNORESTOREELEMENT]
+LngMessageBoxNoRestoreElement=Veuillez sélectionner au minimum un élément à restaurer !
+LngMessageBoxNoRestoreElementTitre=ZGuideTV.NET - Aucun élément de restauration sélectionné
+
+[MESSAGEBOXREORGCHANNEL]
+LngMessageBoxReorgChannel=Vous devez redémarrer ZGuideTV.NET afin que les nouveaux paramètres prennent effet.
+LngMessageBoxReorgChannel1=Voulez-vous redémarrer ZGuideTV.NET maintenant ?
+LngMessageBoxReorgChannelTitre=ZGuideTV.NET - Réorganisation des chaines
+
+[MESSAGEBOXRESUME]
+LngMessageBoxResume=RAPPEL : Une ou plusieurs émissions ont été marquées
+LngMessageBoxResume1=pour une consultation ultérieure.
+LngMessageBoxResumeTitre=ZGuideTV.NET - Sortie du mode veille
+
+[MESSAGEBOXRAZ]
+LngMessageBoxRaz=Cette fonctionnalité réinitalise tous les paramètres de ZGuideTV.NET !
+LngMessageBoxRaz1=Etes vous sûre de vouloir réinitaliser ZGuideTV.NET ?
+LngMessageBoxTitleRaz=ZGuideTV.NET - Réinitialisation des paramètres
+
+[MESSAGEBOXMISEAJOUREXE]
+LngMessageBoxMiseaJourExe=Une nouvelle version de ZGuideTV.NET est disponible.
+LngMessageBoxMiseaJourExe1=Voulez-vous télécharger cette nouvelle version ?
+LngMessageBoxMiseaJourExeTitre=ZGuideTV.NET - Nouvelle version disponible.
+LngMessageBoxMiseaJourExeActual=Version actuelle : 
+LngMessageBoxMiseaJourExeNew=Version disponible : 
+
+[MESSAGEBOXFILENOTEXIST]
+LngMessageBoxFileNotExist=Le fichier de mise à jour sur l'emplacement local
+LngMessageBoxFileNotExist1=spécifié a été supprimé ou déplacé.
+LngMessageBoxFileNotExistTitre=Erreur de mise à jour
+
+[MESSAGEBOXDIRCHECKED]
+LngMessageBoxDirChecked=Vous avez sélectionné une mise à jour à partir d'un emplacement local.
+LngMessageBoxDirChecked1=Voulez-vous désactiver la mise à jour automatique ? (Recommandé)
+LngMessageBoxDirCheckedTitre=Mise à jour à partir d'un emplacement local
+
+[MESSAGEBOXURLCHECKED]
+LngMessageBoxURLChecked=Vous avez sélectionné une mise à jour à partir d'une URL.
+LngMessageBoxURLChecked1=Voulez-vous activer la mise à jour automatique ? (Recommandé)
+LngMessageBoxURLCheckedTitre=Mise à jour à partir d'une URL
+
+[MESSAGEBOXSAVEDONE]
+LngMessageboxSaveDone=Sauvegarde effectuée avec succès !
+LngMessageboxSaveDoneTitre=ZGuideTV.NET - Sauvegarde
+
+[MESSAGEBOXRENAMEDONE]
+LngMessageboxRenameDone=Base de données renommée avec succès !
+LngMessageboxRenameDoneTitre=ZGuideTV.NET - Renommer
+
+[MESSAGEBOXDELETEDONE]
+LngMessageboxDeleteDone=Base de données effacée avec succès !
+LngMessageboxDeleteDoneTitre=ZGuideTV.NET - Suppression
+
+[INPUTBOXNAMEBDD]
+LngInputBoxNameBdd=Veuillez donner un nom à la base de données qui va être créée !
+LngInputBoxNameBddTitre=ZGuideTV.NET - Nommer
+
+[INPUTBOXRENAMEBDD]
+LngInputBoxRenameBdd=Veuillez donner un nouveau nom à base de données sélectionnée !
+LngInputBoxRenameBddTitre=ZGuideTV.NET - Renommer
+
+[DOWNLOAD_FORM_LABEL]
+LngDownloadFormTitle=ZGuideTV.NET - Téléchargement de la mise à jour...
+LngDownloadFormWeight=Taille du fichier :
+LngDownloadFormProgress=Progression :
+LngDownloadFormSpeed=Vitesse :
+LngDownloadFormEstimated=Temps restant estimé :
+
+[MISEAJOURAUTO]
+LngMiseAJourAutoTitle=ZGuideTV.NET - Mise à jour automatique
+LngNodenumber=Nombres de noeuds :
+LngAutoupdate_operation=Opération en cours :
+Lngdwnloperation=Téléchargement
+LngParsingoperation=Analyse syntaxique du fichier XML
+Lngremainingtime=Temps restant estimé :
+Lngfilesize=Taille du fichier :
+LngMiseAJourProgress=Progression :
+
+[MISEAJOURAUTO_MESSAGE]
+LngError1majauto=URL invalide !
+LngError2majauto=Fichier introuvable ou serveur inaccessible !
+LngError3majauto=Echec lors de la copie du fichier XML !
+LngError4majauto=Echec lors de la décompression du fichier :
+LngError5majauto=Echec lors de la copie de fichier !
+LngError6majauto=Nom du fichier incorrect :
+
+[TRIAVANCE]
+LngTriAvanceTitle=ZGuideTV.NET - Recherche avancée
+LngTriAvanceLabeltitre=Titre et sous-titre
+LngTriAvanceLabelauteur=Auteur/Acteur
+LngTriAvanceLabelndefini=non défini
+LngTriAvanceButtonSearch=Recherche
+LngTriAvanceButtonCancel=Fermer
+LngTriAvanceGroupBoxCriteres=Critères de recherche
+LngTriAvanceCheckBoxNow=A partir de maintenant 
+LngTriAvanceCheckBoxBegin=Commençant par (sinon contenant)
+LngTriAvanceListViewColumns0=Chaine
+LngTriAvanceListViewColumns1=Emission
+LngTriAvanceListViewColumns2=Début
+LngTriAvanceListViewColumns3=Fin
+LngTriAvanceListViewColumns4=Catégorie
+
+[CALENDAR]
+LngCalendarLundiLabel=Lun.
+LngCalendarMardiLabel=Mar.
+LngCalendarMercrediLabel=Mer.
+LngCalendarJeudiLabel=Jeu.
+LngCalendarVendrediLabel=Ven.
+LngCalendarSamediLabel=Sam.
+LngCalendarDimancheLabel=Dim.
+LngNameofMonth1=Janvier
+LngNameofMonth2=Février
+LngNameofMonth3=Mars
+LngNameofMonth4=Avril
+LngNameofMonth5=Mai
+LngNameofMonth6=Juin
+LngNameofMonth7=Juillet
+LngNameofMonth8=Août
+LngNameofMonth9=Septembre
+LngNameofMonth10=Octobre
+LngNameofMonth11=Novembre
+LngNameofMonth12=Décembre
+
+[DESCRIPTBOX]
+LngDescriptLundiLabel=Lundi
+LngDescriptMardiLabel=Mardi
+LngDescriptMercrediLabel=Mercredi
+LngDescriptJeudiLabel=Jeudi
+LngDescriptVendrediLabel=Vendredi
+LngDescriptSamediLabel=Samedi
+LngDescriptDimancheLabel=Dimanche
+
+[Feedback]
+LngFeedbackTitle=ZGuideTV.NET - Feedback
+LngLabelExceptMessage1=Une erreur inattendue s'est produite!
+LngLabelExceptMessage2=Merci d'aider les développeurs de ZGuideTV en envoyant les informations suivantes :
+LngLabelExceptMessage3=Commentaires (facultatif) :
+LngLabelExceptMessage4=*Si vous voulez être contacté veuillez indiquer votre email.
+LngCheckBoxExceptErrorMessage=Joindre les fichiers log
+LngLabelEmail=E-mail (facultatif)* :
+LngSendButton=Envoyer
+LngCopierButton=Copier
+LngExitButton=Quitter
+LngExceptErrorMessage=Veuillez écrire votre message dans la fenêtre ci-dessous!
+LngLabelFeedbackSend=Envoi en cours...
+LngZGuideTVRelease=Version de ZGuideTV.NET :
+LngCompilationDate=Date de compilation de ZGuideTV.NET :
+LngOSRelease=Système d'exploitation :
+LngArchitecture=Architecture :
+LngOSBootMode=Mode de démarrage :
+LngFramework=Version du Framework :
+LngOSLanguage=Langue système :
+LngTotalMemory=Mémoire physique totale :
+LngRemainingMemory=Mémoire physique disponible :
+LngUsedMemory=Mémoire utilisée par ZGuideTV.NET :
+LngProcessorName=Description du processeur :
+LngProcessorDescription=Nom du Processeur :
+LngProcessorNumber=Nombre de Cores :
+LngMonitorNumber=Nombre d'écrans connectés à l'ordinateur :
+LngEmail=E-mail :
+LngComments=Commentaires :
+LngDescriptionError=Description de l'erreur :
+LngProcessorSpeed=Vitesse horloge actuelle du processeur :
+LngCheckBoxAcknowledgment=Envoyez moi une copie
+
+[THETVDBTAB]
+LngThetvdbLabelSeriesTabSeries=Séries
+LngThetvdbLabelEpisodesTabEpisodes=Episodes
+LngThetvdbLabelActorsTabActors=Acteurs
+
+[THETVDB]
+LngThetvdbLabelSearchName=Série :
+LngThetvdbLabelLanguage=Langue :
+LngThetvdbButtonSearch=Rechercher
+LngThetvdbLabelSiteRating=Note sur le site :
+LngThetvdbLabelID=ID de la série :
+LngThetvdbLabelRuntime=Durée :
+LngThetvdbLabelRating=Note :
+LngThetvdbLabelDescription=Synopsis :
+LngThetvdbLabelFirstAired=1ère diff. :
+LngThetvdbLabelIDTVCom=ID TV.com :
+LngThetvdbLabelIDIMDBCom=ID IMDB.com :
+LngThetvdbLabelForceUpdate=Recharger
+LngThetvdbButtonLoad=Charger
+LngThetvdbButtonCancel=Annuler
+LngThetvdbButtonSearchShow=Recherche
+LngThetvdbButtonExit=Quitter
+LngThetvdbLabelName=Nom :
+LngThetvdbLabelStatus=Etat :
+LngThetvdbLabelGenre=Genre :
+LngThetvdbLabelActors=Acteurs :
+LngThetvdbLabelActors1=Acteurs
+LngThetvdbLabelGueststar=Guest stars :
+LngThetvdbLabelDirector=Réalisateurs :
+LngThetvdbLabelWriter=Scénaristes :
+LngThetvdbLabelEpisodeDescription=Synopsys :
+LngThetvdbLabelLoadFull=Charger les informations des épisodes
+LngThetvdbLabelLoadActors=Charger les informations avancées des acteurs
+LngThetvdbLabelBanner=Charger les bannières
+LngThetvdbLabelUseZipped=Téléchargement compressé
+LngThetvdbLabelOpen=Ouvrir
+LngThetvdbLabelEpisodes=Episodes
+
+[THETVDBTABEPISODE]
+LngThetvdbLabelAbsoluteNumberTabEpisodes=Nombre absolu :
+LngThetvdbLabelProductCodeTabEpisodes=Code de prod. :
+LngThetvdbLabelDVDIDTabEpisodes=ID DVD :
+LngThetvdbLabelDVDSeasonTabEpisodes=DVD saison :
+LngThetvdbLabelDVDNumberTabEpisodes=Ep. DVD numéro :
+LngThetvdbLabelDVDChapterTabEpisodes=Chapitre DVD :
+LngThetvdbNodeSeasonTabEpisodes=Saison
+
+[THETVDBTABACTOR]
+LngThetvdbGroupBoxInformationTabActors=Information
+LngThetvdbLabelIDTabActors=ID :
+LngThetvdbLabelNameTabActors=Nom :
+LngThetvdbLabelRoleTabActors=Rôle :
+LngThetvdbLabelSortOrderTabActors=Ord. de tri :
+
+[THETVDBRESULT]
+LngThetvdbGroupBoxResult=Détails
+LngThetvdbLabelFirstAiredResult=1ère diff. :
+LngThetvdbLabelIMDBIdResult=ID IMDB :
+LngThetvdbLabelOverviewResult=Synopsis :
+LngThetvdbLabelStatusResult=Résultats de la recherche
+LngThetvdbButtonChooseResult=Choisir
+LngThetvdbButtonCancelResult=Annuler
+LngThetvdbListviewResultColumns0=ID
+LngThetvdbListviewResultColumns1=Nom
+LngThetvdbListviewResultColumns2=Langue
+
+[RICHTEXTBOXDESCRIP]
+LngRichTextBoxDescripFrom=de
+LngRichTextBoxDescripTo=à
+LngRichTextBoxDescripDescrip=Résumé : 
+LngRichTextBoxDescripActors=Acteurs : 
+LngRichTextBoxDescripCategory=Catégorie : 
+LngRichTextBoxDescripProductionDate=Date de production : 
+LngRichTextBoxDescripDuree=Durée : 
+LngRichTextBoxDescripShowView=ShowView : 
+LngRichTextBoxDescripDate=Date de diffusion : 
+LngRichTextBoxDescripGenre=Genre : 
+LngRichTextBoxDescripReview=Critique : 
+
+[CHANNELSVIEW]
+LngChannelViewTitle=ZGuideTV.NET - Visualisation par Chaine
+LngChannelViewCheckBox24hHours=24 heures à partir de maintenant
+LngChannelViewLabelOr=<- ou ->
+LngChannelViewButtonClose=Fermer
+LngChannelViewListViewColumns0=Début
+LngChannelViewListViewColumns1=Fin
+LngChannelViewListViewColumns2=Nom
+LngChannelViewListViewColumns3=Catégorie
+
+[TIMEZONE]
+LngTimeZoneTitle=ZGuideTV.NET - Compensation décalage horaire
+LngTimeZoneLabelCompensation=Compensation :
+LngTimeZoneLabelMinute=heure(s)
+
+[ENGINESELECTION]
+LngEngineSelectionTitle=ZGuideTV.NET - Informations complémentaires
+LngEngineSelectionTVDBListBox=TheTVDB.com, la base de données pour les fans de télévision - Interne
+LngEngineSelectionIMDBListBox=IMDb.com, la base de données cinématographiques sur internet - Externe
+LngEngineSelectionAllocineListBox=AlloCiné.fr, le site référence du cinéma et des séries TV - Externe
+LngEngineSelectionShowCheckBox=Ne plus afficher.
+
+[STATUSSTRIP]
+LngToolStripStatusLabelActiveEngine=Informations complémentaires :
+LngToolStripStatusLabelTHEDVB=TheTVDB.com - Interne
+LngToolStripStatusLabelIMDB=IMDb.com - Externe
+LngToolStripStatusLabelALLOCINE=Allocine.com - Externe
+LngToolStripStatusLabelMemory=Mém. :
+LngToolStripStatusLabelMB=Mo
+LngToolStripStatusLabelUpdate=Vérifier les mises à jour...
+
+[LOADER]
+LngLoaderLabelWait=Veuillez patienter. Mise à jour des données en cours...
+
+[BALLONTIPS]
+LngBallonTipsNoInformation=Aucun résumé disponible pour cette émission.
+
+[GESTIONBDD]
+LngGestionBddTitre=ZGuideTV.NET - Gestion base de données
+LngGestionBddButtonDelete=Supprimer
+LngGestionBddButtonSave=Sauvegarder
+LngGestionBddButtonRestore=Restaurer
+LngGestionBddButtonRename=Renommer
+LngGestionBddButtonCancel=Quitter
+LngListViewGestionBddColumns0=Nom de la sauvegarde
+LngListViewGestionBddColumns1=Taille (Ko)
+LngListViewGestionBddColumns2=Date de création
+LngGroupBoxRestauration=Restauration
+LngCheckBoxRestaurationDataBase=Base de données
+LngCheckBoxRestaurationChaines=Liste des chaînes
+LngCheckBoxRestaurationUrl=Liens de mise à jour
+LngCheckBoxRestaurationUserConfig=Configuration utilisateur
+
+[PROGRESSBAR]
+LngProgressBarSaveTitre=Sauvegarde de la base de données
+LngProgressBarSaveLabel=Sauvegarde en cours...
+LngProgressBarRestoreTitre=Restauration de la base de données
+LngProgressBarRestoreLabel=Restauration en cours...

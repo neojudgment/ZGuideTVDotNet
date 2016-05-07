@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZGuideTVDotNet", "ZGuideTVDotNet.vbproj", "{623D2B43-C0D3-4558-A611-1BE728AB49A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9} = {4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC} = {28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}
+		{34E719F9-E103-44E4-B48B-BAB98B328954} = {34E719F9-E103-44E4-B48B-BAB98B328954}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZGuideTVDotNet.Description", "ZGuideTVDotNet.Description\RichTextBoxPrintCtrl\ZGuideTVDotNet.Description.vbproj", "{34E719F9-E103-44E4-B48B-BAB98B328954}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZGuideTVDotNet.Render", "ZGuideTVDotNet.Render\esasyrendervb\ZGuideTVDotNet.Render.vbproj", "{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZGuideTVDotNet.Reset", "ZGuideTVDotNet.Reset\ZGuideTVDotNet.Reset.vbproj", "{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Debug|x86.Build.0 = Debug|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Release|x86.ActiveCfg = Release|Any CPU
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Release|x86.Build.0 = Release|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Debug|x86.Build.0 = Debug|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Release|x86.ActiveCfg = Release|Any CPU
+		{34E719F9-E103-44E4-B48B-BAB98B328954}.Release|x86.Build.0 = Release|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Debug|x86.Build.0 = Debug|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Release|x86.ActiveCfg = Release|Any CPU
+		{4CE9A1F7-8DFE-4E5E-B452-6F9737815EA9}.Release|x86.Build.0 = Release|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Debug|x86.Build.0 = Debug|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Release|x86.ActiveCfg = Release|Any CPU
+		{28D59DF8-8A9D-4B3A-BAD8-E089669A0FFC}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\ZGuideTV.NET.ndproj"
+	EndGlobalSection
+EndGlobal

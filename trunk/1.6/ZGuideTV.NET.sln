@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZGuideTVDotNet", "ZGuideTVDotNet.vbproj", "{623D2B43-C0D3-4558-A611-1BE728AB49A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Debug|x86.ActiveCfg = Debug|x86
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Debug|x86.Build.0 = Debug|x86
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Release|x86.ActiveCfg = Release|x86
+		{623D2B43-C0D3-4558-A611-1BE728AB49A1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\ZGuideTV.NET.ndproj"
+	EndGlobalSection
+EndGlobal
