@@ -92,11 +92,11 @@ Public Class Feedback
 
 #End Region
 
-    Private Const PassPhrase As String = "This Is Not Salt"
-    Private Const SaltValue As String = "x@605bn7dna332v653nx2iqcl7"
-    Private Const PasswordIterations As Integer = 2
-    Private Const InitVector As String = "@1B2c3D4e5F6g7H8"
-    Private Const KeySize As Integer = 256
+    Private Const PassPhrase As String = ""
+    Private Const SaltValue As String = ""
+    Private Const PasswordIterations As Integer = 0
+    Private Const InitVector As String = ""
+    Private Const KeySize As Integer = 0
 
     Private Shared Function Decrypt(ByVal cipherText As String) As String
 
