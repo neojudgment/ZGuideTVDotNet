@@ -7,4 +7,4 @@ Official Website: http://zguidetv.codeplex.com/
 
 ![](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/zguidetvinterface.png?raw=true)
 
-Copyright © Pascal Hubert (ZGuideTV.NET Team) - Brussels, Belgium 2016.
+Copyright © Pascal Hubert (ZGuideTV.NET Team) - Brussels, Belgium 2017.
