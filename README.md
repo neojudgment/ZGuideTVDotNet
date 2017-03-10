@@ -5,4 +5,6 @@ It can be customised to include only those TV listings you want to see.
 
 Official Website: http://zguidetv.codeplex.com/
 
+![](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/zguidetvinterface.png?raw=true)
+
 Copyright © Pascal Hubert (ZGuideTV.NET Team) - Brussels, Belgium 2016.
