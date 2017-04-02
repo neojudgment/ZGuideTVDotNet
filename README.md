@@ -54,7 +54,7 @@ Official Website: http://zguidetv.codeplex.com/
 
 ## Help
 
-- Quick Start
+- [Quick Start](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/QuickStart.md)
 - Keyboard Shortcuts Reference
 - Advanced Search
 
