@@ -56,7 +56,7 @@ Site web officiel: http://zguidetv.codeplex.com/
 
 ## Aide
 
-- Démarrage rapide
+- [Démarrage rapide](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/DemarrageRapide.md)
 - Raccourcis clavier de références
 - Recherches avancées 
 
