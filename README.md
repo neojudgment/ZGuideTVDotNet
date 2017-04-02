@@ -57,13 +57,22 @@ Official Website: http://zguidetv.codeplex.com/
 ## Translation
 
 - ZGuideTV.NET is currently available in English and French (native language).
-- If you use ZGuideTV.NET and want to help translate the program into another language, please contact us (in English or French) on [ZGuideTV's forum](http://www.zguidetv.net/).. 
+- If you use ZGuideTV.NET and want to help translate the program into another language, please contact us (in English or French) on [ZGuideTV's forum](http://www.zguidetv.net/). 
 
 ## Donate
 
 - ZGuideTV.NET software offered on this site is free, and we hope that you find it useful. If you'd like to support future development and new product features, please make a donation.
 - Donations cover our ongoing expenses – domain registration for our forum, software and hardware purchases.
 - All donations truly appreciated. Thank you for your support!
-- Don't forget to spread the word to family and friends! 
+- Don't forget to spread the word to family and friends!
+
+## Help and Contact
+
+- If you have any problems or questions, you can ask for help in English or French on [ZGuideTV's forum](http://www.zguidetv.net/). 
+
+## Review
+
+- Review On Softpedia (Jul 5th, 2016): [Softpedia Official Website](http://www.softpedia.com/get/Internet/Internet-Radio-TV-Player/ZGuideTv.shtml).
+
 
 Copyright © Pascal Hubert (ZGuideTV.NET Team) - Brussels, Belgium 2017.
