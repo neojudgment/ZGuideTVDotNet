@@ -1,4 +1,4 @@
-# ZGuideTV.NET [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/fr_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/uk_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet)
+# ZGuideTV.NET [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/fr_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/uk_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/don-via-paypal.gif">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZBD7C6HV8V52)
 
 ## Qu'est-ce que ZGuideTV.NET ?
 
