@@ -52,7 +52,13 @@ Site web officiel: http://zguidetv.codeplex.com/
 - Recherches avancées.
 - Impression des détails.
 - Mises à jour planifiées.
-- Récupération et affichage des informations détaillées des séries TV et films depuis les bases de données de TheTVDB.com, IMDb.fr et AlloCiné.fr. 
+- Récupération et affichage des informations détaillées des séries TV et films depuis les bases de données de TheTVDB.com, IMDb.fr et AlloCiné.fr.
+
+## Aide
+
+- Démarrage rapide
+- Raccourcis clavier de références
+- Recherches avancées 
 
 ## Et ensuite ?
 
