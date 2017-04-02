@@ -57,7 +57,7 @@ Official Website: http://zguidetv.codeplex.com/
 ## Translation
 
 - ZGuideTV.NET is currently available in English and French (native language).
-- If you use ZGuideTV.NET and want to help translate the program into another language, please contact us (in English or French) on ZGuideTV's forum. 
+- If you use ZGuideTV.NET and want to help translate the program into another language, please contact us (in English or French) on [ZGuideTV's forum](http://www.zguidetv.net/).. 
 
 ## Donate
 
