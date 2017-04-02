@@ -1,4 +1,4 @@
-# ZGuideTV.NET
+# ZGuideTV.NET [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/fr_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/uk_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet)
 
 ## Qu'est-ce que ZGuideTV.NET ?
 
