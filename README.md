@@ -61,7 +61,7 @@ Official Website: http://zguidetv.codeplex.com/
 
 ## Donate
 
-- ZGuideTV.NET software offered on this site is free, and we hope that you find it useful. If you'd like to support future development and new product features, please make a donation.
+- ZGuideTV.NET software offered on this site is free, and we hope that you find it useful. If you'd like to support future development and new product features, please make a [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZBD7C6HV8V52).
 - Donations cover our ongoing expenses – domain registration for our forum, software and hardware purchases.
 - All donations truly appreciated. Thank you for your support!
 - Don't forget to spread the word to family and friends!
