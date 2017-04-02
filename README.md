@@ -83,4 +83,4 @@ Official Website: http://zguidetv.codeplex.com/
 - Review On Softpedia (Jul 5th, 2016): [Softpedia Official Website](http://www.softpedia.com/get/Internet/Internet-Radio-TV-Player/ZGuideTv.shtml).
 
 
-Copyright © Pascal Hubert (ZGuideTV.NET Team) - Brussels, Belgium 2017.
+Copyright © Pascal Hubert (ZGuideTV.NET Team) - Brussels, Belgium 2004 - 2017.
