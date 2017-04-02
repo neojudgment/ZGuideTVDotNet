@@ -52,6 +52,12 @@ Official Website: http://zguidetv.codeplex.com/
 - Scheduled updates.
 - Retrieving and displaying TV series and movies detailed informations from TheTVDB.com, IMDb.com and Screenrush.co.uk databases.
 
+## Help
+
+- Quick Start
+- Keyboard Shortcuts Reference
+- Advanced Search
+
 ## What's next?
 
 - Expect various bug fixes, as usual... 
