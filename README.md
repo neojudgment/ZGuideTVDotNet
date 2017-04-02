@@ -1,4 +1,4 @@
-# ZGuideTV.NET [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/fr_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/uk_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet)
+# ZGuideTV.NET [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/fr_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/uk_flags.jpg">](https://github.com/neojudgment/ZGuideTVDotNet) [<img src="https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/makedonation.gif">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZBD7C6HV8V52)
 ## What is ZGuideTV.NET?
 
 ZGuideTV.NET is an Electronic Program Guide (EPG) - an electronic TV magazine which lets you see TV listings for today and next week.
