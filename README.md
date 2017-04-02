@@ -57,6 +57,7 @@ Official Website: http://zguidetv.codeplex.com/
 - [Quick Start](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/QuickStart.md)
 - Keyboard Shortcuts Reference
 - [Advanced Search](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/AdvancedSearch.md)
+- [Screenshots](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/ScreenShots.md)
 
 ## What's next?
 
