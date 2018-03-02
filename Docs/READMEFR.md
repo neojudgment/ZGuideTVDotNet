@@ -20,7 +20,7 @@ Site web officiel: http://zguidetv.codeplex.com/
 
 ## Dernières versions disponibles
 
-- ZGuideTV.NET 1.7 Version beta: 1.7 bêta Release: 1.7.6517.32009 Samedi 04 novembre 2017.
+- ZGuideTV.NET 1.7 Version beta: v1.7.6517.32009 Samedi 04 novembre 2017.
 
 *ASTUCE: Il n'est pas nécessaire de désinstaller la version précédente. Vous pouvez tout simplement télécharger et installer la dernière version.*
 
