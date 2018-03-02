@@ -1,11 +1,33 @@
-May 2016 (ZGuideTV.NET 1.7 beta 4)
+Saturday, November 04, 2017 (ZGuideTV.NET 1.7 beta 5).
+
+- Fixed bug in advanced search for programs without sub-category
+- Fixed a bug that prevented the main window from being updated when a day change occurred
+- Fixed a bug that prevented the main window from being updated after using the hour navigation buttons
+- Now the update of the main window is also done at the standby output.
+- Translation of "Move to" in the context menu of category management
+- Emissions without a category without an "Not defined, Not defined" category
+- Importing GZ files (https://msdn.microsoft.com/fr-fr/library/system.io.compression.gzipstream%28v=vs. 110%29. aspx? f=255&MSPPError=-2147217396)
+- Deletion of unused translation variables.
+
+Fix for "racacax"files:
+- Fixed bug in color management for categories containing an apostrophe
+- Search for logos without ".fr" in the name of the chains (allows you to find many more logos)
+
+- SQLite engine v3.10.2 to v3.20.1.0
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Friday, june 17, 2016 (ZGuideTV.NET 1.7 beta 4).
 
 - Fix "System.ArgumentOutOfRangeException" error in TV show marked for reminder.
 - Fix JetLag compensation Label and add a MessageBox.
 - Fix "System.IO.DirectoryNotFoundException" error if the backup directory has been moved or deleted.
 - Setup Wizard update for Windows 10 / Framework 4.5.x / Framework 4.6.0.
 - Download and executable automatic update. (currently disabled)
-- User license modification.
+- End User license modification.
 - Database optimization.
 - SQLite engine v3.8.9 to v3.10.2
 - Code cleaning.

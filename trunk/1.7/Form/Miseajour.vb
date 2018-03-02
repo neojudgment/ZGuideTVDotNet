@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -169,7 +169,6 @@ Public Class Miseajour
 
     Public XmlTvDoc As XmlDocument = New XmlDocument()
 
-
     Public Sub ParseXmlChannels(pathXml As String)
 
         ' Y a t il des erreurs a signaler au programme appelant?
@@ -191,9 +190,9 @@ Public Class Miseajour
             CollectionSelectChannels.Clear()
             CollectionChannels.Clear()
             Trace.WriteLine(DateTime.Now & " " & pathXml)
-            xmlTvDoc.Load(pathXml)
+            XmlTvDoc.Load(pathXml)
 
-            elementChannel = xmlTvDoc.DocumentElement.GetElementsByTagName("channel")
+            elementChannel = XmlTvDoc.DocumentElement.GetElementsByTagName("channel")
             ListViewAllChannel.Columns.Add(AvailableChannels & elementChannel.Count & ")", -2,
                                            HorizontalAlignment.Left)
             ListViewAllChannel.Columns.Item(0).Width = ListViewAllChannel.Width - 22
@@ -235,7 +234,7 @@ Public Class Miseajour
                                     End If
                                 Next
 
-                                ' Modifié le 10/09/2009 rvs75                                                
+                                ' Modifié le 10/09/2009 rvs75
                                 listViewMyItem.Text = channelName.ToString
                                 listViewMyItem.SubItems.Add("")
                                 ListViewAllChannel.Items.Add(listViewMyItem)
@@ -713,6 +712,40 @@ Public Class Miseajour
                                      ErrorInUpdate, MessageBoxButtons.OK, MessageBoxIcon.Error,
                                      MessageBoxDefaultButton.Button1)
                             End If
+                        Case "GZ"
+                            Try
+                                ' Rajout de Ronaldo1 03/11/2007
+                                Dim xmlPurge() As String
+                                xmlPurge = Directory.GetFiles(AppData, "*.XML")
+                                Dim i As Integer = 0
+                                Do While i < xmlPurge.Length
+                                    File.Delete(xmlPurge(i))
+                                    i += 1
+                                Loop
+
+
+                                Try
+                                    'décompression GZ
+                                    Using fichiercompresse As FileStream = New FileInfo(XmlTvName).OpenRead()
+                                        Using fichierxml As FileStream = File.Create(FichierProgramme)
+                                            Using DecompressionGZ As GZipStream = New GZipStream(fichiercompresse, CompressionMode.Decompress)
+                                                DecompressionGZ.CopyTo(fichierxml)
+                                            End Using
+                                        End Using
+                                    End Using
+
+                                Catch ex As Exception
+                                    MessageBox.Show(New Form() With {.TopMost = True}, ex.Message, "Exception")
+                                    Trace.WriteLine(
+                                            DateTime.Now &
+                                            "Erreur lors de la décompression du fichier avec 7-zip dans frmMiseajour.vb")
+                                End Try
+
+                                ParseXmlChannels(FichierProgramme)
+
+                            Catch ex As Exception
+
+                            End Try
                         Case Else
                             If CopierFichier(XmlTvName, AppData & fileName, True) Then
                                 Try
@@ -729,7 +762,6 @@ Public Class Miseajour
                                     Try
                                         ' on décompresse le fichier zip. Modifié par Néo le 08/07/2014
                                         ZipFile.ExtractToDirectory(XmlTvName, AppData)
-
 
                                     Catch ex As Exception
                                         MessageBox.Show(New Form() With {.TopMost = True}, ex.Message, "Exception")
@@ -860,7 +892,7 @@ Public Class Miseajour
             Exit Sub
         End If
 
-        ' 290409 pallier au double clic sur bouton mise a jour manuelle 
+        ' 290409 pallier au double clic sur bouton mise a jour manuelle
         ButtonAppliquer.Enabled = False
 
         CheckBoxAutoRestartManualUpdate.Enabled = False
@@ -869,7 +901,7 @@ Public Class Miseajour
         ' C'est une mise à jour à partir d'un emplacement local et la mise à jour auto est activée
         If RadioButtonXmlPath.Checked AndAlso My.Settings.AutoUpdate = 1 AndAlso My.Settings.firstDIRChecked Then
 
-            ' Néo le 14/02/2012 
+            ' Néo le 14/02/2012
             ' Ne plus proposer le message la prochaine fois
             My.Settings.firstDIRChecked = False
 
@@ -889,7 +921,7 @@ Public Class Miseajour
         ' C'est une mise à jour à partir d'une URL et la mise à jour auto est désactivée
         If RadioButtonDownload.Checked AndAlso My.Settings.AutoUpdate = 0 AndAlso My.Settings.firstURLChecked Then
 
-            ' Néo le 14/02/2012 
+            ' Néo le 14/02/2012
             ' Ne plus proposer le message la prochaine fois
             My.Settings.firstURLChecked = False
 
@@ -1011,7 +1043,7 @@ Public Class Miseajour
         End If
     End Sub
 
-    Private Sub ListViewItemDrag(sender As Object, e As  _
+    Private Sub ListViewItemDrag(sender As Object, e As _
                                     ItemDragEventArgs) Handles ListViewAllChannel.ItemDrag
         Dim myItem As ListViewItem
         Dim myItems(ListViewAllChannel.SelectedItems.Count - 1) As ListViewItem
@@ -1025,7 +1057,7 @@ Public Class Miseajour
             i += 1
         Next myItem
 
-        ListViewAllChannel.DoDragDrop(New  _
+        ListViewAllChannel.DoDragDrop(New _
                                          DataObject("System.Windows.Forms.ListViewItem()", myItems),
                                       DragDropEffects.Copy)
         ButtonAppliquer.Location = ButtonDemarrer.Location
@@ -1034,7 +1066,7 @@ Public Class Miseajour
         AcceptButton = ButtonAppliquer
     End Sub
 
-    Private Sub ListViewItemDrag1(sender As Object, e As  _
+    Private Sub ListViewItemDrag1(sender As Object, e As _
                                      ItemDragEventArgs) Handles ListXMLTVFRChoisie.ItemDrag
         Dim myItem As ListViewItem
         Dim myItems(ListXMLTVFRChoisie.SelectedItems.Count - 1) As ListViewItem
@@ -1048,7 +1080,7 @@ Public Class Miseajour
             i += 1
         Next myItem
 
-        ListXMLTVFRChoisie.DoDragDrop(New  _
+        ListXMLTVFRChoisie.DoDragDrop(New _
                                          DataObject("System.Windows.Forms.ListViewItem()", myItems),
                                       DragDropEffects.Copy)
 
@@ -1059,7 +1091,7 @@ Public Class Miseajour
         ButtonAppliquer.Visible = ListXMLTVFRChoisie.Items.Count > 0
     End Sub
 
-    Private Sub ListViewDragEnter1(sender As Object, e As  _
+    Private Sub ListViewDragEnter1(sender As Object, e As _
                                       DragEventArgs) Handles ListViewAllChannel.DragEnter
 
         If sender Is ListViewAllChannel Then
@@ -1073,7 +1105,7 @@ Public Class Miseajour
         End If
     End Sub
 
-    Private Sub ListView_DragEnter2(sender As Object, e As  _
+    Private Sub ListView_DragEnter2(sender As Object, e As _
                                        DragEventArgs) Handles ListXMLTVFRChoisie.DragEnter
 
         If e.Data.GetDataPresent("System.Windows.Forms.ListViewItem()") Then
@@ -1083,7 +1115,7 @@ Public Class Miseajour
         End If
     End Sub
 
-    Private Sub ListViewDragDrop1(sender As Object, e As  _
+    Private Sub ListViewDragDrop1(sender As Object, e As _
                                      DragEventArgs) Handles ListViewAllChannel.DragDrop
         Try
             Select Case _listDraged
@@ -1137,7 +1169,7 @@ Public Class Miseajour
         End Try
     End Sub
 
-    Private Sub ListViewDragDrop2(sender As Object, e As  _
+    Private Sub ListViewDragDrop2(sender As Object, e As _
                                      DragEventArgs) Handles ListXMLTVFRChoisie.DragDrop
 
         Dim i As Integer
@@ -1165,7 +1197,6 @@ Public Class Miseajour
                         numitem = 0
                         Trace.WriteLine(" erreur try catch ligne AAA")
                     End Try
-
 
                     For i = 0 To myItems.GetUpperBound(0)
                         Dim itmListViewAllChannel As New ListViewItem
@@ -1218,7 +1249,6 @@ Public Class Miseajour
 
             ListViewAllChannel.Columns.Item(0).Text = ChosenChannels & ListViewAllChannel.Items.Count & ")"
             ListXMLTVFRChoisie.Columns.Item(0).Text = AvailableChannels & ListXMLTVFRChoisie.Items.Count & ")"
-
 
             Select Case ListXMLTVFRChoisie.Items.Count
                 Case 0
@@ -1402,12 +1432,20 @@ Public Class Miseajour
                 URLComboBox.Enabled = True
             End If
         End If
-        Trace.WriteLine(DateTime.Now & " " & "sortie de sub new de FrmMiseajour")
 
         'Néo 29/05/2010
-        If BasePerimee() = True Then
-            ButtonDemarrer.PerformClick()
-        End If
+        Try
+            If BasePerimee() = True Then
+                Trace.WriteLine(DateTime.Now & " " & "BasePerimee() = True dans Miseajour")
+                ButtonDemarrer.PerformClick()
+            End If
+        Catch ex As Exception
+            Trace.WriteLine(DateTime.Now & " " & "ButtonDemarrer.PerformClick() dans Miseajour.vb" & ex.ToString)
+        Finally
+            Trace.WriteLine(DateTime.Now & " " & "ButtonDemarrer.PerformClick() ==> Finally dans Miseajour.vb")
+        End Try
+
+         Trace.WriteLine(DateTime.Now & " " & "sortie de sub new de Miseajour")
     End Sub
 
     Private Sub RemplirUrlCombo(Optional ByVal bdernierEssai As Boolean = False)
@@ -1703,6 +1741,10 @@ Public Class Miseajour
         'pas très propre mais fonctionnel...
 
         channelRen = channelRen.ToLower()
+        If channelRen.EndsWith(".fr") Then
+            channelRen = channelRen.Substring(0, channelRen.LastIndexOf("."))
+        End If
+
         channelRen =
             channelRen.Replace(".", "").Replace("-", "").Replace("\", "").Replace("/", "").Replace("ü", "u").Replace(
                 "ß", "ss").Replace("'", "").Replace("ï", "i").Replace("î", "i").Replace("ô", "o").Replace("ö", "o").

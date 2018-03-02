@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -35,21 +35,12 @@ Imports ZGuideTV.ZGuideTVDotNetTvdb
 
 #End Region
 
-' ReSharper disable CheckNamespace
-' ReSharper disable UnusedMember.Global
 Public Class CentralScreen
-    ' ReSharper restore UnusedMember.Global
-    ' ReSharper restore CheckNamespace
 
 #Region "Property"
 
-    'Private ReadOnly _descTooltip As New ToolTip
-
-    'Dim WithEvents _popup As New FrmPopup
     Public WithEvents PopupContent As New ucPopup
-    Private WithEvents _pu As New Popup(PopupContent)
-    'Private _myFont As Font
-    'Private ReadOnly _toolTipPictureBox As PictureBox = New PictureBox()
+    Public WithEvents pu As New Popup(PopupContent)
     Private _repereClickEmission As Integer
     Public MessageBoxNoConnection As String
     Public MessageBoxNoConnection1 As String
@@ -169,31 +160,59 @@ Public Class CentralScreen
 
         Try
 
-            For Each item As Control In Mainform.PanelA.Controls
-                Mainform.PanelA.Controls.Remove(item)
-                Trace.WriteLine(DateTime.Now & " " & "Mainform.PanelA.Controls.Remove(item): " & item.ToString)
-            Next item
+            'For Each item As Control In Mainform.PanelA.Controls
+            '    Mainform.PanelA.Controls.Remove(item)
+            '    Trace.WriteLine(DateTime.Now & " " & "Mainform.PanelA.Controls.Remove(item): " & item.ToString)
+            'Next item
 
-            For Each item As Control In Mainform.PanelB.Controls
-                Mainform.PanelB.Controls.Remove(item)
-                Trace.WriteLine(DateTime.Now & " " & "Mainform.PanelB.Controls.Remove(item): " & item.ToString)
-            Next item
+            'For Each item As Control In Mainform.PanelB.Controls
+            '    Mainform.PanelB.Controls.Remove(item)
+            '    Trace.WriteLine(DateTime.Now & " " & "Mainform.PanelB.Controls.Remove(item): " & item.ToString)
+            'Next item
 
-            'With Mainform
-            '.PanelA.Controls.Clear()
-            '.PanelB.Controls.Clear()
+            With Mainform
+                'rvs75 05/08/2017: 
+                'Avec une centaine de chaines, il peut avoir une erreur "error creating windows handle" avec le clear() seule
+                'Et si on Dispose les controls, il n'y a plus l'erreur ci-dessus  mais il reste des émissions sur le panelA et des bugs en découlent après
+                'En mettant les deux, il n'y a plus de bugs apparents (ou sont moins facile à créer)
 
-            '.Invoke(Sub() Mainform.PanelA.Invalidate())
-            '.Invoke(Sub() Mainform.PanelB.Invalidate())
+                'Et on cache les Panels car c'est pas bô!
+                .PanelA.Visible = False
+                .PanelB.Visible = False
 
-            '.PanelA.Invalidate()
-            '.PanelB.Invalidate()
+                For Each ctl As Control In .PanelA.Controls
+                    ctl.Dispose()
+                Next
+                .PanelA.Controls.Clear()
 
-            'Trace.WriteLine(DateTime.Now & " " & ".Invoke(Sub() Mainform.PanelA et B.Remove()) ")
-            'End With
+                For Each ctl As Control In .PanelB.Controls
+                    ctl.Dispose()
+                Next
+                .PanelB.Controls.Clear()
+
+                'rvs75 05/08/2017
+                'Les Invalidate() ne servent plus à rien, a part à faire "flicker" les panels
+                'les .visible=true dans le finally force le .invalidate() des panels
+
+                '.Invoke(Sub() Mainform.PanelA.Invalidate())
+                '.Invoke(Sub() Mainform.PanelB.Invalidate())
+
+                '.PanelA.Invalidate()
+                '.PanelB.Invalidate()
+
+                Trace.WriteLine(DateTime.Now & " " & ".Invoke(Sub() Mainform.PanelA et B.Invalidate()) ")
+            End With
 
         Catch ex As Exception
             Trace.WriteLine(DateTime.Now & " " & "Erreur dans ClearAetBPanelboxes (.PanelA ou B.Controls.Remove): " & ex.ToString)
+        Finally
+            'rvs75 05/08/2017
+            'Dans tous les cas, on rend visible les Panels
+            With Mainform
+                .PanelA.Visible = True
+                .PanelB.Visible = True
+            End With
+
         End Try
 
         Application.DoEvents()
@@ -1231,7 +1250,7 @@ Public Class CentralScreen
                 Exit Sub
             End Try
         Else
-            _pu.Close()
+            pu.Close()
             memoBascule = False
             memoObject = New Object
         End If
@@ -1403,6 +1422,7 @@ Public Class CentralScreen
 
                     Case "IMDB"
                         If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://www.imdb.com") Then
+                            titre = titre.Replace("&", "%26").Replace("?", "%3F")
                             If My.Settings.Language = "Français" Then
                                 Process.Start("http://www.imdb.fr/find?q=" & titre)
                             Else
@@ -1419,6 +1439,7 @@ Public Class CentralScreen
                         End If
                     Case "Allociné"
                         If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://www.allocine.fr") Then
+                            titre = titre.Replace("&", "%26").Replace("?", "%3F")
                             Process.Start("http://www.allocine.fr/recherche/?q=" & titre)
                         Else
                             ' ReSharper disable NotAccessedVariable
@@ -1444,6 +1465,7 @@ Public Class CentralScreen
                         End If
                     Case "Rotten Tomatoes"
                         If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://www.rottentomatoes.com/") Then
+                            titre = titre.Replace("&", "%26").Replace("?", "%3F")
                             Process.Start("http://www.rottentomatoes.com/search/?search=" & titre)
                         Else
                             ' ReSharper disable NotAccessedVariable
@@ -1456,6 +1478,7 @@ Public Class CentralScreen
                         End If
                     Case "Google"
                         If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://www.google.com/") Then
+                            titre = titre.Replace("&", "%26").Replace("?", "%3F")
                             Process.Start("https://www.google.com/search?q=" & titre)
                         Else
                             ' ReSharper disable NotAccessedVariable
@@ -1468,6 +1491,7 @@ Public Class CentralScreen
                         End If
                     Case "Youtube"
                         If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://www.youtube.com") Then
+                            titre = titre.Replace("&", "%26").Replace("?", "%3F")
                             Process.Start("https://www.youtube.com/results?search_query=" & titre)
                         Else
                             ' ReSharper disable NotAccessedVariable

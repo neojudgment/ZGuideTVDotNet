@@ -45,6 +45,7 @@ Partial Class About
         Me.TextBoxDev = New System.Windows.Forms.TextBox()
         Me.TextBoxAdmin = New System.Windows.Forms.TextBox()
         Me.TabPagelicence = New System.Windows.Forms.TabPage()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.TabPage7zip = New System.Windows.Forms.TabPage()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
@@ -57,7 +58,6 @@ Partial Class About
         Me.PictureBoxPaypal = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPageAbout.SuspendLayout()
         Me.TabPageAuteurs.SuspendLayout()
@@ -170,12 +170,12 @@ Partial Class About
         'LinkLabel2
         '
         Me.LinkLabel2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LinkLabel2.Location = New System.Drawing.Point(38, 135)
+        Me.LinkLabel2.Location = New System.Drawing.Point(8, 135)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(204, 13)
+        Me.LinkLabel2.Size = New System.Drawing.Size(263, 13)
         Me.LinkLabel2.TabIndex = 1
         Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "http://zguidetv.codeplex.com/"
+        Me.LinkLabel2.Text = "https://github.com/neojudgment/ZGuideTVDotNet"
         Me.LinkLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'TextBox2
@@ -360,6 +360,15 @@ Partial Class About
         Me.TabPagelicence.Text = "Licence"
         Me.TabPagelicence.UseVisualStyleBackColor = True
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox1.Location = New System.Drawing.Point(4, 0)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(274, 265)
+        Me.RichTextBox1.TabIndex = 2
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
@@ -399,7 +408,7 @@ Partial Class About
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(261, 13)
         Me.TextBox8.TabIndex = 45
-        Me.TextBox8.Text = "markheath © 2016"
+        Me.TextBox8.Text = "markheath © 2017"
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LinkLabel6
@@ -433,7 +442,7 @@ Partial Class About
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(263, 13)
         Me.TextBox6.TabIndex = 6
-        Me.TextBox6.Text = "Microsoft Codeplex © 2006-2016 Microsoft"
+        Me.TextBox6.Text = "Microsoft Codeplex © 2006-2017 Microsoft"
         Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LinkLabel5
@@ -499,15 +508,6 @@ Partial Class About
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Ok"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.RichTextBox1.Location = New System.Drawing.Point(4, 0)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(274, 265)
-        Me.RichTextBox1.TabIndex = 2
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'About
         '

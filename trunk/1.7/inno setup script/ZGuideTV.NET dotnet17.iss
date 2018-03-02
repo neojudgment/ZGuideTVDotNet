@@ -27,7 +27,7 @@ EnableISX=true
 #define MyAppUrlQuickStartEn "ZGuideTVQuickStartEn.url"
 #define MyAppUrlQuickStartFr "ZGuideTVQuickStartFr.url"
 
-#define ISSI_BeveledLabel "ZGuideTV.NET - © 2004 - 2016 ZGuideTV Team"
+#define ISSI_BeveledLabel "ZGuideTV.NET - © 2004 - 2017 ZGuideTV Team"
 #define ISSI_UnZip1 "logos\logos.zip"
 #define ISSI_UnZipDir1 "{commonappdata}\ZGuideTVDotNet\Logos"
 
@@ -37,7 +37,7 @@ EnableISX=true
 [Setup]
 ; SignTool=signtool
 ; Signature du code
-AppVerName={#MyAppName} 1.7 beta 4
+AppVerName={#MyAppName} 1.7 beta 5
 ; {#AppMajorVersionNo}.{#AppMinorVersionNo}
 AppVersion={#AppVersionNo}
 ; nom de l'application (déclaré ci-dessus)
@@ -84,7 +84,7 @@ AllowNoIcons=true
 ; Copyright
 AppCopyright=ZGuideTV Team
 ; nom de sortie du fichier
-OutputBaseFilename= ZGuideTVDotNet_17_beta_4
+OutputBaseFilename= ZGuideTVDotNet_17_beta_5
 ;{#AppMajorVersionNo}
 ; {#AppMinorVersionNo}
 ; on affiche toutes les langues
@@ -115,7 +115,7 @@ VersionInfoCompany=ZGuideTV Team
 ; description du soft
 VersionInfoDescription=ZGuideTV.NET
 ; copyright
-VersionInfoCopyright=Copyright © 2004 - 2016
+VersionInfoCopyright=Copyright © 2004 - 2017
 ; nom du soft
 VersionInfoProductName=ZGuideTV.NET
 ; numéro de version
@@ -131,6 +131,7 @@ SetupLogging=yes
 ; si c'est une mise à jour on évite de demander le répertoire d'installation et la création du groupe
 DisableDirPage=auto
 DisableProgramGroupPage=auto
+ShowTasksTreeLines=True
 
 [Languages]
 ; les langues utilisées durant l'installation
@@ -147,6 +148,9 @@ Name: quicklaunchicon; Description: {cm:CreateQuickLaunchIcon}; GroupDescription
 Source: scripts\isxdl\isxdl.dll; Flags: dontcopy
 Source: scripts\isxdl\english.ini; Flags: dontcopy
 Source: scripts\isxdl\french.ini; Flags: dontcopy
+
+;Source: C:\Program Files (x86)\Windows Kits\10\bin\10.0.15063.0\x86\certmgr.exe; DestDir: {app}; Flags: deleteafterinstall
+;Source: ..\bin\Release\AscertiaRootCA.der; DestDir: {app}; Flags: deleteafterinstall
 
 Source: ..\bin\Release\ZGuideTVDotNet.exe; DestDir: {app}; BeforeInstall: AskRestorePoint; Flags: ignoreversion
 Source: bin\Windows7.DesktopIntegration.Registration.exe; DestDir: {app}; Flags: ignoreversion
@@ -289,6 +293,8 @@ fr.backup=Voulez-vous effacer le répertoire de sauvegarde, la base de données, e
 win_sp_title=Windows %1 Service Pack %2
 
 [Run]
+
+;Filename: {app}\CertMgr.exe; Parameters: "-add -all -c AscertiaRootCA.der -s -r localMachine root"; Flags: waituntilterminated runhidden;
 
 ;x64 fr
 Filename: "{dotnet4064}\ngen.exe"; Parameters: "install ""{app}\ZGuideTVDotNet.exe"""; WorkingDir: {app}; Languages: fr;Flags: runhidden; StatusMsg: Optimisation des performances. Veuillez patienter...; Check: IsWin64

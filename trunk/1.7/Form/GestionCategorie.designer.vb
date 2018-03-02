@@ -22,12 +22,12 @@ Partial Class GestionCategorie
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btRecharger = New System.Windows.Forms.Button()
         Me.lblNomGroupeCategorie = New System.Windows.Forms.Label()
         Me.txbNomGroupeCategorie = New System.Windows.Forms.TextBox()
         Me.lblCouleurGroupeCategorie = New System.Windows.Forms.Label()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
-        Me.lblCouleur = New System.Windows.Forms.Label()
         Me.btCouleur = New System.Windows.Forms.Button()
         Me.btSauvegarder = New System.Windows.Forms.Button()
         Me.btFermer = New System.Windows.Forms.Button()
@@ -37,17 +37,23 @@ Partial Class GestionCategorie
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.chkSuppGroupeVide = New System.Windows.Forms.CheckBox()
         Me.lblIdGroupe = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmsGroup = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.DéplacerVersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tvwCategorie = New ZGuideTV.TreeViewCategorie()
+        Me.pvCouleur = New ZGuideTV.PaveCentral()
         Me.gbxGroupeCategorie.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.cmsGroup.SuspendLayout()
         Me.SuspendLayout()
         '
         'btRecharger
         '
-        Me.btRecharger.Location = New System.Drawing.Point(12, 448)
+        Me.btRecharger.Location = New System.Drawing.Point(352, 357)
         Me.btRecharger.Name = "btRecharger"
-        Me.btRecharger.Size = New System.Drawing.Size(202, 29)
+        Me.btRecharger.Size = New System.Drawing.Size(206, 29)
         Me.btRecharger.TabIndex = 1
-        Me.btRecharger.Text = "Recharger"
+        Me.btRecharger.Text = "Annuler les modifications"
         Me.btRecharger.UseVisualStyleBackColor = True
         '
         'lblNomGroupeCategorie
@@ -63,7 +69,7 @@ Partial Class GestionCategorie
         '
         Me.txbNomGroupeCategorie.Location = New System.Drawing.Point(9, 33)
         Me.txbNomGroupeCategorie.Name = "txbNomGroupeCategorie"
-        Me.txbNomGroupeCategorie.Size = New System.Drawing.Size(164, 20)
+        Me.txbNomGroupeCategorie.Size = New System.Drawing.Size(206, 20)
         Me.txbNomGroupeCategorie.TabIndex = 3
         '
         'lblCouleurGroupeCategorie
@@ -75,21 +81,11 @@ Partial Class GestionCategorie
         Me.lblCouleurGroupeCategorie.TabIndex = 4
         Me.lblCouleurGroupeCategorie.Text = "Couleur du groupe  :"
         '
-        'lblCouleur
-        '
-        Me.lblCouleur.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblCouleur.Location = New System.Drawing.Point(9, 82)
-        Me.lblCouleur.Name = "lblCouleur"
-        Me.lblCouleur.Size = New System.Drawing.Size(131, 25)
-        Me.lblCouleur.TabIndex = 5
-        Me.lblCouleur.Text = "Test affichage "
-        Me.lblCouleur.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'btCouleur
         '
-        Me.btCouleur.Location = New System.Drawing.Point(146, 81)
+        Me.btCouleur.Location = New System.Drawing.Point(179, 90)
         Me.btCouleur.Name = "btCouleur"
-        Me.btCouleur.Size = New System.Drawing.Size(27, 25)
+        Me.btCouleur.Size = New System.Drawing.Size(36, 30)
         Me.btCouleur.TabIndex = 6
         Me.btCouleur.Text = "..."
         Me.btCouleur.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -97,16 +93,16 @@ Partial Class GestionCategorie
         '
         'btSauvegarder
         '
-        Me.btSauvegarder.Location = New System.Drawing.Point(235, 411)
+        Me.btSauvegarder.Location = New System.Drawing.Point(5, 61)
         Me.btSauvegarder.Name = "btSauvegarder"
-        Me.btSauvegarder.Size = New System.Drawing.Size(179, 28)
+        Me.btSauvegarder.Size = New System.Drawing.Size(206, 28)
         Me.btSauvegarder.TabIndex = 9
         Me.btSauvegarder.Text = "Sauvegarder tout"
         Me.btSauvegarder.UseVisualStyleBackColor = True
         '
         'btFermer
         '
-        Me.btFermer.Location = New System.Drawing.Point(329, 448)
+        Me.btFermer.Location = New System.Drawing.Point(475, 597)
         Me.btFermer.Name = "btFermer"
         Me.btFermer.Size = New System.Drawing.Size(83, 29)
         Me.btFermer.TabIndex = 10
@@ -115,23 +111,23 @@ Partial Class GestionCategorie
         '
         'gbxGroupeCategorie
         '
+        Me.gbxGroupeCategorie.Controls.Add(Me.pvCouleur)
         Me.gbxGroupeCategorie.Controls.Add(Me.btAjouterGroupe)
         Me.gbxGroupeCategorie.Controls.Add(Me.btModifierGroupeCategorie)
         Me.gbxGroupeCategorie.Controls.Add(Me.lblNomGroupeCategorie)
         Me.gbxGroupeCategorie.Controls.Add(Me.txbNomGroupeCategorie)
         Me.gbxGroupeCategorie.Controls.Add(Me.lblCouleurGroupeCategorie)
-        Me.gbxGroupeCategorie.Controls.Add(Me.lblCouleur)
         Me.gbxGroupeCategorie.Controls.Add(Me.btCouleur)
-        Me.gbxGroupeCategorie.Location = New System.Drawing.Point(231, 169)
+        Me.gbxGroupeCategorie.Location = New System.Drawing.Point(347, 140)
         Me.gbxGroupeCategorie.Name = "gbxGroupeCategorie"
-        Me.gbxGroupeCategorie.Size = New System.Drawing.Size(181, 155)
+        Me.gbxGroupeCategorie.Size = New System.Drawing.Size(234, 179)
         Me.gbxGroupeCategorie.TabIndex = 11
         Me.gbxGroupeCategorie.TabStop = False
         Me.gbxGroupeCategorie.Text = "Groupe de catégories"
         '
         'btAjouterGroupe
         '
-        Me.btAjouterGroupe.Location = New System.Drawing.Point(100, 112)
+        Me.btAjouterGroupe.Location = New System.Drawing.Point(100, 123)
         Me.btAjouterGroupe.Name = "btAjouterGroupe"
         Me.btAjouterGroupe.Size = New System.Drawing.Size(73, 32)
         Me.btAjouterGroupe.TabIndex = 2
@@ -140,7 +136,7 @@ Partial Class GestionCategorie
         '
         'btModifierGroupeCategorie
         '
-        Me.btModifierGroupeCategorie.Location = New System.Drawing.Point(9, 112)
+        Me.btModifierGroupeCategorie.Location = New System.Drawing.Point(9, 123)
         Me.btModifierGroupeCategorie.Name = "btModifierGroupeCategorie"
         Me.btModifierGroupeCategorie.Size = New System.Drawing.Size(85, 32)
         Me.btModifierGroupeCategorie.TabIndex = 9
@@ -150,17 +146,19 @@ Partial Class GestionCategorie
         'lblInfo
         '
         Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInfo.Location = New System.Drawing.Point(232, 13)
+        Me.lblInfo.Location = New System.Drawing.Point(344, 12)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(180, 125)
+        Me.lblInfo.Size = New System.Drawing.Size(233, 125)
         Me.lblInfo.TabIndex = 13
-        Me.lblInfo.Text = "Pour passer une catégorie d'un groupe à un autre, cliquez sur la catégorie puis g" & _
+        Me.lblInfo.Text = "Pour passer une catégorie d'un groupe à un autre, cliquez sur la catégorie puis g" &
     "lissez-déposer vers le groupe désiré."
         Me.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'chkSuppGroupeVide
         '
-        Me.chkSuppGroupeVide.Location = New System.Drawing.Point(235, 376)
+        Me.chkSuppGroupeVide.Checked = True
+        Me.chkSuppGroupeVide.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkSuppGroupeVide.Location = New System.Drawing.Point(15, 19)
         Me.chkSuppGroupeVide.Name = "chkSuppGroupeVide"
         Me.chkSuppGroupeVide.Size = New System.Drawing.Size(179, 36)
         Me.chkSuppGroupeVide.TabIndex = 14
@@ -176,6 +174,28 @@ Partial Class GestionCategorie
         Me.lblIdGroupe.TabIndex = 15
         Me.lblIdGroupe.Visible = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btSauvegarder)
+        Me.GroupBox1.Controls.Add(Me.chkSuppGroupeVide)
+        Me.GroupBox1.Location = New System.Drawing.Point(347, 435)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(234, 100)
+        Me.GroupBox1.TabIndex = 17
+        Me.GroupBox1.TabStop = False
+        '
+        'cmsGroup
+        '
+        Me.cmsGroup.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DéplacerVersToolStripMenuItem})
+        Me.cmsGroup.Name = "cmsGroup"
+        Me.cmsGroup.Size = New System.Drawing.Size(145, 26)
+        '
+        'DéplacerVersToolStripMenuItem
+        '
+        Me.DéplacerVersToolStripMenuItem.Name = "DéplacerVersToolStripMenuItem"
+        Me.DéplacerVersToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.DéplacerVersToolStripMenuItem.Text = "Déplacer vers"
+        '
         'tvwCategorie
         '
         Me.tvwCategorie.AllowDrop = True
@@ -188,22 +208,31 @@ Partial Class GestionCategorie
         Me.tvwCategorie.ShowLines = False
         Me.tvwCategorie.ShowPlusMinus = False
         Me.tvwCategorie.ShowRootLines = False
-        Me.tvwCategorie.Size = New System.Drawing.Size(202, 432)
+        Me.tvwCategorie.Size = New System.Drawing.Size(304, 623)
         Me.tvwCategorie.TabIndex = 16
+        '
+        'pvCouleur
+        '
+        Me.pvCouleur.Align = System.Drawing.StringAlignment.Near
+        Me.pvCouleur.BgColor = System.Drawing.Color.White
+        Me.pvCouleur.Location = New System.Drawing.Point(9, 90)
+        Me.pvCouleur.Marquage = False
+        Me.pvCouleur.Name = "pvCouleur"
+        Me.pvCouleur.Size = New System.Drawing.Size(164, 30)
+        Me.pvCouleur.TabIndex = 10
         '
         'GestionCategorie
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(422, 486)
+        Me.ClientSize = New System.Drawing.Size(606, 647)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.tvwCategorie)
         Me.Controls.Add(Me.lblIdGroupe)
-        Me.Controls.Add(Me.chkSuppGroupeVide)
         Me.Controls.Add(Me.btRecharger)
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.gbxGroupeCategorie)
         Me.Controls.Add(Me.btFermer)
-        Me.Controls.Add(Me.btSauvegarder)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "GestionCategorie"
@@ -214,6 +243,8 @@ Partial Class GestionCategorie
         Me.TopMost = True
         Me.gbxGroupeCategorie.ResumeLayout(False)
         Me.gbxGroupeCategorie.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.cmsGroup.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -223,7 +254,6 @@ Partial Class GestionCategorie
     Friend WithEvents txbNomGroupeCategorie As System.Windows.Forms.TextBox
     Friend WithEvents lblCouleurGroupeCategorie As System.Windows.Forms.Label
     Friend WithEvents ColorDialog1 As System.Windows.Forms.ColorDialog
-    Friend WithEvents lblCouleur As System.Windows.Forms.Label
     Friend WithEvents btCouleur As System.Windows.Forms.Button
     Friend WithEvents btSauvegarder As System.Windows.Forms.Button
     Friend WithEvents btFermer As System.Windows.Forms.Button
@@ -234,5 +264,8 @@ Partial Class GestionCategorie
     Friend WithEvents chkSuppGroupeVide As System.Windows.Forms.CheckBox
     Friend WithEvents lblIdGroupe As System.Windows.Forms.Label
     Friend WithEvents tvwCategorie As ZGuideTV.TreeViewCategorie
-
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents pvCouleur As PaveCentral
+    Friend WithEvents cmsGroup As ContextMenuStrip
+    Friend WithEvents DéplacerVersToolStripMenuItem As ToolStripMenuItem
 End Class

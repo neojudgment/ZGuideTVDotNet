@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -796,7 +796,7 @@ Public Class Mainform
                                 MajautoReussie = False
                                 Trace.WriteLine(" juste avant application.restart dans maj grille tv full automatique")
                                 Application.DoEvents()
-                                miseajour.Close()
+                                Miseajour.Close()
                                 Trace.WriteLine(
                                     DateTime.Now & " " & "redemarrage du timer_minute " &
                                     DateTime.Now.ToString)
@@ -839,7 +839,7 @@ Public Class Mainform
         End If
 
         If miseajouraeffectuer = False Then
-            ' Néo le 02/01/2016 
+            ' Néo le 02/01/2017 
             ' On lance la vérification auto de la version de zguidetv.exe
             ' car il n'y a pas de mise à jour auto des grilles tv prévue
             ZGuideTvDotNetUpdateSr()
@@ -968,12 +968,12 @@ Public Class Mainform
                 ' -------------------------------------------------------------------------------------------------------
                 ' Provisoire !!!!
                 ' Modifié par Néo le 12/12/2015
-                If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://zguidetv.codeplex.com") Then
+                If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://github.com/") Then
 
                     If [String].Equals(My.Settings.Language, "Français", StringComparison.CurrentCulture) Then
-                        Process.Start("http://zguidetv.codeplex.com/wikipage?title=home-fr")
+                        Process.Start("https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md")
                     Else
-                        Process.Start("http://zguidetv.codeplex.com/")
+                        Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
                     End If
 
                     Application.DoEvents()
@@ -1128,8 +1128,19 @@ Public Class Mainform
 #Region "AffichageCeSoir"
 
     Private Sub AffichageCeSoir()
+        'rvs75 05/08/2017
+        'evite d'avoir des fuites
+        'voir ClearAetBPanelboxes pour plus d'infos
 
-        Panel_ce_soir.Controls.Clear()
+        With Panel_ce_soir
+            .Visible = False
+            For Each ctl As Control In .Controls
+                ctl.Dispose()
+            Next
+            .Controls.Clear()
+            .Visible = True
+        End With
+        'Panel_ce_soir.Controls.Clear()
         GetListOfEmissionsForCeSoir()
         Panel_ce_soir.Height = Math.Max(NbEmissionsForCeSoir, NbLignesCeSoir) * PeriodiciteVerticale
 
@@ -1169,6 +1180,17 @@ Public Class Mainform
         End If
 
         If blChangeMaintenant Then
+            'rvs75 05/08/2017
+            'evite d'avoir des fuites
+            'voir ClearAetBPanelboxes pour plus d'infos
+            With Panel_maintenant
+                .Visible = False
+                For Each ctl As Control In .Controls
+                    ctl.Dispose()
+                Next
+                .Controls.Clear()
+                .Visible = True
+            End With
             Panel_maintenant.Controls.Clear()
             With Panel_maintenant
                 .Height = NbEmissionsForMaintenant * PeriodiciteVerticale
@@ -1241,6 +1263,7 @@ Public Class Mainform
         SuspendLayout()
         Timer_minute.Enabled = False
         DeplacerPanelA()
+        Timer_minute.Enabled = True
     End Sub
 
     Private Sub AfficherDateOrigineEcran()
@@ -1551,7 +1574,7 @@ Public Class Mainform
         Trace.WriteLine(DateTime.Now & " " & "Sortie de constants_widest_screen")
     End Sub
 
-    Private Sub myTextboxTemps_MousedoubleClick(sender As Object, e As MouseEventArgs)
+    Private Sub MyTextboxTemps_MousedoubleClick(sender As Object, e As MouseEventArgs)
 
         'Dim dt As DateTime = DateReference
         Dim minutes As Integer = CInt((DirectCast(sender, Ztextbox).Tag)) * 30
@@ -1585,7 +1608,7 @@ Public Class Mainform
         ' pour avoir les demies heures
         For icount = 0 To limit
             Dim myTextboxTemps As New Ztextbox
-            AddHandler myTextboxTemps.MouseDoubleClick, AddressOf myTextboxTemps_MousedoubleClick
+            AddHandler myTextboxTemps.MouseDoubleClick, AddressOf MyTextboxTemps_MousedoubleClick
             With myTextboxTemps
                 .Location = New Point((NbPixelsPour30Minutes * icount), 0)
                 .Width = CInt(NbPixelsPour30Minutes)
@@ -1614,6 +1637,15 @@ Public Class Mainform
         Trace.WriteLine(DateTime.Now & " " & "Sortie dessine ligne temps")
     End Sub
 
+    Private Sub PowerModeChangedeventHandler(ByVal sender As Object, ByVal e As PowerModeChangedEventArgs)
+        ' 02/11/2017 rvs75 mise à jour en sortie de veille
+        If e.Mode = PowerModes.Resume Then
+            EveryMinute()
+            CentralScreen.CurseurVertical()
+        End If
+    End Sub
+
+
     Private Sub EveryMinute()
 
         ' ne fait pas appel à curseur vertical
@@ -1629,15 +1661,21 @@ Public Class Mainform
 
         ' 19/09/2009 rvs75 code de mise à jour de ce soir
         ' après un  changement de jour
-        If DateTime.Now.Hour = 0 AndAlso DateTime.Now.Minute = 0 Then
+        ' 02/11/2017 rvs75 mise à jour automatique si le jour n'est pas le même
+        ' plus d'obligation de passer par 00h00 (PC en veille)
+        Static jour As Integer = -1
+        If jour <> DateTime.Today.Day Then
+            jour = DateTime.Today.Day
             AffichageCeSoir()
             MaJDateStatusBar()
+
         End If
 
         ' mets a jour maintenant mais pas titre_maintenant
-        If WindowState = FormWindowState.Minimized Then
-            Return
-        End If
+        '02/11/2017 rvs75 code inutile
+        'If WindowState = FormWindowState.Minimized Then
+        '    Return
+        'End If
     End Sub
 
     Private Sub ButtonsVerticauxResumé(ByVal sender As Object, ByVal e As EventArgs) _
@@ -2451,6 +2489,9 @@ Public Class Mainform
         EmissionDurationCesoir = My.Settings.dureecesoir
         Timer_minute.Enabled = False
 
+
+        AddHandler SystemEvents.PowerModeChanged, AddressOf PowerModeChangedeventHandler
+
         ' Néo le 22/09/2010
         ' On crée un thread pour l'affichage du SplashScreen
         Dim splashthread As Thread = New Thread(AddressOf SplashScreenClass.ShowSplashScreen)
@@ -2504,77 +2545,78 @@ Public Class Mainform
 
     Private Sub MainformResize(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Resize
 
-        Trace.WriteLine(" ")
-        Trace.WriteLine(DateTime.Now & " entrée dans mainform resize ")
-        Trace.WriteLine(DateTime.Now & " me.size.width = " & Size.Width.ToString)
-        Trace.WriteLine(DateTime.Now & " me.size.height= " & Size.Height.ToString)
+        If Me.IsHandleCreated Then
+            Trace.WriteLine(" ")
+            Trace.WriteLine(DateTime.Now & " entrée dans mainform resize ")
+            Trace.WriteLine(DateTime.Now & " me.size.width = " & Size.Width.ToString)
+            Trace.WriteLine(DateTime.Now & " me.size.height= " & Size.Height.ToString)
+            Try
+                Trace.WriteLine(DateTime.Now & " buttondroit.right= " & ZSplitButtonDroit.Right.ToString)
+                Trace.WriteLine(DateTime.Now & " panel_droit.left= " & panel_droit.Left.ToString)
+            Catch ex As Exception
+                Trace.WriteLine(DateTime.Now & " " & ex.ToString)
+            End Try
 
-        Try
-            Trace.WriteLine(DateTime.Now & " buttondroit.right= " & ZSplitButtonDroit.Right.ToString)
-            Trace.WriteLine(DateTime.Now & " panel_droit.left= " & panel_droit.Left.ToString)
-        Catch ex As Exception
-            Trace.WriteLine(DateTime.Now & " " & ex.ToString)
-        End Try
+            Select Case WindowState
+                Case FormWindowState.Minimized
 
-        Select Case WindowState
-            Case FormWindowState.Minimized
+                    MyMemoireClean()
 
-                MyMemoireClean()
+                    If My.Settings.Systray Then
+                        NotifyIcon1.Visible = True
 
-                If My.Settings.Systray Then
-                    NotifyIcon1.Visible = True
-
-                    ' Modif le 08/12/2013 Néo
-                    If My.Settings.NotifyIconShow Then
-                        With NotifyIcon1
-                            .BalloonTipTitle = "ZGuideTV.NET"
-                            .BalloonTipText =
-                                BalloonText1 &
-                                Chr(13) & Chr(13) & BalloonText3
-                            .BalloonTipIcon = ToolTipIcon.Info
-                            .ShowBalloonTip(2000)
-                            .Text = "ZGuideTV.NET"
-                        End With
+                        ' Modif le 08/12/2013 Néo
+                        If My.Settings.NotifyIconShow Then
+                            With NotifyIcon1
+                                .BalloonTipTitle = "ZGuideTV.NET"
+                                .BalloonTipText =
+                                    BalloonText1 &
+                                    Chr(13) & Chr(13) & BalloonText3
+                                .BalloonTipIcon = ToolTipIcon.Info
+                                .ShowBalloonTip(2000)
+                                .Text = "ZGuideTV.NET"
+                            End With
+                        End If
+                        Hide()
                     End If
-                    Hide()
-                End If
 
-        End Select
+            End Select
 
-        Trace.WriteLine(DateTime.Now & " sortie de mainform resize apres modif de buttondroit.left")
-        Trace.WriteLine(DateTime.Now & " me.size.width=" & Size.Width.ToString)
-        Trace.WriteLine(DateTime.Now & " me.size.height=" & Size.Height.ToString)
-        Trace.WriteLine(DateTime.Now & " buttondroit.right=" & ZSplitButtonDroit.Right.ToString)
+            Trace.WriteLine(DateTime.Now & " sortie de mainform resize apres modif de buttondroit.left")
+            Trace.WriteLine(DateTime.Now & " me.size.width=" & Size.Width.ToString)
+            Trace.WriteLine(DateTime.Now & " me.size.height=" & Size.Height.ToString)
+            Trace.WriteLine(DateTime.Now & " buttondroit.right=" & ZSplitButtonDroit.Right.ToString)
 
 
-        Trace.WriteLine(DateTime.Now & " panel_droit.left= " & panel_droit.Left.ToString)
+            Trace.WriteLine(DateTime.Now & " panel_droit.left= " & panel_droit.Left.ToString)
 
-        Calendar.Top = 0
+            Calendar.Top = 0
 
-        ' on reduit la haut. de panel_glob_ce_soir pour continuer
-        ' a voir panel_glob_maintenant lors de la reduction
-        ' de hauteur de mainform lors du resize
-        Panel_glob_ce_soir.Height =
-            CInt(
-                (DisplayRectangle.Height - ToolStrip1.Height - MenuStrip1.Height - StatusStrip2.Height -
-                 Calendar.Height) \ 2)
-        Panel_glob_maintenant.Top = Panel_glob_ce_soir.Bottom
-        'rvs75 12/08/2010 les panel ont maintenant la même taille + remise du top des panels au niveau des bottoms des titres  
-        Panel_glob_maintenant.Height = Panel_glob_ce_soir.Height
-        Panel_ce_soir.Top = lbl_Titre_Ce_Soir.Bottom
-        Panel_maintenant.Top = lbl_titre_maintenant.Bottom
-        PositionneBoutonsMemorises()
-        SuspendLayout()
+            ' on reduit la haut. de panel_glob_ce_soir pour continuer
+            ' a voir panel_glob_maintenant lors de la reduction
+            ' de hauteur de mainform lors du resize
+            Panel_glob_ce_soir.Height =
+                CInt(
+                    (DisplayRectangle.Height - ToolStrip1.Height - MenuStrip1.Height - StatusStrip2.Height -
+                     Calendar.Height) \ 2)
+            Panel_glob_maintenant.Top = Panel_glob_ce_soir.Bottom
+            'rvs75 12/08/2010 les panel ont maintenant la même taille + remise du top des panels au niveau des bottoms des titres  
+            Panel_glob_maintenant.Height = Panel_glob_ce_soir.Height
+            Panel_ce_soir.Top = lbl_Titre_Ce_Soir.Bottom
+            Panel_maintenant.Top = lbl_titre_maintenant.Bottom
+            PositionneBoutonsMemorises()
+            SuspendLayout()
 
-        With PanelE
-            .Left = ZSplitButtonGauche.Right
-            .Top = StatusStrip2.Top - HauteurPaves
-            .Height = HauteurPaves
-            .Width = ZSplitButtonDroit.Left - ZSplitButtonGauche.Right
-        End With
+            With PanelE
+                .Left = ZSplitButtonGauche.Right
+                .Top = StatusStrip2.Top - HauteurPaves
+                .Height = HauteurPaves
+                .Width = ZSplitButtonDroit.Left - ZSplitButtonGauche.Right
+            End With
 
-        Trace.WriteLine(DateTime.Now & " " & "fin de mainform_resize, apres dimensionner 12 paves")
-        ResumeLayout()
+            Trace.WriteLine(DateTime.Now & " " & "fin de mainform_resize, apres dimensionner 12 paves")
+            ResumeLayout()
+        End If
     End Sub
 
     Private Sub RestaurerClick(ByVal sender As Object, ByVal e As EventArgs) Handles Restaurer.Click
@@ -2926,12 +2968,12 @@ Public Class Mainform
         Try
 
             ' Modifié par Néo le 26/08/2009
-            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://zguidetv.codeplex.com") Then
+            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://github.com/") Then
 
                 If [String].Equals(My.Settings.Language, "Français", StringComparison.CurrentCulture) Then
-                    Process.Start("http://zguidetv.codeplex.com/wikipage?title=home-fr")
+                    Process.Start("https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md")
                 Else
-                    Process.Start("http://zguidetv.codeplex.com/")
+                    Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
                 End If
 
             Else
@@ -3264,12 +3306,12 @@ Public Class Mainform
         Try
 
             ' Modifié par Néo le 26/08/2009
-            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://zguidetv.codeplex.com/") Then
+            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://github.com/") Then
 
                 If [String].Equals(My.Settings.Language, "Français", StringComparison.CurrentCulture) Then
-                    Process.Start("http://zguidetv.codeplex.com/wikipage?title=home-fr")
+                    Process.Start("https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/READMEFR.md")
                 Else
-                    Process.Start("http://zguidetv.codeplex.com/")
+                    Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
                 End If
 
             Else
@@ -4368,13 +4410,13 @@ Public Class Mainform
         Try
 
             ' Modifié par Néo le 13/02/2011
-            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://zguidetv.codeplex.com") Then
+            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://github.com/") Then
 
                 If My.Settings.Language = "Français" Then
 
-                    Process.Start("http://zguidetv.codeplex.com/wikipage?title=Quick%20Start-fr")
+                    Process.Start("https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/DemarrageRapide.md")
                 Else
-                    Process.Start("http://zguidetv.codeplex.com/wikipage?title=Quick%20Start")
+                    Process.Start("https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Docs/QuickStart.md")
                 End If
 
             Else
@@ -4452,13 +4494,13 @@ Public Class Mainform
         Try
 
             ' Modifié par Néo le 13/02/2011
-            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("http://zguidetv.codeplex.com") Then
+            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://github.com/") Then
 
                 If [String].Equals(My.Settings.Language, "Français", StringComparison.CurrentCulture) Then
-                    Process.Start(
-                        "http://zguidetv.codeplex.com/wikipage?title=Raccourcis clavier de r%u00e9f%u00e9rences")
+                    ' Process.Start(
+                    ' "http://zguidetv.codeplex.com/wikipage?title=Raccourcis clavier de r%u00e9f%u00e9rences")
                 Else
-                    Process.Start("http://zguidetv.codeplex.com/wikipage?title=Keyboard Shortcuts")
+                    ' Process.Start("http://zguidetv.codeplex.com/wikipage?title=Keyboard Shortcuts")
                 End If
 
             Else
@@ -4619,13 +4661,13 @@ Public Class Mainform
         End Try
     End Sub
 
-    Private Sub btImprimeCeSoir_Click(sender As Object, e As EventArgs) Handles btImprimeCeSoir.Click
+    Private Sub BtImprimeCeSoir_Click(sender As Object, e As EventArgs) Handles btImprimeCeSoir.Click
 
         Dim test As New ImprimeEmissions("CE SOIR", TableauListEmissionsCeSoir)
         test.VoirPrevisualisation()
     End Sub
 
-    Private Sub btImprimemaintenant_Click(sender As Object, e As EventArgs) Handles btImprimemaintenant.Click
+    Private Sub BtImprimemaintenant_Click(sender As Object, e As EventArgs) Handles btImprimemaintenant.Click
 
         Dim test As New ImprimeEmissions("MAINTENANT", TableauListEmissionsMaintenant)
         test.VoirPrevisualisation()

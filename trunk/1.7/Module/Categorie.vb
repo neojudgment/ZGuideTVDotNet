@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -89,10 +89,10 @@ Module Categorie
         Dim cptCouleur As Integer = 1
         For Each category As String In listeCat
 
-            str = "insert into GroupeCategorie(NomGroupeCategory,IdExtColor) values('group_" & category & "' ," & dtCouleurNonUtilise.Rows(cptCouleur).Item(0).ToString() & ");"
+            str = "insert into GroupeCategorie(NomGroupeCategory,IdExtColor) values('group_" & category.Replace("'", "''") & "' ," & dtCouleurNonUtilise.Rows(cptCouleur).Item(0).ToString() & ");"
             db.ExecuteNonQueryFast(str)
             Dim idgroupeCategorie As Int64 = db.Last()
-            str = "insert into Categorie (NomCategory,IdExtGroupeCategorie) values ('" & category & "'," & idgroupeCategorie.ToString() & ")"
+            str = "insert into Categorie (NomCategory,IdExtGroupeCategorie) values ('" & category.Replace("'", "''") & "'," & idgroupeCategorie.ToString() & ")"
             db.ExecuteNonQueryFast(str)
             cptCouleur = cptCouleur + 1
         Next

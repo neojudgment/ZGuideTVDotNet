@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -38,17 +38,17 @@ Public Class About
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) _
         Handles LinkLabel2.LinkClicked
-        Process.Start("http://zguidetv.codeplex.com/")
+        Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) _
         Handles LinkLabel3.LinkClicked
-        Process.Start("http://igloo.crystalxp.net/djeric")
+        ' Process.Start("http://igloo.crystalxp.net/djeric")
     End Sub
 
     Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) _
         Handles LinkLabel5.LinkClicked
-        Process.Start("http://www.codeplex.com/")
+        Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
     End Sub
 
     Private Sub PictureBoxPaypalClick(sender As Object, e As EventArgs) Handles PictureBoxPaypal.Click

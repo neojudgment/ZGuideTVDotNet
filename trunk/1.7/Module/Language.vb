@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -309,10 +309,10 @@ Friend Module Language
     Public LngMessageBoxNoDataTitre As String
 
     'MAINFORM TREEVIEW CATEGORY
-    Public LngNodeFilter As String
-    Public LngNodeCategory As String
-    Public LngNodeCountry As String
-    Public LngNodeProvider As String
+    'Public LngNodeFilter As String
+    'Public LngNodeCategory As String
+    'Public LngNodeCountry As String
+    'Public LngNodeProvider As String
 
     'MESSAGEBOXBASEPERIMEE
     Public LngMessageBoxBasePerimee As String
@@ -698,6 +698,7 @@ Friend Module Language
     Public LngGestionCategoriebtSauvegarder As String
     Public LngGestionCategoriebtRecharger As String
     Public LngGestionCategoriebtFermer As String
+    Public LngGestionCategorieDeplacerVers As String
 
     'IMPRIMEREMISSIONS
     Public LngImprimerEmissionsTonight As String
@@ -1173,7 +1174,8 @@ Friend Module Language
                 LngGestionCategoriebtRecharger = str.Substring(31)
             ElseIf str.StartsWith("LngGestionCategoriebtFermer=", StringComparison.CurrentCulture) Then
                 LngGestionCategoriebtFermer = str.Substring(28)
-
+            ElseIf str.StartsWith("LngGestionCategorieDeplacerVers=", StringComparison.CurrentCulture) Then
+                LngGestionCategorieDeplacerVers = str.Substring(32)
                 'REORGCHANNEL_TITLE
             ElseIf str.StartsWith("LngReorgChannelTitle=", StringComparison.CurrentCulture) Then
                 LngReorgChannelTitle = str.Substring(21)
@@ -1307,14 +1309,14 @@ Friend Module Language
                 LngMsgProxy = str.Substring(12)
 
                 ' MAINFORM TREEVIEW NODES
-            ElseIf str.StartsWith("LngNodeFilter=", StringComparison.CurrentCulture) Then
-                LngNodeFilter = str.Substring(14)
-            ElseIf str.StartsWith("LngNodeCategory=", StringComparison.CurrentCulture) Then
-                LngNodeCategory = str.Substring(16)
-            ElseIf str.StartsWith("LngNodeCountry=", StringComparison.CurrentCulture) Then
-                LngNodeCountry = str.Substring(15)
-            ElseIf str.StartsWith("LngNodeProvider=", StringComparison.CurrentCulture) Then
-                LngNodeProvider = str.Substring(16)
+                'ElseIf str.StartsWith("LngNodeFilter=", StringComparison.CurrentCulture) Then
+                '    LngNodeFilter = str.Substring(14)
+                'ElseIf str.StartsWith("LngNodeCategory=", StringComparison.CurrentCulture) Then
+                '    LngNodeCategory = str.Substring(16)
+                'ElseIf str.StartsWith("LngNodeCountry=", StringComparison.CurrentCulture) Then
+                '    LngNodeCountry = str.Substring(15)
+                'ElseIf str.StartsWith("LngNodeProvider=", StringComparison.CurrentCulture) Then
+                '    LngNodeProvider = str.Substring(16)
 
                 'MESSAGEBOXBASEPERIMEE
             ElseIf str.StartsWith("LngMessageBoxBasePerimee=", StringComparison.CurrentCulture) Then

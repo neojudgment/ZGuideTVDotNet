@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -149,13 +149,15 @@ Friend Module ControlLanguage
             GestionCategorie.gbxGroupeCategorie.Text = LngGestionCategoriegbxGroupeCategorie
             GestionCategorie.lblNomGroupeCategorie.Text = LngGestionCategorielblNomGroupeCategorie
             GestionCategorie.lblCouleurGroupeCategorie.Text = LngGestionCategorielblCouleurGroupeCategorie
-            GestionCategorie.lblCouleur.Text = LngGestionCategorielblCouleur
+            'GestionCategorie.lblCouleur.Text = LngGestionCategorielblCouleur
+            GestionCategorie.pvCouleur.Text = LngGestionCategorielblCouleur
             GestionCategorie.btModifierGroupeCategorie.Text = LngGestionCategoriebtModifierGroupeCategorie
             GestionCategorie.btAjouterGroupe.Text = LngGestionCategoriebtAjouterGroupe
             GestionCategorie.chkSuppGroupeVide.Text = LngGestionCategoriechkSuppGroupeVide
             GestionCategorie.btSauvegarder.Text = LngGestionCategoriebtSauvegarder
             GestionCategorie.btRecharger.Text = LngGestionCategoriebtRecharger
             GestionCategorie.btFermer.Text = LngGestionCategoriebtFermer
+            GestionCategorie.cmsGroup.Items(0).Text = LngGestionCategorieDeplacerVers
 
             'MAINFORM_TOOLSTRIP_MENU_FILE
             Mainform.ToolStripMenuFile.Text = LngToolStripMenuFile

@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -70,7 +70,13 @@ Public Class ucPopup
         ResumeLayout()
     End Sub
 
+    Private Sub cboRecherche_EventEngine(engine As String) Handles cboRecherche.EventEngine
+
+        RaiseEvent EventInfo(_titreCourt, engine)
+    End Sub
+
     Public Sub MajLangagePopup()
+
         'changement des text des labels
         SuspendLayout()
         lblRealise.Text = LngPopupLblRealise

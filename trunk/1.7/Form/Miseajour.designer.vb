@@ -78,7 +78,7 @@ Partial Class Miseajour
         '
         'OpenFileDialogXml
         '
-        Me.OpenFileDialogXml.Filter = "Fichiers xmltv|*.xml; *.zip|Tous les fichiers|*.*"
+        Me.OpenFileDialogXml.Filter = "Fichiers xmltv|*.xml; *.zip;*.gz|Tous les fichiers|*.*"
         Me.OpenFileDialogXml.SupportMultiDottedExtensions = True
         '
         'ButtonOpenfile

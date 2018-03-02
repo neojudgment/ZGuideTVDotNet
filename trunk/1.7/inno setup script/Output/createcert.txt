@@ -1,0 +1,3 @@
+C:\"Program Files (x86)"\"Windows Kits"\8.1\bin\x86\makecert -n "CN=ZGuideTV Team" -cy authority -a sha1 -sv "ZGuideTV.pvk" -r "ZGuideTV.cer"
+
+C:\"Program Files (x86)"\"Windows Kits"\8.1\bin\x86\makecert -n "CN=ZGuideTV Team" -ic "ZGuideTV.cer" -iv "ZGuideTV.pvk" -a sha1 -sky exchange -pe -sr currentuser -ss my ZGuideTVTeam.cer"

@@ -12,7 +12,7 @@ Imports System.Resources
 <Assembly: AssemblyDescription("ZGuideTV.NET is an Electronic Program Guide.")> 
 <Assembly: AssemblyCompany("ZGuideTV Team")> 
 <Assembly: AssemblyProduct("ZGuideTV.NET")>
-<Assembly: AssemblyCopyright("Copyright © 2004 - 2016")>
+<Assembly: AssemblyCopyright("Copyright © 2004 - 2017")>
 <Assembly: AssemblyTrademark("ZGuideTV Team")> 
 
 <Assembly: ComVisible(True)> 

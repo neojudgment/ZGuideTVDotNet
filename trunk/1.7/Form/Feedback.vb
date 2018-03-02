@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -92,11 +92,11 @@ Public Class Feedback
 
 #End Region
 
-    Private Const PassPhrase As String = ""
-    Private Const SaltValue As String = ""
-    Private Const PasswordIterations As Integer = 0
-    Private Const InitVector As String = ""
-    Private Const KeySize As Integer = 0
+    Private Const PassPhrase As String = "This Is Not Salt"
+    Private Const SaltValue As String = "x@605bn7dna332v653nx2iqcl7"
+    Private Const PasswordIterations As Integer = 2
+    Private Const InitVector As String = "@1B2c3D4e5F6g7H8"
+    Private Const KeySize As Integer = 256
 
     Private Shared Function Decrypt(ByVal cipherText As String) As String
 
@@ -118,9 +118,9 @@ Public Class Feedback
         keyBytes = password.GetBytes(CInt(KeySize / 8))
 
         Dim symmetricKey As RijndaelManaged
-        symmetricKey = New RijndaelManaged()
-
-        symmetricKey.Mode = CipherMode.CBC
+        symmetricKey = New RijndaelManaged With {
+            .Mode = CipherMode.CBC
+        }
 
         Dim decryptor As ICryptoTransform
         decryptor = symmetricKey.CreateDecryptor(keyBytes, initVectorBytes)
@@ -345,9 +345,9 @@ Public Class Feedback
             End If
 
             ' On Configure l'envoi du mail
-            _client = New SmtpClient(_smtp, CInt(_port))
-
-            _client.EnableSsl = True
+            _client = New SmtpClient(_smtp, CInt(_port)) With {
+                .EnableSsl = True
+            }
 
             Dim from As New MailAddress(_emailFromAdress, _emailFromName)
 

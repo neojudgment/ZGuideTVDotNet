@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -38,7 +38,7 @@ Friend Module Utilitairesmiseajour
     Public MessageNouvellesCategories1 As String = "De nouvelles catégories ont été ajoutées."
     Public MessageNouvellesCategories2 As String = "Voulez-vous ouvrir la fenêtre de gestion des catégories ?"
     Public MessageNouvellesCategoriesTitre As String = "ZGuideTV.NET - Nouvelles Catégories"
-
+    Public StrNonDefini As String = "Non défini, Not defined"
     Private _poid As Integer
 
     Private ReadOnly Os As OperatingSystem = Environment.OSVersion
@@ -736,8 +736,12 @@ Friend Module Utilitairesmiseajour
                             End Select
                         Next noeudEnfProgram
 
-                        pos = PCategory.IndexOf(", ", StringComparison.CurrentCulture)
-                        PCategoryTv = PCategory.Substring(0, pos)
+                        If Not PCategory.Equals(String.Empty) Then
+                            pos = PCategory.IndexOf(", ", StringComparison.CurrentCulture)
+                            PCategoryTv = PCategory.Substring(0, pos)
+                        Else
+                            PCategoryTv = StrNonDefini
+                        End If
                         If PActor.Length > 0 Then
                             PActor = PActor.Substring(2)
                         End If

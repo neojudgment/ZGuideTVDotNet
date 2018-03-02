@@ -2213,7 +2213,7 @@ Partial Class Mainform
         Me.ToolStripStatusLabelEmpty.AutoSize = False
         Me.ToolStripStatusLabelEmpty.BackColor = System.Drawing.Color.Transparent
         Me.ToolStripStatusLabelEmpty.Name = "ToolStripStatusLabelEmpty"
-        Me.ToolStripStatusLabelEmpty.Size = New System.Drawing.Size(338, 18)
+        Me.ToolStripStatusLabelEmpty.Size = New System.Drawing.Size(307, 18)
         Me.ToolStripStatusLabelEmpty.Spring = True
         '
         'ToolStripStatusLabelUpdate

@@ -713,6 +713,7 @@ LngGestionCategoriechkSuppGroupeVide=Remove empty groups when saving
 LngGestionCategoriebtSauvegarder=Save all
 LngGestionCategoriebtRecharger=Reload
 LngGestionCategoriebtFermer=Close
+LngGestionCategorieDeplacerVers=Move to
 
 [RECHERCHE AVANCEE]
 LngSearchByCategories=If catégory|equals|not equals

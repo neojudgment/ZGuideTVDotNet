@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -205,6 +205,9 @@ Public Class PaveActuellement
                     b.SurroundColors = New Color() {_bgColor}
                     gp.Dispose()
                     .FillRectangle(b, rect)
+                    If b IsNot Nothing Then
+                        b.Dispose()
+                    End If
                 Else
 
                     Dim b As New SolidBrush(_bgColor)
@@ -240,7 +243,7 @@ Public Class PaveActuellement
                 myBlend.Positions = New Single() {0.0, 0.5, 1.0}
                 myBlend.Colors = New Color() {Color.Green, Color.Yellow, Color.Red}
                 lgbEcoule.InterpolationColors = myBlend
-
+                
                 Dim myBlend2 As ColorBlend = New ColorBlend(2)
                 myBlend2.Positions = New Single() {0.0F, 0.5F, 1.0F}
                 myBlend2.Colors = New Color() {Color.LightGreen, Color.LightYellow, Color.Pink}

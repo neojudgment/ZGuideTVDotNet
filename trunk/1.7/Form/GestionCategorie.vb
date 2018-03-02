@@ -5,7 +5,7 @@
 ' |                                                                                                            |
 ' |    It can be customised to include only those TV listings you want to see.                                 |
 ' |                                                                                                            |
-' |    Copyright (C) 2004-2016 ZGuideTV.NET Team <http://zguidetv.codeplex.com/>                               |
+' |    Copyright (C) 2004-2017 ZGuideTV.NET Team <https://github.com/neojudgment>                              |
 ' |                                                                                                            |
 ' |    Project administrator : Pascal Hubert (neojudgment@hotmail.com)                                         |
 ' |                                                                                                            |
@@ -56,28 +56,34 @@ Public Class GestionCategorie
         gbxGroupeCategorie.Text = LngGestionCategoriegbxGroupeCategorie
         lblNomGroupeCategorie.Text = LngGestionCategorielblNomGroupeCategorie
         lblCouleurGroupeCategorie.Text = LngGestionCategorielblCouleurGroupeCategorie
-        lblCouleur.Text = LngGestionCategorielblCouleur
+        pvCouleur.Text = LngGestionCategorielblCouleur
         btModifierGroupeCategorie.Text = LngGestionCategoriebtModifierGroupeCategorie
         btAjouterGroupe.Text = LngGestionCategoriebtAjouterGroupe
         chkSuppGroupeVide.Text = LngGestionCategoriechkSuppGroupeVide
         btSauvegarder.Text = LngGestionCategoriebtSauvegarder
         btRecharger.Text = LngGestionCategoriebtRecharger
         btFermer.Text = LngGestionCategoriebtFermer
-
+        cmsGroup.Items(0).Text = LngGestionCategorieDeplacerVers
         MsgBoxTitre = LngMessageBoxGestionCategorieTitre
         MsgBoxNonSauvegarde1 = LngMessageBoxGestionCategorieNonSauvegarde1
         MsgBoxNonSauvegarde2 = LngMessageBoxGestionCategorieNonSauvegarde2
 
         AfficherTreeview()
+        tvwCategorie.ContextMenuStrip = cmsGroup
     End Sub
 
     Private Sub tvwCategorie_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles tvwCategorie.NodeMouseClick
+        If e.Button = MouseButtons.Left Then
+            Dim tn As TreeNode = e.Node
+            If TypeOf (tn) Is TreeNodeGroupeCategorie Then
+                txbNomGroupeCategorie.Text = tn.Text
+                pvCouleur.BgColor = Color.FromArgb(DirectCast(tn, TreeNodeGroupeCategorie).Couleur)
+                lblIdGroupe.Text = DirectCast(tn, TreeNodeGroupeCategorie).IdGroupe.ToString()
+            End If
 
-        Dim tn As TreeNode = e.Node
-        If TypeOf (tn) Is TreeNodeGroupeCategorie Then
-            txbNomGroupeCategorie.Text = tn.Text
-            lblCouleur.BackColor = Color.FromArgb(DirectCast(tn, TreeNodeGroupeCategorie).Couleur)
-            lblIdGroupe.Text = DirectCast(tn, TreeNodeGroupeCategorie).IdGroupe.ToString()
+        ElseIf e.Button = MouseButtons.Right Then
+
+
         End If
     End Sub
 
@@ -148,7 +154,8 @@ Public Class GestionCategorie
         If lblNomGroupeCategorie.Text.Trim.Length > 0 Then
             Dim tn As New TreeNodeGroupeCategorie
             tn.Text = txbNomGroupeCategorie.Text
-            tn.Couleur = lblCouleur.BackColor.ToArgb
+            'tn.Couleur = lblCouleur.BackColor.ToArgb
+            tn.Couleur = pvCouleur.BgColor.ToArgb
             tn.IdGroupe = idNouveau
             tvwCategorie.Nodes.Add(tn)
             idNouveau = idNouveau - 1
@@ -157,7 +164,8 @@ Public Class GestionCategorie
 
     Private Sub btCouleur_Click(sender As Object, e As EventArgs) Handles btCouleur.Click
         If ColorDialog1.ShowDialog = DialogResult.OK Then
-            lblCouleur.BackColor = ColorDialog1.Color
+            'lblCouleur.BackColor = ColorDialog1.Color
+            pvCouleur.BgColor = ColorDialog1.Color
         End If
     End Sub
 
@@ -175,7 +183,8 @@ Public Class GestionCategorie
             Next
             For Each tn As TreeNode In tvwCategorie.Nodes
                 If DirectCast(tn, TreeNodeGroupeCategorie).IdGroupe = CInt(lblIdGroupe.Text) Then
-                    DirectCast(tn, TreeNodeGroupeCategorie).Couleur = lblCouleur.BackColor.ToArgb
+                    'DirectCast(tn, TreeNodeGroupeCategorie).Couleur = lblCouleur.BackColor.ToArgb
+                    DirectCast(tn, TreeNodeGroupeCategorie).Couleur = pvCouleur.BgColor.ToArgb
                     tn.Text = txbNomGroupeCategorie.Text.Trim
                     Exit Sub
                 End If
@@ -207,6 +216,7 @@ Public Class GestionCategorie
 
         Dim test As New List(Of TreeNode)
         Dim tnGroupe As TreeNodeGroupeCategorie = New TreeNodeGroupeCategorie
+        DirectCast(cmsGroup.Items(0), ToolStripMenuItem).DropDownItems.Clear()
         For Each it As DataRow In dtCategorie.Rows
             If CInt(it.Item(1)) <> memoIdGroupe Then
                 If memoIdGroupe > 0 Then
@@ -217,6 +227,9 @@ Public Class GestionCategorie
                 tnGroupe.IdGroupe = CInt(it.Item(1))
                 tnGroupe.IdCouleur = CInt(it.Item(3))
                 tnGroupe.Couleur = CInt(it.Item(4))
+                Dim tsmi As New ToolStripMenuItem(it.Item(2).ToString)
+                AddHandler tsmi.MouseDown, AddressOf Cms_SubItem_MouseDown
+                DirectCast(cmsGroup.Items(0), ToolStripMenuItem).DropDownItems.Add(tsmi)
                 memoIdGroupe = tnGroupe.IdGroupe
                 If CInt(it.Item(5)) > 0 Then
                     Dim tnCat As New TreeNodeCategorie
@@ -239,6 +252,8 @@ Public Class GestionCategorie
         End If
 
     End Sub
+
+
 
     Private Sub btRecharger_Click(sender As Object, e As EventArgs) Handles btRecharger.Click
         tvwCategorie.Nodes.Clear()
@@ -318,6 +333,27 @@ Public Class GestionCategorie
         Next
         db.CloseDatabase()
 
+    End Sub
+
+    Private Sub TvwCategorie_MouseClick(sender As Object, e As MouseEventArgs) Handles tvwCategorie.MouseClick
+        Dim tn As TreeNode = tvwCategorie.GetNodeAt(e.X, e.Y)
+        tvwCategorie.SelectedNode = tn
+    End Sub
+    Private Sub Cms_SubItem_MouseDown(sender As Object, e As MouseEventArgs)
+
+        Dim tn As TreeNode = tvwCategorie.SelectedNode
+        Dim target As TreeNode = tvwCategorie.Nodes.Cast(Of TreeNode).ToList.Find(Function(n) n.Text.Equals(DirectCast(sender, ToolStripMenuItem).Text))
+
+        If TypeOf (tn) Is TreeNodeGroupeCategorie Then
+            For i As Integer = tn.Nodes.Count - 1 To 0 Step -1
+                Dim ttn As TreeNode = tn.Nodes.Item(i)
+                tn.Nodes.RemoveAt(i)
+                target.Nodes.Add(ttn)
+            Next
+        Else
+            tn.Nodes.Remove(tn)
+            target.Nodes.Add(tn)
+        End If
     End Sub
 End Class
 

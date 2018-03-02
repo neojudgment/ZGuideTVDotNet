@@ -1,0 +1,158 @@
+Friday, January 1, 2016 (ZGuideTV.NET 1.7 beta 4)
+
+- Fix "System.ArgumentOutOfRangeException" error in TV show marked for reminder.
+- Fix JetLag compensation Label and add a MessageBox.
+- Fix "System.IO.DirectoryNotFoundException" error if the backup directory has been moved or deleted.
+- Setup Wizard update for Windows 10 / Framework 4.5.x / Framework 4.6.0.
+- Download and executable automatic update. (currently disabled)
+- User license modification.
+- Database optimization.
+- SQLite engine v3.8.9 to v3.10.2
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Thursday, April 30, 2015 (ZGuideTV.NET 1.7 beta 3)
+
+- Workaround for "System.IO.FileLoadException:... 'Microsoft.WindowsAPICodePack.Shell'..." error.
+
+=================================================================================================================================
+
+Saturday, April 25, 2015 (ZGuideTV.NET 1.7 beta 2).
+
+- The setup wizard includes both 32-bit and 64-bit ZGuideTV.NET.
+- New Advanced Search (by channel, by category, by specific date).
+- New print preview.
+- New effect on Mouse Over TV Show.
+- Ability to search TV channels in the catalog during a manual update.
+- Ability to select the backup directory.
+- English translation to print "Now" and "Tonight".
+- Workaround for "System.IndexOutOfRangeException" error when the database has expired.
+- Workaround for "A valid active Window is needed to update the Taskbar" error.
+- SQLite engine v3.8.5 to v3.8.9
+- NAudio libraries v1.7 to v1.7.3
+- Logos updated.
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Thursday, January 1, 2015 (ZGuideTV.NET 1.7 beta 1).
+
+- Ability to select/change/save TV Show colors.
+- Improved launch speed on multi-core system.
+- Link to ZGuideTV.NET Facebook group.
+- SQLite engine v3.8.4 to v3.8.5
+- xmltv.dtd v1.4 to v1.47
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Sunday, April 13, 2014 (ZGuideTV.NET 1.6 beta 1).
+
+- Fixes calculation error for horizontal scrolling (in progress).
+- The AutoComplete done is saved between sessions (search by title).
+- SQLite engine v3.8.2 to v3.8.4.3
+- xmltv.dtd v1.45 to v1.46
+- new XMLTV sample file link
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Tuesday, December 31, 2013 (ZGuideTV.NET 1.5 Final Release).
+
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Tuesday, December 10, 2013 (ZGuideTV.NET 1.5 beta 4).
+
+- Fixes SQLite error "Index was outside the bounds of the array".
+- Systray icon regression fixes (via settings menu).
+- Update 7-Zip v9.30 to v9.32.
+- SQLite engine v3.8.1 to v3.8.2
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+
+=================================================================================================================================
+
+Sunday, November 10, 2013 (ZGuideTV.NET 1.5 beta 3).
+
+- Rewriting management treeview code. (faster queries)
+- Central tables, now and tonight are now identical + optimization
+- Securing some requests to avoid exceeding limits.
+- SQLite engine v3.8.0.2 to v3.8.1
+- NAudio libraries v1.6 to v1.7
+- Logos updated.
+- Code cleaning.
+- Code optimization.
+- Various simplifications and optimizations.
+- Many performance improvements and bug fixes.
+
+NB : The wheel mouse click under Windows 8/8.1 now displays a panoramic view of the desktop applications. The workaround to "reminder" a TV Show is now done with a right mouse click.
+
+=================================================================================================================================
+
+Thursday, October 3, 2013 (ZGuideTV.NET 1.5 beta 2).
+
+- New time line
+- Fixes in title and subtitle display
+- SQLite engine v3.7.16.2 to v3.8.0.2
+- Code cleaning.
+- Code optimization.
+- Many performance improvements and bug fixes.
+
+=================================================================================================================================
+
+Sunday, August 18, 2013 (ZGuideTV.NET 1.5 beta 1).
+
+- Fixes in first language selection.
+- Fixes in server connection test (available / unavailable).
+- Ability to restart automatically after a manual update.
+- Contains some new features / enhancement and a few regression fixes.
+
+=================================================================================================================================
+
+Thursday, June 20, 2013 (ZGuideTV.NET 1.5 alpha 3)
+
+- Subtitle added.
+- Feedback improvement.
+- Fixes in sheets selection.
+- Fixes in search by title.
+- Message with detailed information when an ZGuideTV.NET update is available.
+- Automatic search optimization for executable update.
+- Feedback optimization.
+- SQLite engine v3.7.16.2 to v3.7.17
+- English translation updated.
+- New settings icon.
+- Code cleaning.
+- Code optimization.
+- Many performance improvements and bug fixes.
+
+=================================================================================================================================
+
+Tuesday, April 15, 2013 (ZGuideTV.NET 1.5 alpha 2)
+
+- Optimized startup code, ZGuideTV.NET should now launch 2 to 4 times faster than 1.0.
+- GUI improvements. 
+- Sub-category
+- Code cleaning.
+- Code optimisation.
+- SQLite engine v3.7.16 to v3.7.16.2
+- Many performance improvements and bug fixes.
+
+================================================================================================================================= 
+
+Sunday, February 3, 2013 (ZGuideTV.NET 1.5 alpha 1).
+
+Initial release.

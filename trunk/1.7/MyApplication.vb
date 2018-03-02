@@ -50,15 +50,16 @@ Namespace My
 
             ShowDebugOutput(DirectCast(e.ExceptionObject, Exception))
         End Sub
-#If Not Debug Then
+#If Not DEBUG Then
         Private Sub MyApplicationUnhandledException(sender As Object,
                                                     e As UnhandledExceptionEventArgs) _
             Handles Me.UnhandledException
 
             ShowDebugOutput(e.Exception)
         End Sub
-    End Class
+        End Class
 #End If
+    End Class
 End Namespace
 
 
