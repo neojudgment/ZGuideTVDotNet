@@ -6,8 +6,6 @@ ZGuideTV.NET est un EPG (Electronic Program Guide), c'est-à-dire un "magazine d
 
 Il est personnalisable afin de ne voir que les chaînes qui vous intéressent.
 
-Site web officiel: http://zguidetv.codeplex.com/
-
 ![](https://github.com/neojudgment/ZGuideTVDotNet/blob/master/Screenshots/zguidetvinterface.png?raw=true)
 
 ## Notes importantes
