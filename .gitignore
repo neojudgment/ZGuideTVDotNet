@@ -2,5 +2,7 @@
 # Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs
 /trunk/1.7/.vs/ZGuideTV.NET/v15/Server/sqlite3
 /trunk/1.7/.vs/ZGuideTV.NET/v15/sqlite3
+/trunk/1.7/.vs
