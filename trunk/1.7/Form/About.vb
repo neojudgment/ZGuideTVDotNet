@@ -42,7 +42,7 @@ Public Class About
     End Sub
 
     Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) _
-        Handles LinkLabel3.LinkClicked
+
         ' Process.Start("http://igloo.crystalxp.net/djeric")
     End Sub
 
@@ -97,8 +97,8 @@ Public Class About
             opSys = "32-bit"
         End If
 
-        TextBoxVersion.Text = fv.ProductName & " v" & fv.FileVersion & " beta " & opSys
-        TextBoxCompiledOn.Text = "Compiled on: Windows 10 64-bit"
+        TextBoxVersion.Text = fv.ProductName & " v" & fv.FileVersion & " alpha " & opSys
+        TextBoxCompiledOn.Text = "Compiled on: Windows 11 64-bit"
         TextBoxCompilationDate.Text = "Build date: " &
                                       CStr(File.GetLastWriteTime(AppPath & "ZGuideTVDotNet.exe").ToShortDateString()) &
                                       " " &

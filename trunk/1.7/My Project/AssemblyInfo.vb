@@ -12,13 +12,13 @@ Imports System.Resources
 <Assembly: AssemblyDescription("ZGuideTV.NET is an Electronic Program Guide.")> 
 <Assembly: AssemblyCompany("ZGuideTV Team")> 
 <Assembly: AssemblyProduct("ZGuideTV.NET")>
-<Assembly: AssemblyCopyright("Copyright © 2004 - 2017")>
+<Assembly: AssemblyCopyright("Copyright © 2004 - 2026")>
 <Assembly: AssemblyTrademark("ZGuideTV Team")> 
 
 <Assembly: ComVisible(True)> 
 
 'Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-<Assembly: Guid("1df6ec78-3738-4ea3-8666-9fdc4b26c9c2")> 
+<Assembly: Guid("1df6ec78-3738-4ea3-8666-9fdc4b26c9c2")>
 
 ' Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 '
@@ -31,6 +31,6 @@ Imports System.Resources
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.7.*")> 
+<Assembly: AssemblyVersion("2.0.*")>
 
 <Assembly: NeutralResourcesLanguage("")> 

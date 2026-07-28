@@ -23,7 +23,6 @@ Partial Class About
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(About))
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.TextBoxCredit = New System.Windows.Forms.TextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPageAbout = New System.Windows.Forms.TabPage()
@@ -67,16 +66,6 @@ Partial Class About
         CType(Me.PictureBoxPaypal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.Location = New System.Drawing.Point(26, 335)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(208, 16)
-        Me.LinkLabel3.TabIndex = 10
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "http://igloo.crystalxp.net/djeric"
-        Me.LinkLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'TextBoxCredit
         '
@@ -514,7 +503,6 @@ Partial Class About
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(560, 407)
-        Me.Controls.Add(Me.LinkLabel3)
         Me.Controls.Add(Me.TextBoxCredit)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.PictureBox1)
@@ -542,7 +530,6 @@ Partial Class About
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
     Friend WithEvents TextBoxCredit As System.Windows.Forms.TextBox
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPageAbout As System.Windows.Forms.TabPage
