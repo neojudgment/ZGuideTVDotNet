@@ -47,7 +47,7 @@ Public Class About
     End Sub
 
     Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) _
-        Handles LinkLabel5.LinkClicked
+        
         Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
     End Sub
 

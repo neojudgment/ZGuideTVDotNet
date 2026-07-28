@@ -46,13 +46,6 @@ Partial Class About
         Me.TabPagelicence = New System.Windows.Forms.TabPage()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.TabPage7zip = New System.Windows.Forms.TabPage()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TabPageDonate = New System.Windows.Forms.TabPage()
         Me.PictureBoxPaypal = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -61,7 +54,6 @@ Partial Class About
         Me.TabPageAbout.SuspendLayout()
         Me.TabPageAuteurs.SuspendLayout()
         Me.TabPagelicence.SuspendLayout()
-        Me.TabPage7zip.SuspendLayout()
         Me.TabPageDonate.SuspendLayout()
         CType(Me.PictureBoxPaypal, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,7 +76,6 @@ Partial Class About
         Me.TabControl1.Controls.Add(Me.TabPageAbout)
         Me.TabControl1.Controls.Add(Me.TabPageAuteurs)
         Me.TabControl1.Controls.Add(Me.TabPagelicence)
-        Me.TabControl1.Controls.Add(Me.TabPage7zip)
         Me.TabControl1.Controls.Add(Me.TabPageDonate)
         Me.TabControl1.Location = New System.Drawing.Point(250, 26)
         Me.TabControl1.Name = "TabControl1"
@@ -371,91 +362,6 @@ Partial Class About
         Me.LinkLabel1.Text = "https://opensource.org/licenses/MS-RL"
         Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TabPage7zip
-        '
-        Me.TabPage7zip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.TabPage7zip.Controls.Add(Me.TextBox8)
-        Me.TabPage7zip.Controls.Add(Me.LinkLabel6)
-        Me.TabPage7zip.Controls.Add(Me.TextBox7)
-        Me.TabPage7zip.Controls.Add(Me.TextBox6)
-        Me.TabPage7zip.Controls.Add(Me.LinkLabel5)
-        Me.TabPage7zip.Controls.Add(Me.TextBox1)
-        Me.TabPage7zip.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage7zip.Name = "TabPage7zip"
-        Me.TabPage7zip.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7zip.Size = New System.Drawing.Size(281, 314)
-        Me.TabPage7zip.TabIndex = 4
-        Me.TabPage7zip.Text = "Crédits"
-        Me.TabPage7zip.UseVisualStyleBackColor = True
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.Color.White
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox8.Location = New System.Drawing.Point(11, 126)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(261, 13)
-        Me.TextBox8.TabIndex = 45
-        Me.TextBox8.Text = "markheath © 2017"
-        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'LinkLabel6
-        '
-        Me.LinkLabel6.Location = New System.Drawing.Point(10, 110)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(263, 14)
-        Me.LinkLabel6.TabIndex = 44
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "http://naudio.codeplex.com/"
-        Me.LinkLabel6.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'TextBox7
-        '
-        Me.TextBox7.BackColor = System.Drawing.Color.White
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox7.Location = New System.Drawing.Point(7, 96)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(266, 13)
-        Me.TextBox7.TabIndex = 43
-        Me.TextBox7.Text = "ZGuideTV.NET uses NAudio"
-        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'TextBox6
-        '
-        Me.TextBox6.BackColor = System.Drawing.Color.White
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox6.Location = New System.Drawing.Point(10, 188)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.ReadOnly = True
-        Me.TextBox6.Size = New System.Drawing.Size(263, 13)
-        Me.TextBox6.TabIndex = 6
-        Me.TextBox6.Text = "Microsoft Codeplex © 2006-2017 Microsoft"
-        Me.TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'LinkLabel5
-        '
-        Me.LinkLabel5.Location = New System.Drawing.Point(10, 172)
-        Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(263, 13)
-        Me.LinkLabel5.TabIndex = 5
-        Me.LinkLabel5.TabStop = True
-        Me.LinkLabel5.Text = "http://www.codeplex.com/"
-        Me.LinkLabel5.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(10, 158)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(263, 13)
-        Me.TextBox1.TabIndex = 4
-        Me.TextBox1.Text = "ZGuideTV.NET is hosted by Microsoft Codeplex"
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'TabPageDonate
         '
         Me.TabPageDonate.Controls.Add(Me.PictureBoxPaypal)
@@ -521,8 +427,6 @@ Partial Class About
         Me.TabPageAuteurs.PerformLayout()
         Me.TabPagelicence.ResumeLayout(False)
         Me.TabPagelicence.PerformLayout()
-        Me.TabPage7zip.ResumeLayout(False)
-        Me.TabPage7zip.PerformLayout()
         Me.TabPageDonate.ResumeLayout(False)
         CType(Me.PictureBoxPaypal, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -556,12 +460,5 @@ Partial Class About
     Friend WithEvents TextBoxVersion As System.Windows.Forms.TextBox
     Friend WithEvents TextBoxCompilationDate As System.Windows.Forms.TextBox
     Friend WithEvents TextBoxCompiledOn As System.Windows.Forms.TextBox
-    Friend WithEvents TabPage7zip As System.Windows.Forms.TabPage
-    Private WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Private WithEvents LinkLabel6 As System.Windows.Forms.LinkLabel
-    Private WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents RichTextBox1 As RichTextBox
 End Class
