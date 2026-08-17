@@ -1,0 +1,5 @@
+User-Agent: *
+
+Disallow: /pascal/
+Disallow: /zg/
+Disallow: /gzip/

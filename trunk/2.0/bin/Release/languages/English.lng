@@ -1,0 +1,801 @@
+﻿[LANGUAGE]
+LngLanguage=English
+LngLanguageID=1033
+LngTranslator=Néo
+
+[SELECTLANGUAGE]
+LngSelectLanguageButtonOK=OK
+LngSelectLanguageButtonCancel=Cancel
+
+[JUMPLIST]
+LngSiteOfficiel=ZGuideTV.NET Official Website
+LngForumOfficiel=ZGuideTV.NET Official Forum
+
+[PREMIERDEMARAGE]
+LngPremierDemarrageTitle=ZGuideTV.NET - Proxy Configuration
+LngPremierDemarrageLabelInfo=If you are unsure, ask your administrator or leave these fields blank.
+LngPremierDemarrageButtonOK=OK
+LngPremierDemarrageButtonCancel=Cancel
+LngPremierDemarrageButtonCheck=Check
+
+[PREF_TITLE]
+LngPrefTitle=ZGuideTV.NET - Settings
+
+[PREF_TABPAGE_GENERAL]
+LngTabPageGeneral=General
+LngGroupBoxPurge=Purge files
+LngGroupBoxEffects=Effects
+LngGroupBoxSauvegardeFenetre=Save principal window
+LngGroupBoxDivers=Others
+LngGroupBoxFiltres=Filters
+LngGroupBoxConfHardware=Hardware Configuration
+LngGroupBoxPosition=Windows positions
+LngCheckBoxPurge=Automatic purge
+LngCheckBoxoldUI=2D interface 
+LngCheckBoxFadeOut=FadeOut
+LngCheckBoxSlide=Over mouse effects
+LngRadioButtonConfNormal=Normal (default)
+LngRadioButtonConfAverage=Average
+LngRadioButtonConfMinimum=Small
+LngCheckBoxConfigWindow=Dimensions/Positions
+LngCheckBoxtracelog=TraceLog
+LngCheckBoxFilters=Auto hide
+LngGroupBoxMouse=Mouse
+LngCheckBoxaccordscrollhorizontal=Horizontal Scrolling
+LngCheckBoxbuttonssave=Auto save
+LngCheckBoxUrlUpdate=URL auto Update
+LngGroupBoxUrlUpdate=URL
+LngCheckBoxToolTipsBallon=Show Tooltips
+LngGroupBoxToolTipsBallon=Tooltips
+LngCheckBoxSystray=Enable icon
+LngGroupBoxSystray=System tray
+
+[PREF_TABPAGE_PROXY]
+LngTabPageProxy=Proxy
+LngGroupBoxConnexion=Connexion
+LngGroupBoxProxy=Proxy
+LngLabelUtilisateur=User
+LngLabelMotdePasse=Password
+LngLabelProxy=Proxy
+LngLabelPort=Port
+
+[PREF_TABPAGE_MAJ_DONNEES]
+LngTabPageMiseajourDonnees=Updates
+LngGroupBoxIntervalle=Update interval
+LngGroupBoxUpdateLast=Last update
+LngGroupBoxAutoUpdate=Data update
+LngGroupBoxTailleBdd=Database size
+LngGroupBoxUpdateIn=Next update in
+LngUpdateIn=day(s)
+LngGroupBoxUpdateNext=Next update
+LngCheckBoxAutoUpdate=Auto Update
+LngTextBoxUpdateDay=day(s)
+
+[PREF_TABPAGE_MAJ_LOGICIEL]
+LngGroupBoxAutoUpdateExe=ZGuideTV.NET Updates
+LngCheckBoxAutoverif=Check for updates automatically
+
+[PREF_TABPAGE_CESOIR_MAINTENANT]
+LngTabPageCesoirMaintenant=Tonight and Live
+LngGroupBoxCesoir=Tonight
+LngGroupBoxMaintenant=Live
+LngRadioButtonCesoirAll=Show all
+LngRadioButtonCesoir45=45 minutes
+LngRadioButtonCesoir60=60 minutes
+LngRadioButtonCesoir75=75 minutes
+LngRadioButtonCesoir90=90 minutes
+LngRadioButtonCesoir105=105 minutes
+LngRadioButtonCesoir120=120 minutes
+LngRadioButtonMaintenantAll=Show all
+LngRadioButtonMaintenant45=45 minutes
+LngRadioButtonMaintenant60=60 minutes
+LngRadioButtonMaintenant75=75 minutes
+LngRadioButtonMaintenant90=90 minutes
+LngRadioButtonMaintenant105=105 minutes
+LngRadioButtonMaintenant120=120 minutes
+
+[PREF_TABPAGE_MODE_VEILLE]
+LngTabPageResume=Sleep Mode
+LngGroupBoxResume=Resume from Sleep Mode
+LngCheckBoxResume=Auto Resume
+LngGroupBoxResumeBefore=Resume Before
+LngRadioButtonResume5=5 minutes
+LngRadioButtonResume10=10 minutes
+LngRadioButtonResume15=15 minutes
+LngRadioButtonResume20=20 minutes
+LngRadioButtonResume30=30 minutes
+
+[PREF_TABPAGE_GESTION_SON]
+LngTabPageSound=Sound Manager
+LngGroupBoxRSS=RSS Updates
+LngGroupBoxMessages=Alert Messages
+LngGroupBoxReminder=Reminder Messages
+LngGroupBoxMasterVolume=Master Volume
+LngGroupBoxMute=Mute Volume
+LngCheckBoxAudioOn=Mute
+
+[PREF_BUTTON]
+LngButtonOk=OK
+LngButtonCancel=Cancel
+
+[MAINFORM_TOOLSTRIP_MENU_FILE]
+LngToolStripMenuFile=&File
+LngToolStripMenuFileSave=Database Management
+LngToolStripMenuFileRestart=App. Restart
+LngToolStripMenuItemSettingsReset=Reset Settings
+LngToolStripMenuFileExit=Exit
+
+[MAINFORM_TOOLSTRIP_MENU_EDIT]
+LngToolStripMenuEdit=&Edit
+LngToolStripMenuEditOntop=Always On top
+LngToolStripMenuSearch=Advanced Search
+LngToolStripMenuEditPrint=Print description
+LngToolStripMenuPrintTonight=Print "Tonight"
+LngToolStripMenuCategories=Show/Hide categories
+LngToolStripMenuDescription=Show/Hide description
+LngToolStripMenuCalendar=Show/Hide calendar
+
+[MAINFORM_TOOLSTRIP_MENU_OPTIONS]
+LngToolStripMenuOptions=&Options
+LngToolStripMenuOptionsUpdate=Manual update
+LngToolStripMenuOptionsAutoUpdate=Auto update
+LngToolStripMenuOptionsPreferences=Settings
+LngToolStripMenuOptionsLogos=Logos and Channels Reorganization 
+LngToolStripMenuOptionsDualMonitor=Switch between screen
+LngToolStripMenuOptionsEngineSelection=Additional Information...
+LngToolStripMenuOptionsCouleurCategorie=Color categories
+
+[MAINFORM_TOOLSTRIP_MENU_HELP]
+LngToolStripMenuHelp=?
+LngToolStripMenuHelpHelptopics=Help Topics
+LngToolStripMenuHelpHelpShortcuts=Keyboard Shortcuts Reference
+LngToolStripMenuHelpWebsite=ZGuideTV.NET Official Website
+LngToolStripMenuHelpForum=ZGuideTV.NET Official Forum
+LngToolStripMenuHelpLanguage=Language
+LngToolStripMenuHelpAbout=About ZGuideTV.NET
+LngToolStripMenuHelpManualFeedBack=Send a Feedback...
+LngToolStripMenuHelpDonate=Donate
+LngToolStripMenuHelpCompensation=Jet-Lag Compensation
+
+[MAINFORM_TOOLSTRIP]
+LngToolStripSave=Database Management
+LngToolStripPrint=Print description
+LngToolStripSearch=Advanced Search
+LngToolStripOntop=Always On top
+LngToolStripPreferences=Settings
+LngToolStripLogos=Logos and Channels Reorganization 
+LngToolStripUpdate=Manual update
+LngToolStripAutoUpdate=Auto Update
+LngToolStripDualMonitor=Switch between screen
+LngToolStripWebsite=ZGuideTV.NET Official Website
+LngToolStripForum=ZGuideTV.NET Official Forum
+LngToolStripLangue=Language
+LngToolStripAbout=About ZGuideTV.NET
+LngToolStripHelptopics=Help Topics
+LngToolStripHelpShortcuts=Keyboard Shortcuts Reference
+LngToolStripCategories=Show/Hide categories
+LngToolStripDescription=Show/Hide description
+LngToolStripCalendar=Show/Hide calendar
+LngToolStripManualFeedBack=Send a Feedback...
+LngToolStripTextBoxRecherche=Search by title
+LngToolStripButtonRecherche=Quick Search
+LngToolStripButtonDonate=Donate
+LngToolStripOptionsCouleurCategorie=Color categories
+
+
+[MAINFORM_PAVE]
+LngPaveJourMoins=Day -1
+LngPaveHeureMoins=Hour -1
+LngPave6H=06H
+LngPave9H=09H
+LngPave12H=12H
+LngPave15H=15H
+LngPave18H=18H
+LngPave20H=20H
+LngPave23H=23H
+LngPaveMaintenant=Now
+LngPaveJourPlus=Day +1
+LngPaveHeurePlus=Hour +1
+
+[MAINFORM_CESOIR_MAINTENANT]
+LngPanelTitreCesoir=Tonight
+LngPanelTitreMaintenant=Live
+
+[REORGCHANNEL_TITLE]
+LngReorgChannelTitle=ZGuideTV.NET - Logos and Channels Reorganization 
+
+[REORGCHANNEL_BUTTON]
+LngButtonMonterReorgChannel=Up
+LngButtonDescendreReorgChannel=Down
+LngButtonSupprimerReorgChannel=Delete
+LngButtonLogoReorgChannel=Replace logo
+LngButtonEnregistrerReorgChannel=Save
+LngButtonAnnulerReorgChannel=Cancel
+LngReorgChannelListViewColumns0=Channel
+LngReorgChannelListViewColumns1=Order
+
+[FRM_ABOUT_TITLE]
+LngAboutTitle=ZGuideTV.NET - About
+
+[FRM_ABOUT_TABPAGE_ABOUT]
+LngTabPageAbout=About
+
+[FRM_ABOUT_TABPAGE_AUTHORS]
+LngTabPageAuteurs=Authors
+LngTextBoxCreator=Project initiator
+LngTextBoxAdmin=Project administrator
+LngTextBoxDev=Developers
+LngTextBoxTesters=Beta testers
+LngTextBoxContributors=Contributors
+LngTextBoxThanks=Thanks
+
+[FRM_ABOUT_TABPAGE_LICENCE]
+LngTabPagelicence=License
+
+[FRM_ABOUT_TABPAGE_7ZIP]
+LngTabPage7zip=Credits
+
+[FRM_ABOUT_TABPAGE_DONATE]
+LngTabPageDonate=Make A Donation
+
+[FRMMISEAJOUR_TITLE]
+LngFrmMiseajour=ZGuideTV.NET - Update
+
+[FRMMISEAJOUR_LISTVIEW1_COLUMN]
+LngFrmMiseajourListViewAllChannelColumns0=Available Channels
+LngFrmMiseajourListViewAllChannelColumns1=Selected Channels
+
+[FRMMISEAJOUR]
+LngRadioButtonDownload=Download
+LngRadioButtonXmlPath=XMLTV File
+LngButtonTout=Select All
+LngButtonSuppr=Delete All
+LngButtonMiseaJour=Update
+LngButtonDemarrer=Start
+LngButtonAnnuler=Cancel
+LngButtonEdit=Edit
+LngButtonForceDownload=Force UpDate
+Lngtelechargement=Downloading day:
+LngParsingoperation=Parsing day:
+LngCheckBoxAutoRestartManualUpdate=Automatically restart after an update
+LngTextBoxRecherche=Search by channel
+
+[FRMMISEAJOUR_MESSAGE]
+LngErrorInChannelListRecovery=Recovery channels list error!
+LngNoURLUpdate=URL list update error!
+LngInvalidURL=Invalid URL!
+LngUntraceableFile=File not found!
+LngInvalidFile=Invalid File!
+LngErrorInUpdate=Update Error
+LngErrorInXMLCopy=TV programs update procedure failed during XML file copy!
+LngErrorInFileCopy=TV programs update procedure failed during file copy!
+LngErrorInUnzip=TV programs update procedure failed during uncompress file!
+LngWrongFileName=Wrong File Name!
+LngFailURLFileDownload=URL list loading failed!
+LngUntraceableURLListFile=URL list Not Found!
+LngTheFile=File
+LngDontExist= does not exist!
+LngProtectedFile= , protected in writing or is already used by another process!
+LngChosenChannels=Selected Channels (
+LngAvailableChannels=Available Channels (
+LngChoseFile=Please choose the file to be downloaded.
+LngInvalidChoice=Invalid choice!
+
+[MAINFORM_MESSAGE_PROXY]
+LngMsgProxyTitle=ZGuideTV.NET - Proxy setup
+LngMsgProxy=If you have a proxy, do you want set up it now?
+
+[MAINFORM_NOTIFYICON1_BALLOONTIP]
+LngNotifyIcon1BalloonTipTitle=ZGuideTV.NET
+
+[MESSAGEBOXBASEPERIMEE]
+LngMessageBoxBasePerimee=The database is expired!
+LngMessageBoxBasePerimee1=Do you want to update?
+LngMessageBoxBasePerimeeTitre=ZGuideTV.NET - Database Expired
+
+[MESSAGEBOXNODATA]
+LngMessageBoxNoData=Sorry, there is no data for this date!
+LngMessageBoxNoDataTitre=Information
+
+[MESSAGEBOXNOUPDATE]
+LngMessageBoxnoupdate=There is not a newer release available!
+LngMessageBoxnoupdateTitre=ZGuideTV.NET - Check for Updates...
+
+[MESSAGEBOXMISEAJOUR]
+LngMessageBoxMiseaJour=An update has been scheduled!
+LngMessageBoxMiseaJour1=Do you want to update?
+LngMessageBoxMiseaJourTitre=ZGuideTV.NET - scheduled Update
+
+LngMessageBoxMajauto=The planned update has failed and will be carried out later!
+LngMessageBoxMajautoTitre=ZGuideTV.NET - scheduled Update
+
+LngMessageBoxfichierRetabli=The original files were recovered!
+LngMessageBoxfichierRetabliTitre=ZGuideTV.NET - Recovery
+
+[MESSAGEBOXMISEAJOURDONE]
+LngMessageBoxMiseaJourDone=An update has just been completed!
+LngMessageBoxMiseaJour1Done=Do you want to restart ZGuideTV.NET?
+LngMessageBoxMiseaJourTitreDone=ZGuideTV.NET - Update
+
+[MESSAGEBOXMODIFPREF]
+LngMessageBoxModifPref=You must restart ZGuideTV.NET before the new settings will take effect.
+LngMessageBoxModifPref1=Do you want to restart ZGuideTV.NET now?
+LngMessageBoxModifPrefTitre=ZGuideTV.NET - Settings
+
+[MESSAGEBOXNOCONNECTION]
+LngMessageBoxNoConnection=Internet connection unavailable or
+LngMessageBoxNoConnection1=website temporarily down!
+LngMessageBoxNoConnectionTitre=ZGuideTV.NET - Internet Connection
+
+[MESSAGEBOXFEEDBACK]
+LngMessageBoxFeedback=E-mail adress invalid!
+LngMessageBoxFeedbackTitre=ZGuideTV.NET - Feedback
+
+[MESSAGEBOXFICHIERCORROMPU]
+LngMessageFichierCorrompu=The XMLTV file is not conform to DTD specifications or is corrupted!
+LngMessageFichierCorrompu1=Would you try to recover your old database
+LngMessageFichierCorrompu2=or select another file update?
+LngMessageFichierCorrompuTitre=ZGuideTV.NET - File is not conform
+
+[MESSAGEBOXLISTXMLTVFRCHOISIE]
+LngMessageBoxListXMLTVFRChoisie=The channels number selected exceeds the limit!
+LngMessageBoxListXMLTVFRChoisie1=The maximum channels number allowed is 120.
+LngMessageBoxListXMLTVFRChoisieTitre=ZGuideTV.NET - The channels number selected exceeds the limit
+
+[MESSAGEBOXTHETVDBNORESULT]
+LngMessageBoxThetvdbNoResult=No result for this serie!
+LngMessageBoxThetvdbNoResultTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXTHETVDBVALIDESERIEID]
+LngMessageBoxThetvdbNoValidSeriesId=Please enter a valid series ID!
+LngMessageBoxThetvdbNoValidSeriesIdTitre=ZGuideTV.NET - TheTVDB.Com
+
+[THETVDBBOXNOSHEET]
+LngThetvdbBoxNoSheet=Search this sheet temporarily unavailable!
+LngThetvdbBoxNoSheetTitre=ZGuideTV.NET - Connection 
+
+[MESSAGEBOXTHETVDBNOSERIEDETAIL]
+LngMessageBoxThetvdbNoSerieDetails=Couldn't load Series details!
+LngMessageBoxThetvdbNoSerieDetailsTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXTHETVDBNOACTORINFO]
+LngMessageBoxThetvdbNoActorInfo=Couldn't load extended actor info!
+LngMessageBoxThetvdbNoActorInfoTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXTHETVDBNOBANNER]
+LngMessageBoxThetvdbNoBanner=Couldn't load Banners!
+LngMessageBoxThetvdbNoBannerTitre=ZGuideTV.NET - TheTVDB.Com
+
+[MESSAGEBOXMESSAGEENVOYE]
+LngMessageBoxMessageEnvoye=Your feedback has been successfully sent. Thanks!
+LngMessageBoxMessageEnvoyeTitre=ZGuideTV.NET - Feedback
+
+[MESSAGEBOXMESSAGEISEMPTY]
+LngMessageBoxMessageIsEmpty=Please write your message before sending. Thank you!
+LngMessageBoxMessageIsEmptyTitre=ZGuideTV.NET - Feedback
+
+[MESSAGEBOXFILESAVE]
+LngMessageBoxFileSave=The database has been saved.
+LngMessageBoxFileSave1=The backup is done correctly!
+LngMessageBoxFileSaveTitre=ZGuideTV.NET - Save database
+
+[MESSAGEBOXFILERESTORE]
+LngMessageBoxFileRestore=A restoration has been done!
+LngMessageBoxFileRestore1=You must restart ZGuideTV.NET so that it takes effect.
+LngMessageBoxFileRestore2=Do you want to restart ZGuideTV.NET now?
+LngMessageBoxFileRestoreTitre=ZGuideTV.NET - Restore
+
+[MESSAGEBOXNORESTORESELECTED]
+LngMessageBoxNoRestoreSelected=Please select a backup!
+LngMessageBoxNoRestoreSelectedTitre=ZGuideTV.NET - No backup selected
+
+[MESSAGEBOXNORESTOREELEMENT]
+LngMessageBoxNoRestoreElement=Please select at least one item to restore!
+LngMessageBoxNoRestoreElementTitre=ZGuideTV.NET - No item selected
+
+[MESSAGEBOXNODIRECTORYSELECTED]
+LngMessageBoxNoDirectorySelectedTitre=None selected backup directory.
+LngMessageBoxNoDirectorySelected=Please select a backup directory!
+
+[MESSAGEBOXREORGCHANNEL]
+LngMessageBoxReorgChannel=You must restart ZGuideTV.NET before the new settings will take effect.
+LngMessageBoxReorgChannel1=Do you want to restart ZGuideTV.NET now?
+LngMessageBoxReorgChannelTitre=ZGuideTV.NET - Logos and Channels Reorganization
+
+[MESSAGEBOXRESUME]
+LngMessageBoxResume=Reminder: One or more TV Shows were marked
+LngMessageBoxResume1=for future reference.
+LngMessageBoxResumeTitre=ZGuideTV.NET - Waking from sleep
+
+[MESSAGEBOXRAZ]
+LngMessageBoxRaz=This feature resets all ZGuideTV.NET settings!
+LngMessageBoxRaz1=Are-you sure to reset ZGuideTV.NET?
+LngMessageBoxTitleRaz=ZGuideTV.NET - Reset settings
+
+[MESSAGEBOXMISEAJOUREXE]
+LngMessageBoxMiseaJourExe=A new ZGuideTV.NET version is available.
+LngMessageBoxMiseaJourExe1=Do you want to download and install this new version?
+LngMessageBoxMiseaJourExeTitre=ZGuideTV.NET - New version available
+LngMessageBoxMiseaJourExeActual=Current version: 
+LngMessageBoxMiseaJourExeNew=Available version:  
+
+[MESSAGEBOXFILENOTEXIST]
+LngMessageBoxFileNotExist=The update file on the local specified location
+LngMessageBoxFileNotExist1=has been deleted or moved.
+LngMessageBoxFileNotExistTitre=Update Error
+
+[MESSAGEBOXDIRCHECKED]
+LngMessageBoxDirChecked=You have selected an update from a local location.
+LngMessageBoxDirChecked1=Do you want to disable auto update? (Recommended)
+LngMessageBoxDirCheckedTitre=Update from a local location
+
+[MESSAGEBOXURLCHECKED]
+LngMessageBoxURLChecked=You have selected an update from an URL.
+LngMessageBoxURLChecked1=Do you want to enable auto update? (Recommended)
+LngMessageBoxURLCheckedTitre=Update from an URL
+
+[MESSAGEBOXSAVEDONE]
+LngMessageboxSaveDone=Backup completed successfully!
+LngMessageboxSaveDoneTitre=ZGuideTV.NET - Backup
+
+[MESSAGEBOXRENAMEDONE]
+LngMessageboxRenameDone=Database renamed successfully!
+LngMessageboxRenameDoneTitre=ZGuideTV.NET - Rename
+
+[MESSAGEBOXDELETEDONE]
+LngMessageboxDeleteDone=Database deleted successfully!
+LngMessageboxDeleteDoneTitre=ZGuideTV.NET - Delete
+
+[MESSAGEBOXNODIRECTORYEXISTS]
+LngMessageBoxNoDirectoryExistsTitre=ZGuideTV.NET - Database
+LngMessageBoxNoDirectoryExists=The directory backup has been moved or deleted!
+
+[MESSAGEBOXGESTIONCATEGORIESAUVEGARDER]
+LngMessageBoxGestionCategorieTitre=ZGuideTV.NET - Save
+LngMessageBoxGestionCategorieNonSauvegarde1=You have not saved!
+LngMessageBoxGestionCategorieNonSauvegarde2=Do you want to save?
+
+[INPUTBOXNAMEBDD]
+LngInputBoxNameBdd=Please provide a name for the database that will be created!
+LngInputBoxNameBddTitre=ZGuideTV.NET - Name
+
+[INPUTBOXRENAMEBDD]
+LngInputBoxRenameBdd=Please give a new name for the selected database!
+LngInputBoxRenameBddTitre=ZGuideTV.NET - Rename
+
+[DOWNLOAD_FORM_LABEL]
+LngDownloadFormTitle=ZGuideTV.NET - Update Downloading...
+LngDownloadFormWeight=File size :
+LngDownloadFormProgress=Progress :
+LngDownloadFormSpeed=Speed :
+LngDownloadFormEstimated=Remaining time :
+
+[MISEAJOURAUTO]
+LngMiseAJourAutoTitle=ZGuideTV.NET - Auto Update
+LngNodenumber=Number of nodes :
+LngAutoupdateoperation=Operation in progress :
+Lngdwnloperation=Downloading
+LngParsingoperation=Parsing XML File
+Lngremaining_time=Remaining Time :
+Lngfilesize=File size :
+LngMiseAJourProgress=Progress :
+
+[MISEAJOURAUTOMESSAGE]
+LngMessageBoxMajautoUrl=Invalid URL!
+LngMessageBoxMajautoUrlTitre=ZGuideTV.NET - Invalide URL
+LngMessageBoxMajautoserverError=File not Found or cannot reach server!
+LngMessageBoxMajautoserverErrorTitre=ZGuideTV.NET - File error
+LngMessageBoxMajautoxmlError=Error during XML file copy!
+LngMessageBoxMajautoxmlErrorTitre=ZGuideTV.NET - Copy error
+LngMessageBoxMajautoextractionError=Error during file extraction!
+LngMessageBoxMajautoextractionErrorTitre=ZGuideTV.NET - Extraction error
+LngMessageBoxMajautocopyError=Error during file copy!
+LngMessageBoxMajautocopyErrorTitre=ZGuideTV.NET - Copy error
+LngMessageBoxMajautonameError=Incorrect file name!
+LngMessageBoxMajautonameErrorTitre=ZGuideTV.NET - Nom incorrect
+
+[NOTIFYICON]
+lngBalloonText1=The program continues to be carried out in the systray and continues to run normally.
+lngBalloonText2=This message will disappear automatically in 5 seconds.
+lngBalloonText3=Click here to do not show this message again.
+
+[SYSTRAY]
+lngSystrayMenuRestore=Restore
+lngSystrayMenuExit=Exit
+
+[CALENDAR]
+LngCalendarLundiLabel=Mon.
+LngCalendarMardiLabel=Tue.
+LngCalendarMercrediLabel=Wed.
+LngCalendarJeudiLabel=Thu.
+LngCalendarVendrediLabel=Fri.
+LngCalendarSamediLabel=Sat.
+LngCalendarDimancheLabel=Sun.
+LngNameofMonth1=January
+LngNameofMonth2=February
+LngNameofMonth3=March
+LngNameofMonth4=April
+LngNameofMonth5=May
+LngNameofMonth6=June
+LngNameofMonth7=July
+LngNameofMonth8=August
+LngNameofMonth9=September
+LngNameofMonth10=October
+LngNameofMonth11=November
+LngNameofMonth12=December
+
+[DESCRIPTBOX]
+LngDescriptLundiLabel=Monday
+LngDescriptMardiLabel=Tuesday
+LngDescriptMercrediLabel=Wednesday
+LngDescriptJeudiLabel=Thursday
+LngDescriptVendrediLabel=Friday
+LngDescriptSamediLabel=Saturday
+LngDescriptDimancheLabel=Sunday
+
+[Feedback]
+LngFeedbackTitle=ZGuideTV.NET - Feedback
+LngLabelExceptMessage1=An unexpected error occurred!
+LngLabelExceptMessage2=Thank you for helping ZGuideTV developers by sending the following information:
+LngLabelExceptMessage3=Comments (optional):
+LngLabelExceptMessage4=*If you want to be contacted please provide your email.
+LngCheckBoxExceptErrorMessage=Attach log files
+LngLabelEmail=E-mail (optional)*:
+LngSendButton=Send
+LngCopierButton=Copy
+LngExitButton=Exit
+LngExceptErrorMessage=Please write your message in the window below!
+LngLabelFeedbackSend=Submitting...
+LngZGuideTVRelease=ZGuideTV.NET Version:
+LngCompilationDate=ZGuideTV.NET Release Date:
+LngOSRelease=Operating System:
+LngArchitecture=Architecture:
+LngOSBootMode=Boot Mode:
+LngFramework=Framework Version:
+LngOSLanguage=System Language:
+LngTotalMemory=Total Physical Memory:
+LngRemainingMemory=Physical memory available:
+LngUsedMemory=Memory used by ZGuideTV.NET:
+LngProcessorName=Processor Description:
+LngProcessorDescription=Processor Name:
+LngProcessorNumber=Number of Cores:
+LngMonitorNumber=Number of Screens Connected:
+LngEmail=E-mail:
+LngComments=Comments:
+LngDescriptionError=Error Description:
+LngProcessorSpeed=Processor Current Clock Speed:
+LngCheckBoxAcknowledgment=Send me a copy
+
+[THETVDBTAB]
+LngThetvdbLabelSeriesTabSeries=Series
+LngThetvdbLabelEpisodesTabEpisodes=Episodes
+LngThetvdbLabelActorsTabActors=Actors
+
+[THETVDB]
+LngThetvdbLabelSearchName=Series:
+LngThetvdbLabelLanguage=Language:
+LngThetvdbButtonSearch=Search
+LngThetvdbLabelSiteRating=Site Rating:
+LngThetvdbLabelID=Serie ID:
+LngThetvdbLabelRuntime=Runtime:
+LngThetvdbLabelRating=Rating:
+LngThetvdbLabelDescription=Synopsis:
+LngThetvdbLabelFirstAired=First Aired:
+LngThetvdbLabelIDTVCom=TV.com ID:
+LngThetvdbLabelIDIMDBCom=IMDB.com ID:
+LngThetvdbLabelForceUpdate=Reload
+LngThetvdbButtonLoad=Load
+LngThetvdbButtonCancel=Cancel
+LngThetvdbButtonSearchShow=Search
+LngThetvdbButtonExit=Exit
+LngThetvdbLabelName=Name:
+LngThetvdbLabelGenre=Genre:
+LngThetvdbLabelActors=Actors:
+LngThetvdbLabelActors1=Actors
+LngThetvdbLabelGueststar=Guest stars:
+LngThetvdbLabelDirector=Directors:
+LngThetvdbLabelWriter=Writers:
+LngThetvdbLabelEpisodeDescription=Synopsis:
+LngThetvdbLabelLoadFull=Load Episode Information
+LngThetvdbLabelLoadActors=Load extended actor info
+LngThetvdbLabelBanner=Load Banners
+LngThetvdbLabelUseZipped=zipped downloading
+LngThetvdbLabelOpen=Open
+LngThetvdbLabelEpisodes=Episodes
+
+[THETVDBTABEPISODE]
+LngThetvdbLabelAbsoluteNumberTabEpisodes=Absolute Number:
+LngThetvdbLabelProductCodeTabEpisodes=Production Code:
+LngThetvdbLabelDVDIDTabEpisodes=DVD Disc ID:
+LngThetvdbLabelDVDSeasonTabEpisodes=DVD Season:
+LngThetvdbLabelDVDNumberTabEpisodes=DVD Ep Number:
+LngThetvdbLabelDVDChapterTabEpisodes=DVD Chapter:
+LngThetvdbNodeSeasonTabEpisodes=Season
+
+[THETVDBTABACTOR]
+LngThetvdbGroupBoxInformationTabActors=Information
+LngThetvdbLabelIDTabActors=ID:
+LngThetvdbLabelNameTabActors=Name:
+LngThetvdbLabelRoleTabActors=Role:
+LngThetvdbLabelSortOrderTabActors=SortOrder:
+
+[THETVDBRESULT]
+LngThetvdbGroupBoxResult=Details
+LngThetvdbLabelFirstAiredResult=FirstAired:
+LngThetvdbLabelIMDBIdResult=IMDB ID :
+LngThetvdbLabelOverviewResult=Synopsis:
+LngThetvdbLabelStatusResult=Search Results
+LngThetvdbButtonChooseResult=Choose
+LngThetvdbButtonCancelResult=Cancel
+LngThetvdbListviewResultColumns0=ID
+LngThetvdbListviewResultColumns1=Name
+LngThetvdbListviewResultColumns2=Language
+
+[POPUP]
+LnglblDiffusion=Scheduled:
+LnglblDuree=Runtime:
+LnglblShowView=ShowView:
+LnglblGenre=Category:
+LnglblPublic=Public:
+LnglblProduction=Production date:
+LnglblRealise=Director(s):
+LnglblPresents=Presenter(s):
+LnglblAvec=Actors:
+LnglblSynopsis=Review:
+LnglblInfos=Infos:
+LngstrDe=from
+LngstrA=to
+
+[TIMEZONE]
+LngTimeZoneTitle=ZGuideTV.NET - Jet-Lag compensation
+LngTimeZoneLabelCompensation=Compensation:
+LngTimeZoneLabelMinute=Hour(s)
+
+[STATUSSTRIP]
+LngToolStripStatusLabelActiveEngine=Additional Information:
+LngToolStripStatusLabelTHEDVB=TheTVDB.com - Internal
+LngToolStripStatusLabelIMDB=IMDb.com - External
+LngToolStripStatusLabelALLOCINE=Screenrush.co.uk - External
+LngToolStripStatusLabelMemory=Mem. :
+LngToolStripStatusLabelMB=MB
+LngToolStripStatusLabelUpdate=Check for updates...
+
+[LOADER]
+LngLoaderLabelWait=Please wait. Updating data...
+
+[BALLONTIPS]
+LngBallonTipsNoInformation=No summary available for this TV show.
+
+[GESTIONBDD]
+LngGestionBddTitre=ZGuideTV.NET - Database management
+LngGestionBddButtonDelete=Delete
+LngGestionBddButtonSave=Save
+LngGestionBddButtonRestore=Restore
+LngGestionBddButtonRename=Rename
+LngGestionBddButtonCancel=Quit
+LngListViewGestionBddColumns0=Backup Name
+LngListViewGestionBddColumns1=Size (Ko)
+LngListViewGestionBddColumns2=Creation Date
+LngGroupBoxRestauration=Restore
+LngCheckBoxRestaurationDataBase=DataBase
+LngCheckBoxRestaurationChaines=Channel List
+LngCheckBoxRestaurationUrl=Links update
+LngCheckBoxRestaurationUserConfig=User Configuration
+LngDirectoryBackup=Select
+LngBackupDirectory=Backup directory:
+
+'IMPRIMEREMISSIONS
+LngImprimerEmissionsTonight=TONIGHT
+LngImprimerEmissionsNow=NOW
+LngImprimerEmissionsLe=
+LngImprimerEmissionsDe=from
+LngImprimerEmissionsA=to
+LngImprimerEmissionsRealise=Directed by:
+LngImprimerEmissionsAvec=With:
+LngImprimerEmissionsResume=Synopsis:
+
+[PROGRESSBAR]
+LngProgressBarSaveTitre=Database Backup
+LngProgressBarSaveLabel=Backup in progress...
+LngProgressBarRestoreTitre=Database Restore
+LngProgressBarRestoreLabel=Restoration in progress ...
+
+[GESTIONCATEGORIE]
+LngGestionCategorietxt=ZGuideTV.NET - Categories management
+LngGestionCategorielblInfo=To move a category from one group to another, click on the category and then drag and drop to the desired group.
+LngGestionCategoriegbxGroupeCategorie=Group categories
+LngGestionCategorielblNomGroupeCategorie=Group name:
+LngGestionCategorielblCouleurGroupeCategorie=Color group:
+LngGestionCategorielblCouleur=display test
+LngGestionCategoriebtModifierGroupeCategorie=Modify
+LngGestionCategoriebtAjouterGroupe=Add
+LngGestionCategoriechkSuppGroupeVide=Remove empty groups when saving
+LngGestionCategoriebtSauvegarder=Save all
+LngGestionCategoriebtRecharger=Reload
+LngGestionCategoriebtFermer=Close
+
+[RECHERCHE AVANCEE]
+LngSearchByCategories=If catégory|equals|not equals
+LngSearchByChannel=If channel|equals|not equals
+LngSearchToday=If is on today
+LngSearchNow=If is on now
+LngSeachByDateOrTime=If|start time|stop time|equals|is earlier than|is later
+LngSeachByDateRange=If date|is between|is not between|and|This date must be later than the minimum date.
+LngSeachByTimeRange=If|start time|stop time|is between|is not between|and|
+LngSearchByDayOfWeek= If day of week|equals|not equals
+LngSearchByDuration=If duration|equals|is greater than|is lower than|is between|minutes|hours|and
+LngSearchOrCondition=OR Condition|Insert|By text field|By category|By channel|By date|By time|By duration|By day of week|By date range|By time range|Is on today|Is on now|By time proximity
+LngSearchByTextField=If|title|subtitle|description|contains|does not contain
+LngSeachByTimeProximity=If start time is within the next|minutes|hours|days
+
+LngSearchAdvancedTxt=ZGuideTV.NET - Advanced searches
+LngSearchAdvancedFindOtherMenuItem=Find other occurences
+LngSearchAdvancedAddToSavedSearchesMenuItem=Add to Saved Searches
+LngSearchAdvancedPrintMenuItem=Print this list
+
+[LISTE RECHERCHE AVANCEE]
+LngListSearchAvancedGeneral=en
+LngListSearchAvancedStart=Start
+LngListSearchAvancedStop=Stop
+LngListSearchAvancedTitle=Title
+LngListSearchAvancedChannel=Channel
+LngListSearchAvancedCategory=Category
+
+LngListSearchAvancedNoDescription=No description
+LngPrintDescription=Advanced searches
+LngPrintErrorTitle=ZGUIDE - Print error
+LngPrintErrorMessage=The list is empty !
+
+
+LngTabSearchList=List
+LngTabSearchAdvancedSearch=Advanced search
+
+[RECHERCHE AVANCEE EDITOR]
+LngAdvancedSeachGBSearch=Create your search
+LngAdvancedSeachGBSave=Save search
+LngAdvancedSeachBTInsert=Insert
+LngAdvancedSeachBTClear=Clear
+LngAdvancedSeachBTSave=Save
+LngAdvancedSeachBTSearch=Search
+LngAdvancedSeachLBName=Search name
+LngAdvancedSeachCBCriteria=By text field|By category|By channel|By date|By time|By duration|By day of week|By date range|By time range|Is on today|Is on now|By time proximity|OR Condition
+LngAdvancedSeachError1Message=Some of your search criteria are not valid, fix them and try again.
+LngAdvancedSeachError2Message=Please enter a name for this search.
+LngAdvancedSeachErrorTitle=ZGuideTV.NET - Error
+
+[RECHERCHE AVANCEE TREEVIEW]
+LngTreeviewSearchAvancedGeneral=en
+LngTreeviewSearchAdvancedCategories=Categories
+LngTreeviewSearchAdvancedChannels=Channels
+LngTreeviewSearchAdvancedSavedSearches=Saved searches
+LngTreeviewSearchAdvancedDay=Specific dates
+LngTreeviewDeleteMenuItem=Delete
+LngTreeviewEditMenuItem=Edit
+LngTreeviewRenameMenuItem=Rename
+
+[PRINT PREVIEW]
+LngPrintPreviewBtPrint=Print document
+LngPrintPreviewBtPageSetup=Page setup
+LngPrintPreviewBtFirst=First page
+LngPrintPreviewBtPrev=Previous page
+LngPrintPreviewBtNext=Next page
+LngPrintPreviewBtLast=Last page
+LngPrintPreviewFormName=Print preview
+LngPrintPreviewBtCancel_Cancel=Cancel
+LngPrintPreviewBtCancel_Close=Close
+LngPrintPreviewOfPage=of
+LngPrintPreviewZoomActualSize=Actual size
+LngPrintPreviewZoomFullPage=Full page
+LngPrintPreviewZoomPageWidth=Page width
+LngPrintPreviewZoomTwoPages=Two pages
+
+[POPUP]
+LngPopupLblRealise=Director
+LngPopupLblPresents=Presenter
+LngPopupLblAvec=With
+LngPopupLblResume=Summary
+LngPopupLblDe= from 
+LngPopupLblA= to 
+LngPopupLblSur= on
+LngPopupStrRechercheAvancee=Advanced search (internal)
+LngPopupStrTVDB=TVDB (internal)
