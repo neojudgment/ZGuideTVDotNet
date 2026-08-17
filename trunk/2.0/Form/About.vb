@@ -98,7 +98,7 @@ Public Class About
         End If
 
         TextBoxVersion.Text = fv.ProductName & " v" & fv.FileVersion & " alpha " & opSys
-        TextBoxCompiledOn.Text = "Compiled on: Windows 11 64-bit"
+        TextBoxCompiledOn.Text = "Compiled on: Windows 11 Pro 64-bit"
         TextBoxCompilationDate.Text = "Build date: " &
                                       CStr(File.GetLastWriteTime(AppPath & "ZGuideTVDotNet.exe").ToShortDateString()) &
                                       " " &

@@ -205,7 +205,7 @@ Public Class Mainform
         End If
 
         ' On envoie au second Thread (SplashScreen)
-        SplashScreenClass.VersionText(fv.ProductName & " v" & fv.FileVersion & " beta Release " & opSys)
+        SplashScreenClass.VersionText(fv.ProductName & " v" & fv.FileVersion & " alpha Release " & opSys)
         SplashScreenClass.CopyrightText(fv.LegalCopyright & " " & fv.CompanyName)
 
         Hide()
@@ -302,7 +302,7 @@ Public Class Mainform
             End With
         End With
 
-        Text = String.Format(fv.ProductName & " v" & fv.FileVersion & " beta Release")
+        Text = String.Format(fv.ProductName & " v" & fv.FileVersion & " alpha Release")
 
         'Néo 29/05/2010 On regarde si la bdd est périmée
         If _
