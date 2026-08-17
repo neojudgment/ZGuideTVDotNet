@@ -51,39 +51,39 @@ Public Class About
         Process.Start("https://github.com/neojudgment/ZGuideTVDotNet")
     End Sub
 
-    Private Sub PictureBoxPaypalClick(sender As Object, e As EventArgs) Handles PictureBoxPaypal.Click
-        Try
+    'Private Sub PictureBoxPaypalClick(sender As Object, e As EventArgs) Handles PictureBoxPaypal.Click
+    '    Try
 
-            ' Modifié par Néo le 28/01/2010
-            If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://www.paypal.com/") Then
-                Process.Start(
-                    "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZBD7C6HV8V52")
+    '        ' Modifié par Néo le 28/01/2010
+    '        If My.Computer.Network.IsAvailable AndAlso ConnectionAvailable("https://www.paypal.com/") Then
+    '            Process.Start(
+    '                "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZBD7C6HV8V52")
 
-            Else
+    '        Else
 
-                ' Message indiquant qu'il n'y a pas de connexion internet dispo pour
-                ' aller sur Paypal
+    '            ' Message indiquant qu'il n'y a pas de connexion internet dispo pour
+    '            ' aller sur Paypal
 
-                ' ReSharper disable NotAccessedVariable
-                Dim boxNoConnection As DialogResult
-                ' ReSharper restore NotAccessedVariable
-                boxNoConnection =
-                    MessageBox.Show(Mainform.MessageBoxNoConnection & Chr(13) & Mainform.MessageBoxNoConnection1,
-                                    Mainform.MessageBoxNoConnectionTitre, MessageBoxButtons.OK,
-                                    MessageBoxIcon.Exclamation)
-            End If
+    '            ' ReSharper disable NotAccessedVariable
+    '            Dim boxNoConnection As DialogResult
+    '            ' ReSharper restore NotAccessedVariable
+    '            boxNoConnection =
+    '                MessageBox.Show(Mainform.MessageBoxNoConnection & Chr(13) & Mainform.MessageBoxNoConnection1,
+    '                                Mainform.MessageBoxNoConnectionTitre, MessageBoxButtons.OK,
+    '                                MessageBoxIcon.Exclamation)
+    '        End If
 
-        Catch ex As WebException
+    '    Catch ex As WebException
 
-            ' ReSharper disable NotAccessedVariable
-            Dim boxNoConnection As DialogResult
-            ' ReSharper restore NotAccessedVariable
-            boxNoConnection =
-                MessageBox.Show(Mainform.MessageBoxNoConnection & Chr(13) & Mainform.MessageBoxNoConnection1,
-                                Mainform.MessageBoxNoConnectionTitre, MessageBoxButtons.OK,
-                                MessageBoxIcon.Exclamation)
-        End Try
-    End Sub
+    '        ' ReSharper disable NotAccessedVariable
+    '        Dim boxNoConnection As DialogResult
+    '        ' ReSharper restore NotAccessedVariable
+    '        boxNoConnection =
+    '            MessageBox.Show(Mainform.MessageBoxNoConnection & Chr(13) & Mainform.MessageBoxNoConnection1,
+    '                            Mainform.MessageBoxNoConnectionTitre, MessageBoxButtons.OK,
+    '                            MessageBoxIcon.Exclamation)
+    '    End Try
+    'End Sub
 
     Private Sub AboutLoad(sender As Object, e As EventArgs) Handles Me.Load
 
